@@ -21,3 +21,29 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
   end
 end
+
+lane :unit_testing do |options|
+    increment_build_number(build_number: ENV["BUILD_NUMBER"]) if ENV["BUILD_NUMBER"]
+    increment_build_number(build_number: options[:build_number]) if options[:build_number]
+    set_info_plist_value(path: "/Users/samchen/Desktop/SETravel/Example/SETravel/SETravel-Info.plist", key: 'UIFileSharingEnabled', value: "true")
+
+    # 根据Fastfile目录，换算workspace，并且制定 编译存放路径，优化打包机空间功能
+    workspace = "/Users/samchen/Desktop/FastlaneTest"
+    zip_path = "#{workspace}/products_zip"
+    build_log_path = "#{workspace}/build_log"
+    ENV['FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT'] = "20"
+    ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "20"
+    scan(scheme: "SETravel-Example",
+         workspace: "SETravel.xcworkspace",
+         configuration: "Debug",
+         destination: 'generic/platform=iOS',
+         clean: true,
+         output_directory: zip_path,
+         buildlog_path: build_log_path,
+         build_for_testing: true,
+         code_coverage: true,
+         should_zip_build_products: true,
+         skip_slack: true,
+         xcargs: "-arch=\'arm64\' VALID_ARCHS=\'arm64\'",
+    )
+end
