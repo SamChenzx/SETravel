@@ -20,10 +20,10 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		61F16A60500855ECD841D5F7 /* Pods_SETravel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364ECEF3A18A4FB586D5710D /* Pods_SETravel_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		95E9AFE53D1D1D6D5D457BD4 /* Pods_SETravel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B082692482E3A0E8D14FF47D /* Pods_SETravel_Tests.framework */; };
+		A046BF5800E232143243A608 /* libPods-SETravel_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */; };
+		B64C161CAF82C8B6CC25BC2E /* libPods-SETravel_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		364ECEF3A18A4FB586D5710D /* Pods_SETravel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SETravel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SETravel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETravel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,11 +60,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B082692482E3A0E8D14FF47D /* Pods_SETravel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SETravel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9B5BB8715D0B4D12631B228 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B9B5BB8715D0B4D12631B228 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.debug.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D5C358E991F9C3B7AC205735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EA2395420A8AA63202BE4541 /* SETravel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SETravel.podspec; path = ../SETravel.podspec; sourceTree = "<group>"; };
+		D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C358E991F9C3B7AC205735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EA2395420A8AA63202BE4541 /* SETravel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SETravel.podspec; path = ../SETravel.podspec; sourceTree = "<group>"; };
 		F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				61F16A60500855ECD841D5F7 /* Pods_SETravel_Example.framework in Frameworks */,
+				A046BF5800E232143243A608 /* libPods-SETravel_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				95E9AFE53D1D1D6D5D457BD4 /* Pods_SETravel_Tests.framework in Frameworks */,
+				B64C161CAF82C8B6CC25BC2E /* libPods-SETravel_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,6 @@
 				AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */,
 				20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +134,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				364ECEF3A18A4FB586D5710D /* Pods_SETravel_Example.framework */,
-				B082692482E3A0E8D14FF47D /* Pods_SETravel_Tests.framework */,
+				D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */,
+				BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3017609CE9AF6197B847F030 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,7 +246,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chenzhixiang;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 95Y89KCYKV;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 95Y89KCYKV;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +298,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3017609CE9AF6197B847F030 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SETravel/SETravel.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SETravel.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ADAE0DB655EC7E38B1877617 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +479,7 @@
 			baseConfigurationReference = C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Y89KCYKV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETravel/SETravel-Prefix.pch";
 				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
@@ -510,6 +496,7 @@
 			baseConfigurationReference = F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Y89KCYKV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETravel/SETravel-Prefix.pch";
 				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
@@ -526,6 +513,7 @@
 			baseConfigurationReference = AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 95Y89KCYKV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +539,7 @@
 			baseConfigurationReference = 20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 95Y89KCYKV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,0 +1,6 @@
+framework module SETravel {
+  umbrella header "SETravel-umbrella.h"
+
+  export *
+  module * { export * }
+}

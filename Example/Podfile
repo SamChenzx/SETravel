@@ -1,10 +1,11 @@
-use_frameworks!
+#use_frameworks!
+install! 'cocoapods', :disable_input_output_paths => true
 
 platform :ios, '9.0'
 
 target 'SETravel_Example' do
   pod 'SETravel', :path => '../'
-
+  pod 'SSZipArchive', '1.1' 
   target 'SETravel_Tests' do
     inherit! :search_paths
 

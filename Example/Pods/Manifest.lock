@@ -1,0 +1,23 @@
+PODS:
+  - SETravel (0.1.0)
+  - SSZipArchive (1.1)
+
+DEPENDENCIES:
+  - SETravel (from `../`)
+  - SSZipArchive (= 1.1)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  SETravel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SETravel: 3b24c362cf28eebf278ac9c923e647fc013d6399
+  SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
+
+PODFILE CHECKSUM: e25ed14f3a839301c0b5f219c86a04fbf3a92113
+
+COCOAPODS: 1.10.0
