@@ -65,7 +65,7 @@
 		C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.debug.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C358E991F9C3B7AC205735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EA2395420A8AA63202BE4541 /* SETravel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SETravel.podspec; path = ../SETravel.podspec; sourceTree = "<group>"; };
+		EA2395420A8AA63202BE4541 /* SETravel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SETravel.podspec; path = ../SETravel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
