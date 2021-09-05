@@ -7,72 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016A81B78EC734683C4E673F787A8915 /* gifTestResourceCDNFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0788879DE9B8402F1EDE5610D93501 /* gifTestResourceCDNFetcher.m */; };
 		0560C41991F0C002834E5300DC07AB7B /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAAF2015D66C6BCC8AB16107F4504D6 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		06BA9548701023BDB08DDEB0E4BB49CA /* SEObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E72B784B90C01E059A8D776FE40152 /* SEObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0EDE3C5CEC23D2C611B8A1AF98AA8358 /* Pods-SETravel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFE15998B6CD70B58BD97504E25473 /* Pods-SETravel_Example-dummy.m */; };
+		125EF1D5C02CE1D1C774A5A8221BE63D /* gifTestMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A7A94777706C7527B2E8B7F3739CDB /* gifTestMockResponse.m */; };
 		22C8B0DDAD121E1864CCF457AE82E61A /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B18ACE2E1678D515F19C274D1B5BF5B /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2349B6E8693DC5B5E66167FAE0708245 /* gifTestResourceKeyFileMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3A11D8E3FFC0F0CEF6A293E0998449 /* gifTestResourceKeyFileMap.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2929C0566D31D3C7DB492E61456A6D78 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DD74AAB70ECA1E68FAECAFE8D83DD /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2F5E067126D3BBB4B47AAAF0BBFA028A /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = CAB4BAE1943A29FCE63E54F90D7FDAC9 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		389C552B5A10320BC6E8F0716123B1BF /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = D10970C53E0D955F370812C042686614 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3D1081B451A552F1C1E4AB682F31ED36 /* gifTestResourceCDNFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA5BD39B71511D37FF353C051D2D06A /* gifTestResourceCDNFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		40CBF1E8AB265C17ED28FC51FEDAAEF1 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 118861C7977D26A704F89007F05D4FC1 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		470CDA819775C3B2B846B844557AF938 /* SEObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F27858C37D702D6982F2521427C4BFEE /* SEObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47901B82E9106BF2176F701F29BD3577 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 374ED545FFAE7E64029AF99A060F6D57 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4869D44275516CBF0D20EB9146AF4F76 /* SEObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3482A01256000E2322020249D1B11C5 /* SEObject.m */; };
+		4A76877258061B0C8BA70B954B459AB9 /* gifTestMockServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DC5D7058E04540E0DCA2E0562D5196 /* gifTestMockServer.m */; };
 		4EC087D911BDFF529254A15AB8333775 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F78089576A25CC7DC3C5382F24B45543 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50CEA20CF8CD0AA4B0B62873B37F967A /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 93E5496528B6935556D7A00B481F5A44 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		56D9061807541C4227295B0A223181A9 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = A61155C9A6B18D4AD391F9D856998CA9 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5805618559DDF30DA286FA034669093E /* gifTestMockHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6E5855AD86C896875FCDBE14093ED0 /* gifTestMockHTTPStubs.m */; };
+		59C372DA50EC80C2A6B400C7769B603F /* gifTestMockHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 06085A32E7D94975E3018AED626429E7 /* gifTestMockHTTPStubs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5B828F7435157F9BBB88FBCDEB7EE5AE /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2DBE279E89F87023D6E25F44B6CB6B /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5B904D264497FFA70C1B87C299D13EFF /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 208F31C1CC26BBEC760CFCEDB8666DA7 /* Common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D2BD61805D84D1F3971B27D2DA70213 /* gifTestResourceCDNFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B955ECB361BB4B093D21336728E66 /* gifTestResourceCDNFetcher.m */; };
 		622A3FD667A5554A5CE4F6C7785D5A92 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 61EF5D7AD820EB56D512793FA2132CB7 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63060335AC558AEA2860A52FBEFBDEBE /* gifTestMockResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7549F736D9EA75CA850684D46D40F392 /* gifTestMockResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		638C4FEE6D6A1AC123B3E2B2B86BFBAC /* SETravel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F9A62CE251C137F14A5C4E944D4E24 /* SETravel-dummy.m */; };
+		6AFEE16A63DA896F471F95ED9BF107A1 /* gifTestToolsKeyFileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A665B5D9995CE234611B85814BEB11AC /* gifTestToolsKeyFileMap.m */; };
 		6F90DC1025BF14162689E3F93A522251 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = EE40F941F022426508031927705CB433 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		73A53A8EE8C5E178A4F11C84EB13D01B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = DA05EBDBDFCB5061BF23EC1E069861C4 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		77006A89D9316DC97A73039C6E2369FD /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 3709CD9BA36774D0CED38CFFE4E513FA /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		77F530BDABAA429F13998C6AF342D0BB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 61404AF37E695441DE49DCD8A59BA83B /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		79A9543A473DB9A11662C46563432EED /* SEObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A15376CA4DE364E8B8BB3E59153841 /* SEObject.m */; };
 		7A6AB8DCA5D2E72B14D5ECDEA8773B5B /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 574323F3944F14874C497902E6A4C11B /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AA2441A93659C062F17D012F75CA743 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFFA3FE8D428A2DADA12E34F8FACD2 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7C8109E241FC39C88481B638DED30C7E /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 800C60276D10D15FB8B7724710B67E44 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7E108430F8588EDCD7E96EB100D47D6F /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = A3650C88528DA5A7E8D7E9D464894656 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8BA330DB8E89B1DD9EBC97D547D305E3 /* gifTestResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFCD3E2D5D132428EBC243CC44169E /* gifTestResourceHelper.m */; };
 		A004C5F6309C7C028D33BC5E0E940100 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7507BFABCF7D084DD6E69A7210BE2E /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A3ECB06840D9ED13539ADC8B8611FB02 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BC28EBB47B9CFCD6D0C41F60253DEBD /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A49BF75F870F728DEA732C13C9F08D74 /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 058B3AD7D4D5D0074278567FF464DC5B /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A5160D82AAD42BFAFD7F059AF54B1313 /* SETravel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B9E7A61EED83281154FF3B5CC7F215 /* SETravel-dummy.m */; };
+		A4B45C6258052D53FE84F65EE2C7A543 /* gifTestResourceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C14E7D0F921DCB8BA008482068F60AFF /* gifTestResourceHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A9FD7007C248932A95CC9E8573EA5800 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 8766BFFB6253C927D70F2946427EF5AF /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE0CA4B87571845873409329C275DB4A /* gifTestResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E0088C8B10A0654147D222EAE81195 /* gifTestResourceHelper.m */; };
 		AF39369B07BAAE42DFA382DEF186795A /* Pods-SETravel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04E384424EBD6BEDEEC6BA4927554 /* Pods-SETravel_Tests-dummy.m */; };
 		B238736A75594BEFE1731C94D1D982A4 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 844905BAFE58F5500F0748EFC6461D1E /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B392FA948113623324438184393CE842 /* gifTestResourceDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C02FEA172E79406653E76B42A824102C /* gifTestResourceDiskCache.m */; };
 		B48345C5EB833CEC5CFC8769BFDE96D0 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8599C4F7825E37C481866F6FDC89B530 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B6FE9FECD41A80DEF21DF532F8E983F4 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D0CC802EE7C8854D4C4A936F009F154 /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BC420C7243392AE94DBD9B7243BADDB6 /* gifTestResourceDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B15BE157313372484DC00977DC6F05 /* gifTestResourceDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD7E961835245C8D405478C90AB84E15 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ECD72E007933D7C09CF4D0BA77BDBE /* SSZipArchive-dummy.m */; };
-		BF745EEBCD1D6B43345E66E223042BEF /* gifTestResourceDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E321DF2CB992F45628DE04A4317C23 /* gifTestResourceDiskCache.m */; };
+		C18E3DBB6FF9662147F3A28BA0AE1B28 /* gifTestResourceCDNFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 910D5C3D96B3977855BE09F4AF5C521C /* gifTestResourceCDNFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C2F69F22D9FD925A6A77D493A4079ED1 /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A56B58AF3D430BBFA340F04681D89FA /* aes_via_ace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAA269077E8DD7247E2F69B5E4276DAD /* gifTestToolsKeyFileMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2AC799A3F74AA0464E72C7FF08F28A /* gifTestToolsKeyFileMap.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D07256220B68E33C92C9885A0B560ACD /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6B80912C94E9BB4288BE4BEAEC4BFB /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D3163C208C08984846C958A9B6953AE4 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 2024826DDBC24754D0464485D22CC514 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DAA823CE7ED29ADE632C76DA2D68A06B /* gifTestResourceKeyFileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8A0BC41F91ED9B59F982753C00F459 /* gifTestResourceKeyFileMap.m */; };
-		E3857E0126059AB7960996000F7BC2EB /* gifTestResourceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D4CDF628DD275EB65064BCC756CEBF /* gifTestResourceHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E3E10684DFB33FCB2246DAFBE492AE01 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = D31EB04F68A8EBF08ADDB1A12551596D /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4BB8C9005826A1462C73E0292D4A087 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 53372E897B70764CDEBA8BA803FE0050 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EACE8089821743EEE6FC9DDB566DD600 /* gifTestResourceDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B282F310702AB33FC9F18468A3BC7AC5 /* gifTestResourceDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB1602EDDA771A782FB7DD2F7E6C65D9 /* gifTestMockServer.h in Headers */ = {isa = PBXBuildFile; fileRef = B79A9DFC83BAF5CD2DD6459F46F378C8 /* gifTestMockServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FB9C0C9685404657E04C70F4C5AD821D /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F2447F8662CA07D70A2EF28449E7C58 /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		604F92557601667F350FF5206782B2E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
-			remoteInfo = SSZipArchive;
-		};
-		A9930D5D3382D6DB138B205C7B8A28E3 /* PBXContainerItemProxy */ = {
+		308A2228258BA09AC7C78733017C57A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6D8544A4AFD017BDA2E92B151AEA2F98;
 			remoteInfo = "Pods-SETravel_Example";
 		};
-		FCC160E4CA2001652A767FDD7A260D40 /* PBXContainerItemProxy */ = {
+		553D0A7E6D1AEA4E6EF35A1C4131D8C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
+		};
+		F4AC6C6D5924B430637CF14266DE6D32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -82,30 +88,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02E321DF2CB992F45628DE04A4317C23 /* gifTestResourceDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceDiskCache.m; sourceTree = "<group>"; };
-		0583040C54DDAAED8AF2702926F3547B /* SETravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SETravel.debug.xcconfig; sourceTree = "<group>"; };
 		058B3AD7D4D5D0074278567FF464DC5B /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/aes/prng.h; sourceTree = "<group>"; };
+		06085A32E7D94975E3018AED626429E7 /* gifTestMockHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestMockHTTPStubs.h; sourceTree = "<group>"; };
 		0B2F5EDE98FE5D72DDA21EBC0EAFE703 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		118861C7977D26A704F89007F05D4FC1 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
-		15B15BE157313372484DC00977DC6F05 /* gifTestResourceDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceDiskCache.h; sourceTree = "<group>"; };
-		1D0CC802EE7C8854D4C4A936F009F154 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
+		1C44086F0FA046AEDC5F5E4DA55E79A4 /* SETravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SETravel.debug.xcconfig; sourceTree = "<group>"; };
+		1D0CC802EE7C8854D4C4A936F009F154 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
 		2024826DDBC24754D0464485D22CC514 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/aes/aestab.h; sourceTree = "<group>"; };
 		208F31C1CC26BBEC760CFCEDB8666DA7 /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = SSZipArchive/Common.h; sourceTree = "<group>"; };
-		25B9E7A61EED83281154FF3B5CC7F215 /* SETravel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SETravel-dummy.m"; sourceTree = "<group>"; };
+		21DC5D7058E04540E0DCA2E0562D5196 /* gifTestMockServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestMockServer.m; sourceTree = "<group>"; };
+		26E0088C8B10A0654147D222EAE81195 /* gifTestResourceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceHelper.m; sourceTree = "<group>"; };
+		288ADB390DCF45C627028C9329112358 /* SETravel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SETravel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B7B955ECB361BB4B093D21336728E66 /* gifTestResourceCDNFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceCDNFetcher.m; sourceTree = "<group>"; };
 		2E4AEAF2A435AA572B791860B5EA8A7E /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
 		2ECFE15998B6CD70B58BD97504E25473 /* Pods-SETravel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SETravel_Example-dummy.m"; sourceTree = "<group>"; };
 		3709CD9BA36774D0CED38CFFE4E513FA /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		374ED545FFAE7E64029AF99A060F6D57 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		374ED545FFAE7E64029AF99A060F6D57 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
 		3A2DBE279E89F87023D6E25F44B6CB6B /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = SSZipArchive/aes/entropy.h; sourceTree = "<group>"; };
 		3A54B2767EA08727CB53FBFF533ECC8B /* Pods-SETravel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SETravel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3A56B58AF3D430BBFA340F04681D89FA /* aes_via_ace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = SSZipArchive/aes/aes_via_ace.h; sourceTree = "<group>"; };
 		3ADFFA3FE8D428A2DADA12E34F8FACD2 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		3B242FE0E5B64F985406FC7701C11C5C /* SETravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SETravel.release.xcconfig; sourceTree = "<group>"; };
-		3D3DD74AAB70ECA1E68FAECAFE8D83DD /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		3EEFCD3E2D5D132428EBC243CC44169E /* gifTestResourceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceHelper.m; sourceTree = "<group>"; };
+		3D3DD74AAB70ECA1E68FAECAFE8D83DD /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
 		440D70F7F299CC91133AD32A0E973ECA /* Pods-SETravel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SETravel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		44E72B784B90C01E059A8D776FE40152 /* SEObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEObject.h; path = SETravel/Classes/SEObject.h; sourceTree = "<group>"; };
-		493DE0A4A601708598A6369AA0F8D39E /* SETravel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SETravel-prefix.pch"; sourceTree = "<group>"; };
 		4C6B80912C94E9BB4288BE4BEAEC4BFB /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
 		53372E897B70764CDEBA8BA803FE0050 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/aes/pwd2key.h; sourceTree = "<group>"; };
 		574323F3944F14874C497902E6A4C11B /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
@@ -113,54 +117,55 @@
 		60EEB69A3EBE5BBB6F9DEC619248E7DC /* Pods-SETravel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SETravel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		61404AF37E695441DE49DCD8A59BA83B /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
 		61EF5D7AD820EB56D512793FA2132CB7 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/aes/aes.h; sourceTree = "<group>"; };
-		62A15376CA4DE364E8B8BB3E59153841 /* SEObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEObject.m; path = SETravel/Classes/SEObject.m; sourceTree = "<group>"; };
-		6D3A11D8E3FFC0F0CEF6A293E0998449 /* gifTestResourceKeyFileMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceKeyFileMap.h; sourceTree = "<group>"; };
-		6F2447F8662CA07D70A2EF28449E7C58 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
+		6F2447F8662CA07D70A2EF28449E7C58 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
+		7549F736D9EA75CA850684D46D40F392 /* gifTestMockResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestMockResponse.h; sourceTree = "<group>"; };
+		76F9A62CE251C137F14A5C4E944D4E24 /* SETravel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SETravel-dummy.m"; sourceTree = "<group>"; };
 		7EF2912641EACDD01005834CAD086269 /* Pods-SETravel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SETravel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		800C60276D10D15FB8B7724710B67E44 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
 		844905BAFE58F5500F0748EFC6461D1E /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
 		84E04E384424EBD6BEDEEC6BA4927554 /* Pods-SETravel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SETravel_Tests-dummy.m"; sourceTree = "<group>"; };
-		8599C4F7825E37C481866F6FDC89B530 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
-		8766BFFB6253C927D70F2946427EF5AF /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
-		8BC28EBB47B9CFCD6D0C41F60253DEBD /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
+		8599C4F7825E37C481866F6FDC89B530 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		8766BFFB6253C927D70F2946427EF5AF /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
+		8BC28EBB47B9CFCD6D0C41F60253DEBD /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
 		8CE9F1554E7DBE46D0D8B3B0EB93D2F4 /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A8B11B791C529A109222AFD748056D /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93E5496528B6935556D7A00B481F5A44 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
-		94079DCA9367EFD2D97ACC3C99D4A0D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		94D4CDF628DD275EB65064BCC756CEBF /* gifTestResourceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceHelper.h; sourceTree = "<group>"; };
+		8E2AC799A3F74AA0464E72C7FF08F28A /* gifTestToolsKeyFileMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestToolsKeyFileMap.h; sourceTree = "<group>"; };
+		910D5C3D96B3977855BE09F4AF5C521C /* gifTestResourceCDNFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceCDNFetcher.h; sourceTree = "<group>"; };
+		91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A8B11B791C529A109222AFD748056D /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SETravel_Example.a"; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E5496528B6935556D7A00B481F5A44 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
+		95B68F92FA5EED29B9B01CF1A24AC2AF /* SETravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SETravel.release.xcconfig; sourceTree = "<group>"; };
 		982EE6AEF78DAC63F524C89687A13A6F /* Pods-SETravel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SETravel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98A4FD2CC25E21C19A7CEFA686ECA5D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9AAAF2015D66C6BCC8AB16107F4504D6 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
-		9C0788879DE9B8402F1EDE5610D93501 /* gifTestResourceCDNFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceCDNFetcher.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3650C88528DA5A7E8D7E9D464894656 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
-		A61155C9A6B18D4AD391F9D856998CA9 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
-		AA542DEC4C9F2255F7BCB3D1144E4537 /* libPods-SETravel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61155C9A6B18D4AD391F9D856998CA9 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
+		A665B5D9995CE234611B85814BEB11AC /* gifTestToolsKeyFileMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestToolsKeyFileMap.m; sourceTree = "<group>"; };
+		AA542DEC4C9F2255F7BCB3D1144E4537 /* libPods-SETravel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SETravel_Tests.a"; path = "libPods-SETravel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7507BFABCF7D084DD6E69A7210BE2E /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
+		B282F310702AB33FC9F18468A3BC7AC5 /* gifTestResourceDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceDiskCache.h; sourceTree = "<group>"; };
 		B33C429F88D806B773226C6FD2A2D293 /* Pods-SETravel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SETravel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B79A9DFC83BAF5CD2DD6459F46F378C8 /* gifTestMockServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestMockServer.h; sourceTree = "<group>"; };
+		BC537BC326C66E8E33B489BE542955FF /* SETravel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SETravel-prefix.pch"; sourceTree = "<group>"; };
+		C02FEA172E79406653E76B42A824102C /* gifTestResourceDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceDiskCache.m; sourceTree = "<group>"; };
+		C14E7D0F921DCB8BA008482068F60AFF /* gifTestResourceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceHelper.h; sourceTree = "<group>"; };
 		C2DEB88AF97DF47CF7B584C1149DF8E3 /* Pods-SETravel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SETravel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CAB4BAE1943A29FCE63E54F90D7FDAC9 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
-		CB72AA3BFC79E1A8BBE756E83F25362D /* libSETravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSETravel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA5BD39B71511D37FF353C051D2D06A /* gifTestResourceCDNFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gifTestResourceCDNFetcher.h; sourceTree = "<group>"; };
-		D10970C53E0D955F370812C042686614 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		C3482A01256000E2322020249D1B11C5 /* SEObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEObject.m; path = SETravel/Classes/SEObject.m; sourceTree = "<group>"; };
+		CAB4BAE1943A29FCE63E54F90D7FDAC9 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
+		CB72AA3BFC79E1A8BBE756E83F25362D /* libSETravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSETravel.a; path = libSETravel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6E5855AD86C896875FCDBE14093ED0 /* gifTestMockHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestMockHTTPStubs.m; sourceTree = "<group>"; };
+		D10970C53E0D955F370812C042686614 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
 		D31EB04F68A8EBF08ADDB1A12551596D /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		D3A7A94777706C7527B2E8B7F3739CDB /* gifTestMockResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestMockResponse.m; sourceTree = "<group>"; };
 		D74B399767AA7B693C74C080E0501E5A /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
-		DA05EBDBDFCB5061BF23EC1E069861C4 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
-		DF8A0BC41F91ED9B59F982753C00F459 /* gifTestResourceKeyFileMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = gifTestResourceKeyFileMap.m; sourceTree = "<group>"; };
-		EE40F941F022426508031927705CB433 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
-		EEFC7A4AF0F96EE2DAFDBA4C646FBA11 /* SETravel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SETravel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA05EBDBDFCB5061BF23EC1E069861C4 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
+		EE40F941F022426508031927705CB433 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
+		F27858C37D702D6982F2521427C4BFEE /* SEObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEObject.h; path = SETravel/Classes/SEObject.h; sourceTree = "<group>"; };
 		F78089576A25CC7DC3C5382F24B45543 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		F9ECD72E007933D7C09CF4D0BA77BDBE /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		093286F530FF1AD73BD64E534346E6BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F265DBC7B5A20F1B511BB8FEC4AAFF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +174,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AB02412116F7E3B7D253D06827248CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8763DE53B040AB54D524A7188F5293E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,6 +236,7 @@
 				118861C7977D26A704F89007F05D4FC1 /* ZipArchive.h */,
 				E540C20FEDBCB4F1D176344C28084C1A /* Support Files */,
 			);
+			name = SSZipArchive;
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
@@ -240,30 +253,26 @@
 			path = "Target Support Files/Pods-SETravel_Example";
 			sourceTree = "<group>";
 		};
-		268B580A7A719BFC2C4ADEAFD2ED1D1B /* gifTestResourceHelper */ = {
+		3456D2AB3D7C5635FD375394CCA1835C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEA5BD39B71511D37FF353C051D2D06A /* gifTestResourceCDNFetcher.h */,
-				9C0788879DE9B8402F1EDE5610D93501 /* gifTestResourceCDNFetcher.m */,
-				15B15BE157313372484DC00977DC6F05 /* gifTestResourceDiskCache.h */,
-				02E321DF2CB992F45628DE04A4317C23 /* gifTestResourceDiskCache.m */,
-				94D4CDF628DD275EB65064BCC756CEBF /* gifTestResourceHelper.h */,
-				3EEFCD3E2D5D132428EBC243CC44169E /* gifTestResourceHelper.m */,
-				6D3A11D8E3FFC0F0CEF6A293E0998449 /* gifTestResourceKeyFileMap.h */,
-				DF8A0BC41F91ED9B59F982753C00F459 /* gifTestResourceKeyFileMap.m */,
+				76F9A62CE251C137F14A5C4E944D4E24 /* SETravel-dummy.m */,
+				BC537BC326C66E8E33B489BE542955FF /* SETravel-prefix.pch */,
+				1C44086F0FA046AEDC5F5E4DA55E79A4 /* SETravel.debug.xcconfig */,
+				95B68F92FA5EED29B9B01CF1A24AC2AF /* SETravel.release.xcconfig */,
 			);
-			name = gifTestResourceHelper;
-			path = SETravel/Classes/gifTestResourceHelper;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SETravel";
 			sourceTree = "<group>";
 		};
-		31CECA1EB6324119B06E0458387BF156 /* SETravel */ = {
+		3EBA4575F9E15F4A0C80B53396B70F68 /* SETravel */ = {
 			isa = PBXGroup;
 			children = (
-				44E72B784B90C01E059A8D776FE40152 /* SEObject.h */,
-				62A15376CA4DE364E8B8BB3E59153841 /* SEObject.m */,
-				268B580A7A719BFC2C4ADEAFD2ED1D1B /* gifTestResourceHelper */,
-				522063D0710B2BDAE483FEEAFDAF7E94 /* Pod */,
-				D712B1554D8A8636B048DF871DE5B36C /* Support Files */,
+				F27858C37D702D6982F2521427C4BFEE /* SEObject.h */,
+				C3482A01256000E2322020249D1B11C5 /* SEObject.m */,
+				B98617CDD76C01EB8EB2FD86165F54DE /* gifTestTools */,
+				A69F7A168588A641B55BCE7F8AD49002 /* Pod */,
+				3456D2AB3D7C5635FD375394CCA1835C /* Support Files */,
 			);
 			name = SETravel;
 			path = ../..;
@@ -272,18 +281,9 @@
 		4338542A795E2E35A43BA6909098D94E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				31CECA1EB6324119B06E0458387BF156 /* SETravel */,
+				3EBA4575F9E15F4A0C80B53396B70F68 /* SETravel */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		522063D0710B2BDAE483FEEAFDAF7E94 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				94079DCA9367EFD2D97ACC3C99D4A0D8 /* LICENSE */,
-				EEFC7A4AF0F96EE2DAFDBA4C646FBA11 /* SETravel.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		68E6168DC351BE80EF7E221F43112E77 /* Pods */ = {
@@ -292,6 +292,20 @@
 				18784B8ACB812F95DF6AD4EFC7049947 /* SSZipArchive */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		76D57C0F6156211B205B98AA41E9A7DA /* gifTestMockServer */ = {
+			isa = PBXGroup;
+			children = (
+				06085A32E7D94975E3018AED626429E7 /* gifTestMockHTTPStubs.h */,
+				CD6E5855AD86C896875FCDBE14093ED0 /* gifTestMockHTTPStubs.m */,
+				7549F736D9EA75CA850684D46D40F392 /* gifTestMockResponse.h */,
+				D3A7A94777706C7527B2E8B7F3739CDB /* gifTestMockResponse.m */,
+				B79A9DFC83BAF5CD2DD6459F46F378C8 /* gifTestMockServer.h */,
+				21DC5D7058E04540E0DCA2E0562D5196 /* gifTestMockServer.m */,
+			);
+			name = gifTestMockServer;
+			path = gifTestMockServer;
 			sourceTree = "<group>";
 		};
 		8DF39846CDCB62050E8354B3BA48435B /* Targets Support Files */ = {
@@ -312,6 +326,41 @@
 				91B23470DEB9A986332BEB5034234BC7 /* libSSZipArchive.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A60369AD97BDE304EA5972A84206CFA0 /* gifTestResourceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				910D5C3D96B3977855BE09F4AF5C521C /* gifTestResourceCDNFetcher.h */,
+				2B7B955ECB361BB4B093D21336728E66 /* gifTestResourceCDNFetcher.m */,
+				B282F310702AB33FC9F18468A3BC7AC5 /* gifTestResourceDiskCache.h */,
+				C02FEA172E79406653E76B42A824102C /* gifTestResourceDiskCache.m */,
+				C14E7D0F921DCB8BA008482068F60AFF /* gifTestResourceHelper.h */,
+				26E0088C8B10A0654147D222EAE81195 /* gifTestResourceHelper.m */,
+			);
+			name = gifTestResourceHelper;
+			path = gifTestResourceHelper;
+			sourceTree = "<group>";
+		};
+		A69F7A168588A641B55BCE7F8AD49002 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				98A4FD2CC25E21C19A7CEFA686ECA5D1 /* LICENSE */,
+				288ADB390DCF45C627028C9329112358 /* SETravel.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B98617CDD76C01EB8EB2FD86165F54DE /* gifTestTools */ = {
+			isa = PBXGroup;
+			children = (
+				8E2AC799A3F74AA0464E72C7FF08F28A /* gifTestToolsKeyFileMap.h */,
+				A665B5D9995CE234611B85814BEB11AC /* gifTestToolsKeyFileMap.m */,
+				76D57C0F6156211B205B98AA41E9A7DA /* gifTestMockServer */,
+				A60369AD97BDE304EA5972A84206CFA0 /* gifTestResourceHelper */,
+			);
+			name = gifTestTools;
+			path = SETravel/Classes/gifTestTools;
 			sourceTree = "<group>";
 		};
 		C956909103AE54ADC2C2F90A035EA9DE /* Pods-SETravel_Tests */ = {
@@ -339,18 +388,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D712B1554D8A8636B048DF871DE5B36C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				25B9E7A61EED83281154FF3B5CC7F215 /* SETravel-dummy.m */,
-				493DE0A4A601708598A6369AA0F8D39E /* SETravel-prefix.pch */,
-				0583040C54DDAAED8AF2702926F3547B /* SETravel.debug.xcconfig */,
-				3B242FE0E5B64F985406FC7701C11C5C /* SETravel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SETravel";
-			sourceTree = "<group>";
-		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +410,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B9BDC8B7AB65CCA0888FFC5EE609111 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C372DA50EC80C2A6B400C7769B603F /* gifTestMockHTTPStubs.h in Headers */,
+				63060335AC558AEA2860A52FBEFBDEBE /* gifTestMockResponse.h in Headers */,
+				EB1602EDDA771A782FB7DD2F7E6C65D9 /* gifTestMockServer.h in Headers */,
+				C18E3DBB6FF9662147F3A28BA0AE1B28 /* gifTestResourceCDNFetcher.h in Headers */,
+				EACE8089821743EEE6FC9DDB566DD600 /* gifTestResourceDiskCache.h in Headers */,
+				A4B45C6258052D53FE84F65EE2C7A543 /* gifTestResourceHelper.h in Headers */,
+				CAA269077E8DD7247E2F69B5E4276DAD /* gifTestToolsKeyFileMap.h in Headers */,
+				470CDA819775C3B2B846B844557AF938 /* SEObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E05464B533640C6DCDDC395A9431F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,18 +436,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEB3118F10C0F1E381442848C8859BA9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D1081B451A552F1C1E4AB682F31ED36 /* gifTestResourceCDNFetcher.h in Headers */,
-				BC420C7243392AE94DBD9B7243BADDB6 /* gifTestResourceDiskCache.h in Headers */,
-				E3857E0126059AB7960996000F7BC2EB /* gifTestResourceHelper.h in Headers */,
-				2349B6E8693DC5B5E66167FAE0708245 /* gifTestResourceKeyFileMap.h in Headers */,
-				06BA9548701023BDB08DDEB0E4BB49CA /* SEObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +480,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				85D06C154FA907C291E4CDCE2BFE1002 /* PBXTargetDependency */,
+				F81223ED5272BE29E1D87151CD912B02 /* PBXTargetDependency */,
 			);
 			name = "Pods-SETravel_Tests";
 			productName = "Pods-SETravel_Tests";
@@ -458,8 +498,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				85821435F40E64080A5A631D4E71834C /* PBXTargetDependency */,
-				BFD41BA088FAA3A80714BB7738258957 /* PBXTargetDependency */,
+				AE2B5BC20E35E37C1741EAF254281A01 /* PBXTargetDependency */,
+				EB13E4D382A83BEBAA8C3F3F1BBF6A2C /* PBXTargetDependency */,
 			);
 			name = "Pods-SETravel_Example";
 			productName = "Pods-SETravel_Example";
@@ -468,11 +508,11 @@
 		};
 		8D1F30ED8CF85998D26DE6D9D6DD8685 /* SETravel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84AD48F6B08F048F59A7D75F8C52C04B /* Build configuration list for PBXNativeTarget "SETravel" */;
+			buildConfigurationList = DA17FC804BF27782B5ADC05CA4D4D371 /* Build configuration list for PBXNativeTarget "SETravel" */;
 			buildPhases = (
-				AEB3118F10C0F1E381442848C8859BA9 /* Headers */,
-				EC676326CE9270FFDFDDAA4A9EA3E312 /* Sources */,
-				093286F530FF1AD73BD64E534346E6BA /* Frameworks */,
+				0B9BDC8B7AB65CCA0888FFC5EE609111 /* Headers */,
+				657AA08ECA3ED90069D41D592F005A79 /* Sources */,
+				C8763DE53B040AB54D524A7188F5293E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -553,6 +593,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		657AA08ECA3ED90069D41D592F005A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5805618559DDF30DA286FA034669093E /* gifTestMockHTTPStubs.m in Sources */,
+				125EF1D5C02CE1D1C774A5A8221BE63D /* gifTestMockResponse.m in Sources */,
+				4A76877258061B0C8BA70B954B459AB9 /* gifTestMockServer.m in Sources */,
+				5D2BD61805D84D1F3971B27D2DA70213 /* gifTestResourceCDNFetcher.m in Sources */,
+				B392FA948113623324438184393CE842 /* gifTestResourceDiskCache.m in Sources */,
+				AE0CA4B87571845873409329C275DB4A /* gifTestResourceHelper.m in Sources */,
+				6AFEE16A63DA896F471F95ED9BF107A1 /* gifTestToolsKeyFileMap.m in Sources */,
+				4869D44275516CBF0D20EB9146AF4F76 /* SEObject.m in Sources */,
+				638C4FEE6D6A1AC123B3E2B2B86BFBAC /* SETravel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81B167121F7BD23E781ECE0594E63F83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,39 +625,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC676326CE9270FFDFDDAA4A9EA3E312 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				016A81B78EC734683C4E673F787A8915 /* gifTestResourceCDNFetcher.m in Sources */,
-				BF745EEBCD1D6B43345E66E223042BEF /* gifTestResourceDiskCache.m in Sources */,
-				8BA330DB8E89B1DD9EBC97D547D305E3 /* gifTestResourceHelper.m in Sources */,
-				DAA823CE7ED29ADE632C76DA2D68A06B /* gifTestResourceKeyFileMap.m in Sources */,
-				79A9543A473DB9A11662C46563432EED /* SEObject.m in Sources */,
-				A5160D82AAD42BFAFD7F059AF54B1313 /* SETravel-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85821435F40E64080A5A631D4E71834C /* PBXTargetDependency */ = {
+		AE2B5BC20E35E37C1741EAF254281A01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SETravel;
 			target = 8D1F30ED8CF85998D26DE6D9D6DD8685 /* SETravel */;
-			targetProxy = FCC160E4CA2001652A767FDD7A260D40 /* PBXContainerItemProxy */;
+			targetProxy = F4AC6C6D5924B430637CF14266DE6D32 /* PBXContainerItemProxy */;
 		};
-		85D06C154FA907C291E4CDCE2BFE1002 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SETravel_Example";
-			target = 6D8544A4AFD017BDA2E92B151AEA2F98 /* Pods-SETravel_Example */;
-			targetProxy = A9930D5D3382D6DB138B205C7B8A28E3 /* PBXContainerItemProxy */;
-		};
-		BFD41BA088FAA3A80714BB7738258957 /* PBXTargetDependency */ = {
+		EB13E4D382A83BEBAA8C3F3F1BBF6A2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SSZipArchive;
 			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
-			targetProxy = 604F92557601667F350FF5206782B2E2 /* PBXContainerItemProxy */;
+			targetProxy = 553D0A7E6D1AEA4E6EF35A1C4131D8C1 /* PBXContainerItemProxy */;
+		};
+		F81223ED5272BE29E1D87151CD912B02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SETravel_Example";
+			target = 6D8544A4AFD017BDA2E92B151AEA2F98 /* Pods-SETravel_Example */;
+			targetProxy = 308A2228258BA09AC7C78733017C57A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -718,9 +761,9 @@
 			};
 			name = Debug;
 		};
-		662DEEDF093A3ECBA1FF31A4C237EA9F /* Release */ = {
+		6697EA69278B2E89B52274CE18C49517 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B242FE0E5B64F985406FC7701C11C5C /* SETravel.release.xcconfig */;
+			baseConfigurationReference = 95B68F92FA5EED29B9B01CF1A24AC2AF /* SETravel.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -838,34 +881,12 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		CFCE6E1C3F25F428F7B5B3F43E271CD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0583040C54DDAAED8AF2702926F3547B /* SETravel.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SETravel/SETravel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SETravel;
-				PRODUCT_NAME = SETravel;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		F039BA4E52D25F6088E11F55EF7CDCBD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -883,6 +904,29 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F45EE080024BABC4FD6C5D9592A54ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C44086F0FA046AEDC5F5E4DA55E79A4 /* SETravel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SETravel/SETravel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SETravel;
+				PRODUCT_NAME = SETravel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -941,20 +985,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84AD48F6B08F048F59A7D75F8C52C04B /* Build configuration list for PBXNativeTarget "SETravel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFCE6E1C3F25F428F7B5B3F43E271CD2 /* Debug */,
-				662DEEDF093A3ECBA1FF31A4C237EA9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8A994F385C0040A5E8225AEBD4B4F0DC /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD48EA577E800CA0A9EB036CA6D7688B /* Debug */,
 				1EBD85CC99F64C52C60763BE9E0F2BFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA17FC804BF27782B5ADC05CA4D4D371 /* Build configuration list for PBXNativeTarget "SETravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45EE080024BABC4FD6C5D9592A54ED9 /* Debug */,
+				6697EA69278B2E89B52274CE18C49517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

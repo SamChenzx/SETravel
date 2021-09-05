@@ -1,12 +1,12 @@
 //
 //  gifTestResourceDiskCache.h
-//  gifPostTests
+//  gifTestTools
 //
 //  Created by Sam Chen on 2021/8/27.
 //
 
 #import <Foundation/Foundation.h>
-#import "gifTestResourceKeyFileMap.h"
+#import "gifTestToolsKeyFileMap.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

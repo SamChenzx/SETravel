@@ -1,6 +1,6 @@
 //
 //  gifTestResourceCDNFetcher.h
-//  gifPostTests
+//  gifTestTools
 //
 //  Created by Sam Chen on 2021/8/26.
 //
@@ -14,6 +14,7 @@ typedef void(^fetchCompletionBlock)(NSString * _Nullable path, NSError * _Nullab
 @interface gifTestResourceCDNFetcher : NSObject
 
 + (void)fetchResourceWithURLStrings:(NSArray<NSString *> *)URLStrings completionBlock:(fetchCompletionBlock)completionBlock;
++ (NSString *)syncFetchResourceWithURLStrings:(NSArray<NSString *> *)URLStrings;
 
 @end
 

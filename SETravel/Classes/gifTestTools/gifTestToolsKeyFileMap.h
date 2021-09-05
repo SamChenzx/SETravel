@@ -1,6 +1,6 @@
 //
-//  gifTestResourceKeyFileMap.h
-//  SETravel
+//  gifTestToolsKeyFileMap.h
+//  gifTestTools
 //
 //  Created by Sam Chen on 2021/8/27.
 //
@@ -24,7 +24,7 @@ extern KSTestResourceKey const KSTestPostKTVAlbumResource;
 extern KSTestResourceKey const KSTestPostVideoResource;
 FOUNDATION_EXTERN NSString *stringForTestModule(KSTestModuleType moduleType);
 
-@interface gifTestResourceKeyFileMap : NSObject
+@interface gifTestToolsKeyFileMap : NSObject
 
 - (NSArray<NSString *> *)fileURLsForModule:(KSTestModuleType)moduleType withResource:(KSTestResourceKey)resourceKey;
 - (NSString *)fileNameForModule:(KSTestModuleType)moduleType withResource:(KSTestResourceKey)resourceKey;

@@ -19,7 +19,6 @@
     "ios": "9.0"
   },
   "source_files": [
-    "SETravel/Classes/**/*",
-    "SETravel/Classes/gifTestResourceHelper/**/*"
+    "SETravel/Classes/**/*"
   ]
 }

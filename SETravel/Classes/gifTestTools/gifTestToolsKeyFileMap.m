@@ -1,11 +1,11 @@
 //
-//  gifTestResourceKeyFileMap.m
-//  SETravel
+//  gifTestToolsKeyFileMap.m
+//  gifTestTools
 //
 //  Created by Sam Chen on 2021/8/27.
 //
 
-#import "gifTestResourceKeyFileMap.h"
+#import "gifTestToolsKeyFileMap.h"
 
 static NSString *const cdnBaseUrl = @"https://s2-11424.kwimgs.com/kos/nlav11424/";
 static NSString *const cdnBackupBaseUrl = @"https://s2-11424.ssrcdn.com/kos/nlav11424/";
@@ -36,7 +36,7 @@ NSString * stringForTestModule(KSTestModuleType moduleType) {
     return moduleString;
 }
 
-@interface gifTestResourceKeyFileMap ()
+@interface gifTestToolsKeyFileMap ()
 
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *homeKeyFileMap;
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *localKeyFileMap;
@@ -45,7 +45,7 @@ NSString * stringForTestModule(KSTestModuleType moduleType) {
 
 @end
 
-@implementation gifTestResourceKeyFileMap
+@implementation gifTestToolsKeyFileMap
 
 - (NSArray<NSString *> *)fileURLsForModule:(KSTestModuleType)moduleType withResource:(KSTestResourceKey)resourceKey {
     NSMutableArray<NSString *> *fileURLs = [NSMutableArray array];

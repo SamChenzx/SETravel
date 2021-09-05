@@ -1,6 +1,6 @@
 //
 //  gifTestResourceDiskCache.m
-//  gifPostTests
+//  gifTestTools
 //
 //  Created by Sam Chen on 2021/8/27.
 //
@@ -89,20 +89,19 @@ static NSString *const KSTestZIPSuffix = @".zip";
     }
     [[NSFileManager defaultManager] moveItemAtPath:sourcePath toPath:destPath error:&error];
     if (error) {
-        return nil;
-    } else {
-        NSString *lastComponent = fileName;
-        if ([fileName hasSuffix:KSTestZIPSuffix]) {
-            lastComponent = [fileName stringByReplacingOccurrencesOfString:KSTestZIPSuffix withString:@""];
-            NSString *unzipPath = [modulePath stringByAppendingPathComponent:lastComponent];
-            if ([[NSFileManager defaultManager] fileExistsAtPath:unzipPath]) {
-                [[NSFileManager defaultManager] removeItemAtPath:unzipPath error:nil];
-            }
-            [SSZipArchive unzipFileAtPath:destPath toDestination:unzipPath];
-        }
-        NSString *relativePath = [moduleString stringByAppendingPathComponent:lastComponent];
-        [self storeFileRelativePath:relativePath forKey:key];
+        return NO;
     }
+    NSString *lastComponent = fileName;
+    if ([fileName hasSuffix:KSTestZIPSuffix]) {
+        lastComponent = [fileName stringByReplacingOccurrencesOfString:KSTestZIPSuffix withString:@""];
+        NSString *unzipPath = [modulePath stringByAppendingPathComponent:lastComponent];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:unzipPath]) {
+            [[NSFileManager defaultManager] removeItemAtPath:unzipPath error:nil];
+        }
+        [SSZipArchive unzipFileAtPath:destPath toDestination:unzipPath];
+    }
+    NSString *relativePath = [moduleString stringByAppendingPathComponent:lastComponent];
+    [self storeFileRelativePath:relativePath forKey:key];
     return YES;
 }
 

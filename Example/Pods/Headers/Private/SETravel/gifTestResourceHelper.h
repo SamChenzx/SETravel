@@ -1,1 +1,1 @@
-../../../../../SETravel/Classes/gifTestResourceHelper/gifTestResourceHelper.h
+../../../../../SETravel/Classes/gifTestTools/gifTestResourceHelper/gifTestResourceHelper.h
