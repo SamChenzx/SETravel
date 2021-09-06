@@ -7,21 +7,38 @@
 
 #import "gifTestMockServer.h"
 #import "gifTestResourceHelper.h"
+#import "gifTestMockHTTPStubs.h"
+#import "gifTestMockResponse.h"
 
 @implementation gifTestMockServer
 
 + (void)mockForRequestUrlString:(NSString *)urlString
                          module:(KSTestModuleType)moduleType
-               withResponseFile:(KSTestResourceKey)resourceKey {
+               withResponseFile:(KSTestResourceKey)resourceKey
+                     statusCode:(NSInteger)statusCode
+                        headers:(nullable NSDictionary *)httpHeaders {
     if (!urlString.length) {
         return;
     }
-    [[gifTestResourceHelper sharedHelper] fetchResourceForModule:moduleType withResource:resourceKey complationBlock:^(NSString * _Nonnull resourcePath, BOOL isSuccess) {
-        if (resourcePath.length && [[NSFileManager defaultManager] fileExistsAtPath:resourcePath]) {
-            ;
-        };
+    NSString *resourcePath = [[gifTestResourceHelper sharedHelper] syncFetchResourceForModule:moduleType withResource:resourceKey];
+    if (!resourcePath.length) {
+        return;
+    }
+    [gifTestMockHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest * _Nonnull request) {
+        return [request.URL.path containsString:urlString];
+    } withStubResponse:^gifTestMockResponse * _Nonnull(NSURLRequest * _Nonnull request) {
+        return [gifTestMockResponse responseWithFileAtPath:resourcePath statusCode:statusCode headers:httpHeaders];
     }];
-    
+}
+
++ (void)mockForRequest:(shouldMockRequest)shouldMockBlock
+      withMockResponse:(mockResponseBlock)responseBlock {
+    [gifTestMockHTTPStubs stubRequestsPassingTest:shouldMockBlock
+                                 withStubResponse:responseBlock];
+}
+
++ (void)removeAllMockServers {
+    [gifTestMockHTTPStubs removeAllStubs];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "SEViewController.h"
 #import <SETravel/gifTestResourceHelper.h>
 #import <SETravel/gifTestMockHTTPStubs.h>
+#import <SETravel/gifTestMockServer.h>
 
 #define dispatch_gifPostTest_main_async_safe(block)\
     if ([NSThread isMainThread]) {\
@@ -27,51 +28,23 @@ typedef void(^completion)(NSArray<NSString *> * _Nullable useless);
 
 @implementation SEViewController
 
-NSString* __nullable OHPathForFile(NSString* fileName, Class inBundleForClass)
-{
-    NSBundle* bundle = [NSBundle bundleForClass:inBundleForClass];
-    return OHPathForFileInBundle(fileName, bundle);
-}
-
-NSString* __nullable OHPathForFileInBundle(NSString* fileName, NSBundle* bundle)
-{
-    return [bundle pathForResource:[fileName stringByDeletingPathExtension]
-                            ofType:[fileName pathExtension]];
-}
-
-NSString* __nullable OHPathForFileInDocumentsDir(NSString* fileName)
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *basePath = (paths.count > 0) ? paths[0] : nil;
-    return [basePath stringByAppendingPathComponent:fileName];
-}
-
-NSBundle* __nullable OHResourceBundle(NSString* bundleBasename, Class inBundleForClass)
-{
-    NSBundle* classBundle = [NSBundle bundleForClass:inBundleForClass];
-    return [NSBundle bundleWithPath:[classBundle pathForResource:bundleBasename
-                                                         ofType:@"bundle"]];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:self.gifButton];
-    [gifTestMockHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest * _Nonnull request) {
-        return [request.URL.path containsString:@"www.baidu.com"];
-    } withStubResponse:^gifTestMockResponse * _Nonnull(NSURLRequest * _Nonnull request) {
-        NSString *filePath = OHPathForFile(@"resource.response", self.class);
-        return [gifTestMockResponse responseWithFileAtPath:filePath statusCode:200 headers:@{@"Content-Type":@"application/zip"}];
+    [gifTestMockServer mockForRequest:^BOOL(NSURLRequest * _Nonnull request) {
+        return [request.URL.path containsString:@"www.google.com"];
+    } withMockResponse:^gifTestMockResponse * _Nonnull(NSURLRequest * _Nonnull request) {
+        return [gifTestMockResponse responseForModule:KSTestModuleTypePost WithResource:KSTestPostVideoResource statusCode:200 headers:@{@"Content-Type":@"application/zip"}];
     }];
-
 }
 
 - (void)didClickButton {
     
     
     NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[NSURL URLWithString:@"www.baidu.com"] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[NSURL URLWithString:@"www.google.com"] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"response:%@", response);
     }];
     [task resume];

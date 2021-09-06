@@ -111,7 +111,7 @@ NSString * stringForTestModule(KSTestModuleType moduleType) {
             KSTestPostKTVVoiceResource : @"record.m4a",
             KSTestPostKTVBGMResource : @"bgm.m4a",
             KSTestPostKTVAlbumResource : @"KaraokeLocalAlbumPhoto.zip",
-            KSTestPostVideoResource : @"aaamp4.zip",
+            KSTestPostVideoResource : @"post_test.MOV",
         };
     }
     return _postKeyFileMap;

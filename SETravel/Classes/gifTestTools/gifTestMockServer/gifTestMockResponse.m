@@ -1,28 +1,36 @@
+//
+//  gifTestToolsKeyFileMap.h
+//  gifTestTools
+//
+//  Created by Sam Chen on 2021/8/27.
+//
 
 #import "gifTestMockResponse.h"
 
 #pragma mark - Defines & Constants
-const double OHHTTPStubsDownloadSpeed1KBPS  =-     8 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeedSLOW   =-    12 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeedGPRS   =-    56 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeedEDGE   =-   128 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeed3G     =-  3200 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeed3GPlus =-  7200 / 8; // kbps -> KB/s
-const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Implementation
+const double gifTestMockDownloadSpeed1KBPS  =-     8 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeedSLOW   =-    12 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeedGPRS   =-    56 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeedEDGE   =-   128 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeed3G     =-  3200 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeed3GPlus =-  7200 / 8; // kbps -> KB/s
+const double gifTestMockDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 
 @implementation gifTestMockResponse
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Commodity Constructors
-
-
-#pragma mark > Building response from NSData
++(instancetype)responseForModule:(KSTestModuleType)moduleType
+                    WithResource:(KSTestResourceKey)resourceKey
+                      statusCode:(NSInteger)statusCode
+                         headers:(nullable NSDictionary*)httpHeaders {
+    NSString *filePath = [[gifTestResourceHelper sharedHelper] syncFetchResourceForModule:moduleType
+                                                                             withResource:resourceKey];
+    return [gifTestMockResponse responseWithFileAtPath:filePath
+                                            statusCode:statusCode
+                                               headers:httpHeaders];
+}
 
 +(instancetype)responseWithData:(NSData*)data
-                     statusCode:(int)statusCode
+                     statusCode:(NSInteger)statusCode
                         headers:(nullable NSDictionary*)httpHeaders
 {
     gifTestMockResponse* response = [[self alloc] initWithData:data
@@ -35,7 +43,7 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 #pragma mark > Building response from a file
 
 +(instancetype)responseWithFileAtPath:(NSString *)filePath
-                           statusCode:(int)statusCode
+                           statusCode:(NSInteger)statusCode
                               headers:(nullable NSDictionary *)httpHeaders
 {
     gifTestMockResponse* response = [[self alloc] initWithFileAtPath:filePath
@@ -45,7 +53,7 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 }
 
 +(instancetype)responseWithFileURL:(NSURL *)fileURL
-                        statusCode:(int)statusCode
+                        statusCode:(NSInteger)statusCode
                            headers:(nullable NSDictionary *)httpHeaders
 {
     gifTestMockResponse* response = [[self alloc] initWithFileURL:fileURL
@@ -58,12 +66,9 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 
 +(instancetype)responseWithError:(NSError*)error
 {
-    gifTestMockResponse* response = [[self  alloc] initWithError:error];
+    gifTestMockResponse* response = [[self alloc] initWithError:error];
     return response;
 }
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Commotidy Setters
 
 -(instancetype)responseTime:(NSTimeInterval)responseTime
 {
@@ -89,19 +94,15 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 
 -(instancetype)initWithInputStream:(NSInputStream*)inputStream
                           dataSize:(unsigned long long)dataSize
-                        statusCode:(int)statusCode
-                           headers:(nullable NSDictionary*)httpHeaders
-{
-    self = [super init];
-    if (self)
-    {
+                        statusCode:(NSInteger)statusCode
+                           headers:(nullable NSDictionary*)httpHeaders {
+    if ([super init]) {
         _inputStream = inputStream;
         _dataSize = dataSize;
         _statusCode = statusCode;
         NSMutableDictionary * headers = [NSMutableDictionary dictionaryWithDictionary:httpHeaders];
         static NSString *const ContentLengthHeader = @"Content-Length";
-        if (!headers[ContentLengthHeader])
-        {
+        if (!headers[ContentLengthHeader]) {
             headers[ContentLengthHeader] = [NSString stringWithFormat:@"%llu",_dataSize];
         }
         _httpHeaders = [NSDictionary dictionaryWithDictionary:headers];
@@ -110,7 +111,7 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 }
 
 -(instancetype)initWithFileAtPath:(NSString*)filePath
-                       statusCode:(int)statusCode
+                       statusCode:(NSInteger)statusCode
                           headers:(nullable NSDictionary*)httpHeaders
 {
     NSURL *fileURL = filePath ? [NSURL fileURLWithPath:filePath] : nil;
@@ -121,7 +122,7 @@ const double OHHTTPStubsDownloadSpeedWifi   =- 12000 / 8; // kbps -> KB/s
 }
 
 -(instancetype)initWithFileURL:(NSURL *)fileURL
-                    statusCode:(int)statusCode
+                    statusCode:(NSInteger)statusCode
                        headers:(nullable NSDictionary *)httpHeaders {
     if (!fileURL) {
         NSLog(@"%s: nil file path. Returning empty data", __PRETTY_FUNCTION__);
@@ -151,7 +152,7 @@ The error associated with that operation was: %@",
 }
 
 -(instancetype)initWithData:(NSData*)data
-                 statusCode:(int)statusCode
+                 statusCode:(NSInteger)statusCode
                     headers:(nullable NSDictionary*)httpHeaders
 {
     NSInputStream* inputStream = [NSInputStream inputStreamWithData:data?:[NSData data]];
@@ -173,8 +174,8 @@ The error associated with that operation was: %@",
 
 -(NSString*)debugDescription
 {
-    return [NSString stringWithFormat:@"<%@ %p requestTime:%f responseTime:%f status:%d dataSize:%llu>",
-            self.class, self, self.requestTime, self.responseTime, self.statusCode, self.dataSize];
+    return [NSString stringWithFormat:@"<%@ %p requestTime:%f responseTime:%f status:%ld dataSize:%llu>",
+            self.class, self, self.requestTime, self.responseTime, (long)self.statusCode, self.dataSize];
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -182,7 +183,7 @@ The error associated with that operation was: %@",
 
 -(void)setRequestTime:(NSTimeInterval)requestTime
 {
-    NSAssert(requestTime >= 0, @"Invalid Request Time (%f) for OHHTTPStubResponse. Request time must be greater than or equal to zero",requestTime);
+    NSAssert(requestTime >= 0, @"Invalid Request Time (%f) for gifTestMockResponse. Request time must be greater than or equal to zero",requestTime);
     _requestTime = requestTime;
 }
 
