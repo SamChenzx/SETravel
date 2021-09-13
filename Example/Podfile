@@ -6,6 +6,7 @@ platform :ios, '9.0'
 target 'SETravel_Example' do
   pod 'SETravel', :path => '../'
   pod 'SSZipArchive', '1.1' 
+#  pod 'AFNetworking', '3.2.1'
   target 'SETravel_Tests' do
     inherit! :search_paths
 

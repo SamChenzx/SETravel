@@ -34,7 +34,7 @@
 + (void)mockForRequest:(shouldMockRequest)shouldMockBlock
       withMockResponse:(mockResponseBlock)responseBlock {
     [gifTestMockHTTPStubs stubRequestsPassingTest:shouldMockBlock
-                                 withStubResponse:responseBlock];
+                                 withStubResponse:responseBlock].name = @"AFNetworking stub";
 }
 
 + (void)removeAllMockServers {

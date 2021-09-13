@@ -18,9 +18,12 @@ static const NSTimeInterval gifTestResourceFetchTimeout = 120.0f;
 @implementation gifTestResourceCDNFetcher
 
 + (void)fetchResourceWithURLStrings:(NSArray<NSString *> *)URLStrings completionBlock:(fetchCompletionBlock)completionBlock  {
+    if (!URLStrings.count) {
+        return;
+    }
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *fetchSession = [NSURLSession sessionWithConfiguration:config];
-    NSURL *resourceURL = [NSURL URLWithString:URLStrings.firstObject];
+    NSURL *resourceURL = [NSURL URLWithString:URLStrings.lastObject];
     NSURLSessionDownloadTask *downloadTask = [fetchSession downloadTaskWithURL:resourceURL
                                                                   completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (completionBlock) {

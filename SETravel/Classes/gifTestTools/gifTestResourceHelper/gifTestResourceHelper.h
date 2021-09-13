@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 typedef void(^resourceFetchComplation)(NSString *resourcePath, BOOL isSuccess);
-typedef void(^resourcesFetchComplation)(NSArray<NSString *> *resourcePaths, BOOL isSuccess);
+typedef void(^resourcesFetchComplation)(NSDictionary<KSTestResourceKey, NSString *> *resourcePathDict, BOOL isSuccess);
 
 @interface gifTestResourceHelper : NSObject
 
@@ -45,6 +45,19 @@ typedef void(^resourcesFetchComplation)(NSArray<NSString *> *resourcePaths, BOOL
                              ignoreCache:(BOOL)ignoreCache;
 
 /**
+ * 同步批量从本地缓存或者CDN上或取对应的资源，单个资源超时120秒。
+ * 如果资源为zip压缩包，会把压缩包解压，返回解压后的目录
+ *
+ * @param moduleType 对应的testTarget
+ * @param resourceKeys 对应的资源Key列表
+ * @param ignoreCache 是否忽略缓存，直接从CDN获取资源
+ * @return 返回一个dictionary，内容是KSTestResourceKey和资源路径的对应关系，如果某个资源不存在或者获取失败，则该KSTestResourceKey对应的path为空字符串。
+ */
+- (NSDictionary<KSTestResourceKey, NSString *> *)syncFetchResourceForModule:(KSTestModuleType)moduleType
+                                                              withResources:(NSArray<KSTestResourceKey> *)resourceKeys
+                                                                ignoreCache:(BOOL)ignoreCache;
+
+/**
  * 从本地缓存或者CDN上或取对应的资源，异步获取，并在主线程中回调
  * 如果资源为zip压缩包，会把压缩包解压，返回解压后的目录
  *
@@ -74,9 +87,9 @@ typedef void(^resourcesFetchComplation)(NSArray<NSString *> *resourcePaths, BOOL
  * 批量从本地缓存或者CDN上或取对应的资源，异步获取，并在主线程中回调
  * 如果资源为zip压缩包，会把压缩包解压，返回解压后的目录
  * @param moduleType 对应的testTarget
- * @param ignoreCache 是否忽略缓存，直接从CDN获取资源
  * @param resourceKeys 对应的资源Key列表
- * @param complation 完成回调(NSArray<NSString *> *resourcePaths, BOOL isSuccess)
+ * @param ignoreCache 是否忽略缓存，直接从CDN获取资源
+ * @param complation 完成回调(NSDictionary<KSTestResourceKey, NSString *> *resourcePathDict, BOOL isSuccess)
  */
 - (void)fetchResourceForModule:(KSTestModuleType)moduleType
                  withResources:(NSArray<KSTestResourceKey> *)resourceKeys

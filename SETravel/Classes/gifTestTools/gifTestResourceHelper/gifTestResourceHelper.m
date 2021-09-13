@@ -66,6 +66,17 @@
     return resourcePath;
 }
 
+- (NSDictionary<KSTestResourceKey, NSString *> *)syncFetchResourceForModule:(KSTestModuleType)moduleType
+                                                              withResources:(NSArray<KSTestResourceKey> *)resourceKeys
+                                                                ignoreCache:(BOOL)ignoreCache {
+    NSMutableDictionary <KSTestResourceKey, NSString *> *resourceDict = [NSMutableDictionary dictionary];
+    dispatch_group_t group = dispatch_group_create();
+//    dispatch_group_notify(group, <#dispatch_queue_t  _Nonnull queue#>, ^{
+//        <#code#>
+//    });
+    return resourceDict;
+}
+
 - (void)fetchResourceForModule:(KSTestModuleType)moduleType
                   withResource:(KSTestResourceKey)resourceKey
                complationBlock:(resourceFetchComplation)complation {

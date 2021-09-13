@@ -52,10 +52,9 @@ NSString * stringForTestModule(KSTestModuleType moduleType) {
     NSDictionary<NSString *, NSString *> *keyFileMap = [self keyFileMapForModule:moduleType];
     NSString *fileName = [keyFileMap objectForKey:resourceKey];
     if (fileName.length) {
-        [fileURLs addObject:[NSString stringWithFormat:@"%@%@", cdnBaseUrl, fileName]];
-        [fileURLs addObject:[NSString stringWithFormat:@"%@%@", cdnBackupBaseUrl, fileName]];
+        [fileURLs addObject:[NSString stringWithFormat:@"%@%@/%@", cdnBaseUrl, stringForTestModule(moduleType), fileName]];
+        [fileURLs addObject:[NSString stringWithFormat:@"%@%@/%@", cdnBackupBaseUrl, stringForTestModule(moduleType), fileName]];
     }
-    
     return fileURLs;
 }
 
