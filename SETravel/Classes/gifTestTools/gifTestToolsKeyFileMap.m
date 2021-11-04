@@ -14,6 +14,7 @@ KSTestResourceKey const KSTestPostKTVVoiceResource = @"KSTestPostKTVVoiceResourc
 KSTestResourceKey const KSTestPostKTVBGMResource = @"KSTestPostKTVBGMResource";
 KSTestResourceKey const KSTestPostKTVAlbumResource = @"KSTestPostKTVAlbumResource";
 KSTestResourceKey const KSTestPostVideoResource = @"KSTestPostVideoResource";
+KSTestResourceKey const KSTestPostImageResource = @"KSTestPostImageResource";
 
 NSString * stringForTestModule(KSTestModuleType moduleType) {
     NSString *moduleString = nil;
@@ -111,6 +112,7 @@ NSString * stringForTestModule(KSTestModuleType moduleType) {
             KSTestPostKTVBGMResource : @"bgm.m4a",
             KSTestPostKTVAlbumResource : @"KaraokeLocalAlbumPhoto.zip",
             KSTestPostVideoResource : @"post_test.MOV",
+            KSTestPostImageResource : @"post_test.jpeg",
         };
     }
     return _postKeyFileMap;

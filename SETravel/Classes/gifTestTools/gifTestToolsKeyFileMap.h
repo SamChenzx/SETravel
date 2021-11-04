@@ -22,6 +22,7 @@ extern KSTestResourceKey const KSTestPostKTVVoiceResource;
 extern KSTestResourceKey const KSTestPostKTVBGMResource;
 extern KSTestResourceKey const KSTestPostKTVAlbumResource;
 extern KSTestResourceKey const KSTestPostVideoResource;
+extern KSTestResourceKey const KSTestPostImageResource;
 FOUNDATION_EXTERN NSString *stringForTestModule(KSTestModuleType moduleType);
 
 @interface gifTestToolsKeyFileMap : NSObject

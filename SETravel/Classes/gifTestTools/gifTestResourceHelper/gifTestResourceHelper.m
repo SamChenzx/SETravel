@@ -70,10 +70,10 @@
                                                               withResources:(NSArray<KSTestResourceKey> *)resourceKeys
                                                                 ignoreCache:(BOOL)ignoreCache {
     NSMutableDictionary <KSTestResourceKey, NSString *> *resourceDict = [NSMutableDictionary dictionary];
-    dispatch_group_t group = dispatch_group_create();
-//    dispatch_group_notify(group, <#dispatch_queue_t  _Nonnull queue#>, ^{
-//        <#code#>
-//    });
+    for (KSTestResourceKey resourceKey in resourceKeys) {
+        NSString *resourcePath = [self syncFetchResourceForModule:moduleType withResource:resourceKey ignoreCache:ignoreCache];
+        [resourceDict setObject:resourcePath ?: @"" forKey:resourceKey];
+    }
     return resourceDict;
 }
 
@@ -125,7 +125,20 @@
                  withResources:(NSArray<KSTestResourceKey> *)resourceKeys
                    ignoreCache:(BOOL)ignoreCache
                complationBlock:(resourcesFetchComplation)complation {
-
+    NSMutableDictionary <KSTestResourceKey, NSString *> *resourceDict = [NSMutableDictionary dictionary];
+    dispatch_group_t group = dispatch_group_create();
+    for (KSTestResourceKey resourceKey in resourceKeys) {
+        dispatch_group_enter(group);
+        [self fetchResourceForModule:moduleType withResource:resourceKey ignoreCache:ignoreCache complationBlock:^(NSString * _Nonnull resourcePath, BOOL isSuccess) {
+            [resourceDict setObject:resourcePath ?: @"" forKey:resourceKey];
+            dispatch_group_leave(group);
+        }];
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        if (complation) {
+            complation(resourceDict, YES);
+        }
+    });
 }
 
 - (void)saveResourceAt:(NSString *)sourcePath forModule:(KSTestModuleType)moduleType withResource:(KSTestResourceKey)resourceKey {
