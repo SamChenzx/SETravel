@@ -11,6 +11,6 @@ target 'SETravel_Example' do
   target 'SETravel_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#    pod 'FBSnapshotTestCase'
   end
 end
