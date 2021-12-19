@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Masonry (1.1.0)
+  - SETravel (0.1.0):
+    - AFNetworking
+    - Masonry
+    - SSZipArchive
+  - SSZipArchive (1.1)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - FBSnapshotTestCase
+  - Masonry (= 1.1.0)
+  - SETravel (from `../`)
+  - SSZipArchive (= 1.1)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FBSnapshotTestCase
+    - Masonry
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  SETravel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SETravel: f72f53673b0831c7c398919ee18edd4c66a23ef7
+  SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
+
+PODFILE CHECKSUM: a6de813335d88274335e8a83e11ac0ca6be08c13
+
+COCOAPODS: 1.10.0
