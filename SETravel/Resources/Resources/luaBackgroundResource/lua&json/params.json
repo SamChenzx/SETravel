@@ -1,0 +1,86 @@
+{
+  "minWidth": 0,
+  "bold": false,
+  "maxTextLength": 120,
+  "background": {
+    "enable": true,
+    "fileList": [
+      "main.lua"
+    ],
+    "extra": {
+      "type": 1,
+      "textSize": 13,
+      "paddingLeft": 33,
+      "paddingRight": 6,
+      "supplyMinWidth": 0,
+      "fixText": ""
+    },
+    "type": 0,
+    "fixWidth": 0
+  },
+  "hint": {
+    "enable": true,
+    "hintType": 0,
+    "color": {
+      "alpha": 0.30000001192092896,
+      "red": 0,
+      "green": 0,
+      "blue": 0
+    }
+  },
+  "textPadding": {
+    "left": 22.00000000021373,
+    "top": 44.5,
+    "right": 52.99999999978627,
+    "bottom": 24.5
+  },
+  "maxWidth": 0,
+  "maxHeight": 9999,
+  "absLineSpace": 11,
+  "cursorColor": {
+    "alpha": 1,
+    "red": 0,
+    "green": 0,
+    "blue": 0
+  },
+  "text": {
+    "defaultTextSize": 0,
+    "textAlign": 0,
+    "topCount": 0,
+    "repeatCount": 1,
+    "topLayers": [],
+    "repeatLayers": [
+      {
+        "layers": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "layerType": 0,
+            "fill": {
+              "fillType": 0,
+              "color": {
+                "alpha": 1,
+                "red": 0,
+                "green": 0,
+                "blue": 0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "styleable": {
+    "enable": false,
+    "enableChangeAlign": true,
+    "defaultMode": 0,
+    "attrs": {
+      "enableBackground": false,
+      "strokeList": [],
+      "fillList": [],
+      "shadowList": []
+    }
+  }
+}
