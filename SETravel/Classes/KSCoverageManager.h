@@ -48,6 +48,7 @@ FOUNDATION_EXTERN KSCoverageInfoKey const KSCoverageDeviceID;
 - (void)disableAutoUpload:(BOOL)isDisable;
 - (KSCoverageSwitchStates *)coverageSwitchStates;
 - (NSArray<KSCaseModel *> *)syncFetchCaseList;
+- (void)writeCoverageDataToFile;
 
 @end
 

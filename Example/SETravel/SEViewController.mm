@@ -18,6 +18,10 @@
 #import <SETravel/KSCoverageManager.h>
 #import <SETravel/KSCaseCoverageListView.h>
 #import "SECallGraphTest.h"
+#import <string>
+
+static std::string cxx_static_str("cxx_static_str");
+
 #define dispatch_gifPostTest_main_async_safe(block)\
     if ([NSThread isMainThread]) {\
         block();\
@@ -36,6 +40,10 @@ typedef void(^completion)(NSArray<NSString *> * _Nullable useless);
 @end
 
 @implementation SEViewController
+
++ (void)load {
+    NSLog(@"load 被执行");
+}
 
 + (void)recordDeviceId {
     NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
@@ -119,6 +127,7 @@ typedef void(^completion)(NSArray<NSString *> * _Nullable useless);
         [[KSCoverageManager sharedManager] uploadFilesWithInfo:caseInfoDic shouldReset:YES];
     };
     [self.view addSubview:listView];
+    [[KSCoverageManager sharedManager] writeCoverageDataToFile];
 }
 
 - (void)didClickCoverageButton {

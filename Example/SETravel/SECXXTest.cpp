@@ -8,3 +8,10 @@
 
 #include "SECXXTest.hpp"
 
+int f(void) __attribute__((constructor));
+
+int f(void) {
+    printf(" int f() __attribute__((constructor)) 被调用");
+    return 0;
+}
+

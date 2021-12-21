@@ -219,6 +219,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				2C731E6C34D4BEC0DF8ED8EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +311,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C731E6C34D4BEC0DF8ED8EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-resources.sh",
+				"${PODS_ROOT}/Local Podspecs/SETravel.podspec.json",
+				"${PODS_ROOT}/../SETravel/Images.xcassets/AppIcon.appiconset/Contents.json",
+				"${PODS_ROOT}/../../SETravel/Resources/KSCoverageInfo.json",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/bottom.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/date_bg.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/hand.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/heart.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/kwai_logo.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/lua&json/params.json",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/Resources/2020_summer_memory_icon@3x.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/Resources/bg_yellow_normal@3x.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/star.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/title.png",
+				"${PODS_ROOT}/../../SETravel/Resources/Resources/luaBackgroundResource/top.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SETravel.podspec.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KSCoverageInfo.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bottom.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/date_bg.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/hand.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/heart.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/kwai_logo.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/params.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/2020_summer_memory_icon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg_yellow_normal@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/star.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/title.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/top.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D861C06584F35CD5916C8BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,6 +528,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

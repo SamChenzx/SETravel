@@ -31,6 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SETravel/Classes/**/*'
+  s.resources = ['**/*.{bundle,png,xib,nib,data,json,xml,js,jpg,mp3,mp4,ltb}',
+                  '**/{PinyinMap2.txt,country_code.txt,application_config}']
   
   # s.resource_bundles = {
   #   'SETravel' => ['SETravel/Assets/*.png']

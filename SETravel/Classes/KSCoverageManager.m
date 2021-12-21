@@ -191,6 +191,33 @@ static CGFloat const defaultUploadInterval = 15.0f;
     [self uploadFilesWithInfo:infoDic shouldReset:shouldReset isAutoUpload:NO];
 }
 
+- (void)writeCoverageDataToFile {
+    extern void __llvm_profile_reset_counters(void);
+    extern int __llvm_profile_dump(void);
+    extern int __llvm_profile_is_continuous_mode_enabled(void);
+    extern void __llvm_profile_enable_continuous_mode(void);
+    __llvm_profile_is_continuous_mode_enabled();
+    
+//    __llvm_profile_dump();
+    __llvm_profile_enable_continuous_mode();
+    __llvm_profile_reset_counters();
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *documentsDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject].path;
+    NSString *baseDir = [documentsDirectory stringByAppendingPathComponent:@"coverage"];
+    NSString *coverageZip = [documentsDirectory stringByAppendingString:@"/coverage.zip"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    [fileManager removeItemAtPath:baseDir error:nil];
+    [fileManager createDirectoryAtPath:baseDir withIntermediateDirectories:NO attributes:nil error:NULL];
+    NSString *profileFile = [baseDir stringByAppendingString:@"/SEUnitTestProfilecc.profraw"];
+    extern int __llvm_profile_write_file(void);
+    extern void __llvm_profile_set_filename(char *);
+    __llvm_profile_set_filename((char *)[profileFile cStringUsingEncoding:[NSString defaultCStringEncoding]]);
+    __llvm_profile_write_file();
+    __llvm_profile_write_file();
+    [SSZipArchive createZipFileAtPath:coverageZip withContentsOfDirectory:baseDir];
+}
+
 - (void)uploadFilesWithInfo:(NSDictionary * _Nullable)infoDic shouldReset:(BOOL)shouldReset isAutoUpload:(BOOL)isAutoUpload {
     //The url, task, commit params should be dynamic inject.
     if (infoDic) {
