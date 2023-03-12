@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18005A22287D183F00EAFA9C /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */; };
+		18005A29287EA25D00EAFA9C /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A28287EA25D00EAFA9C /* SEPanelView.m */; };
+		18005A2C287EA36F00EAFA9C /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */; };
 		180FE44726E22203000C7121 /* resource.response in Resources */ = {isa = PBXBuildFile; fileRef = 180FE44626E22203000C7121 /* resource.response */; };
+		18A4CD652833B0DD00CAE962 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD642833B0DD00CAE962 /* WidgetKit.framework */; };
+		18A4CD672833B0DD00CAE962 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD662833B0DD00CAE962 /* SwiftUI.framework */; };
+		18A4CD6A2833B0DD00CAE962 /* SEWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD692833B0DD00CAE962 /* SEWidgets.swift */; };
+		18A4CD6D2833B0DE00CAE962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */; };
+		18A4CD6F2833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
+		18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
+		18A4CD732833B0DE00CAE962 /* SEWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18B002302834B993006133D3 /* MyMainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0022E2834B819006133D3 /* MyMainWidget.swift */; };
 		18CA61B4271FC9D200C8C0F2 /* SENewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA61B3271FC9D200C8C0F2 /* SENewTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -29,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18A4CD712833B0DE00CAE962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A4CD622833B0DD00CAE962;
+			remoteInfo = SEWidgetsExtension;
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -38,8 +56,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18A4CD772833B0DE00CAE962 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18A4CD732833B0DE00CAE962 /* SEWidgetsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18005A20287D183F00EAFA9C /* SEVideoFiltersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEVideoFiltersViewController.h; sourceTree = "<group>"; };
+		18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
+		18005A27287EA25D00EAFA9C /* SEPanelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SEPanelView.h; path = ../../SEPanelView.h; sourceTree = "<group>"; };
+		18005A28287EA25D00EAFA9C /* SEPanelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SEPanelView.m; path = ../../SEPanelView.m; sourceTree = "<group>"; };
+		18005A2A287EA36F00EAFA9C /* SEPanelBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SEPanelBehavior.h; path = ../../SEPanelBehavior.h; sourceTree = "<group>"; };
+		18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SEPanelBehavior.m; path = ../../SEPanelBehavior.m; sourceTree = "<group>"; };
 		180FE44626E22203000C7121 /* resource.response */ = {isa = PBXFileReference; lastKnownFileType = file; path = resource.response; sourceTree = "<group>"; };
+		18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SEWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A4CD642833B0DD00CAE962 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		18A4CD662833B0DD00CAE962 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		18A4CD692833B0DD00CAE962 /* SEWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEWidgets.swift; sourceTree = "<group>"; };
+		18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SEWidgets.intentdefinition; sourceTree = "<group>"; };
+		18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A4CD6E2833B0DE00CAE962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETravel_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		18B0022E2834B819006133D3 /* MyMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainWidget.swift; sourceTree = "<group>"; };
 		18CA61B3271FC9D200C8C0F2 /* SENewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENewTests.m; sourceTree = "<group>"; };
 		18ED076326F2F45B0091A111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +122,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18A4CD602833B0DD00CAE962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4CD672833B0DD00CAE962 /* SwiftUI.framework in Frameworks */,
+				18A4CD652833B0DD00CAE962 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +156,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A4CD682833B0DD00CAE962 /* SEWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				18A4CD692833B0DD00CAE962 /* SEWidgets.swift */,
+				18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */,
+				18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */,
+				18A4CD6E2833B0DE00CAE962 /* Info.plist */,
+				18B0022E2834B819006133D3 /* MyMainWidget.swift */,
+				18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */,
+			);
+			path = SEWidgets;
+			sourceTree = "<group>";
+		};
 		4F5874F87E70323EFA2B8C60 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +188,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for SETravel */,
 				6003F5B5195388D20070C39A /* Tests */,
+				18A4CD682833B0DD00CAE962 /* SEWidgets */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4F5874F87E70323EFA2B8C60 /* Pods */,
@@ -130,6 +200,7 @@
 			children = (
 				6003F58A195388D20070C39A /* SETravel_Example.app */,
 				6003F5AE195388D20070C39A /* SETravel_Tests.xctest */,
+				18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +214,8 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */,
 				BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */,
+				18A4CD642833B0DD00CAE962 /* WidgetKit.framework */,
+				18A4CD662833B0DD00CAE962 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +231,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				18005A20287D183F00EAFA9C /* SEVideoFiltersViewController.h */,
+				18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */,
 			);
 			name = "Example for SETravel";
 			path = SETravel;
@@ -170,6 +245,10 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* SETravel-Prefix.pch */,
+				18005A27287EA25D00EAFA9C /* SEPanelView.h */,
+				18005A28287EA25D00EAFA9C /* SEPanelView.m */,
+				18005A2A287EA36F00EAFA9C /* SEPanelBehavior.h */,
+				18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,6 +286,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A4CD742833B0DE00CAE962 /* Build configuration list for PBXNativeTarget "SEWidgetsExtension" */;
+			buildPhases = (
+				18A4CD5F2833B0DD00CAE962 /* Sources */,
+				18A4CD602833B0DD00CAE962 /* Frameworks */,
+				18A4CD612833B0DD00CAE962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SEWidgetsExtension;
+			productName = SEWidgetsExtension;
+			productReference = 18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6003F589195388D20070C39A /* SETravel_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SETravel_Example" */;
@@ -216,10 +312,12 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				F24F4939823C268589AA274D /* [CP] Copy Pods Resources */,
+				18A4CD772833B0DE00CAE962 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18A4CD722833B0DE00CAE962 /* PBXTargetDependency */,
 			);
 			name = SETravel_Example;
 			productName = SETravel;
@@ -252,14 +350,21 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SE;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chenzhixiang;
 				TargetAttributes = {
+					18A4CD622833B0DD00CAE962 = {
+						CreatedOnToolsVersion = 13.3;
+						DevelopmentTeam = F9PFPWQX48;
+						ProvisioningStyle = Automatic;
+					};
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 95Y89KCYKV;
+						DevelopmentTeam = F9PFPWQX48;
+						LastSwiftMigration = 1340;
 					};
 					6003F5AD195388D20070C39A = {
-						DevelopmentTeam = 95Y89KCYKV;
+						DevelopmentTeam = F9PFPWQX48;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -280,11 +385,20 @@
 			targets = (
 				6003F589195388D20070C39A /* SETravel_Example */,
 				6003F5AD195388D20070C39A /* SETravel_Tests */,
+				18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18A4CD612833B0DD00CAE962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4CD6D2833B0DE00CAE962 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,12 +484,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18A4CD5F2833B0DD00CAE962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B002302834B993006133D3 /* MyMainWidget.swift in Sources */,
+				18A4CD6F2833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
+				18A4CD6A2833B0DD00CAE962 /* SEWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SEAppDelegate.m in Sources */,
+				18005A29287EA25D00EAFA9C /* SEPanelView.m in Sources */,
 				6003F5A7195388D20070C39A /* SEViewController.mm in Sources */,
+				18005A22287D183F00EAFA9C /* SEVideoFiltersViewController.m in Sources */,
+				18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
+				18005A2C287EA36F00EAFA9C /* SEPanelBehavior.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +520,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18A4CD722833B0DE00CAE962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */;
+			targetProxy = 18A4CD712833B0DE00CAE962 /* PBXContainerItemProxy */;
+		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* SETravel_Example */;
@@ -427,6 +560,108 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18A4CD752833B0DE00CAE962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F9PFPWQX48;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SEWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SEWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example.SEWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18A4CD762833B0DE00CAE962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WMCB79Z2LT;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SEWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SEWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example.SEWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,15 +752,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = arm64;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
-				DEVELOPMENT_TEAM = 95Y89KCYKV;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F9PFPWQX48;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETravel/SETravel-Prefix.pch";
 				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = (
 					"-fprofile-instr-generate",
@@ -554,9 +795,15 @@
 					"-fcoverage-mapping",
 					"-fprofile-instr-generate",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SEWidgets/SETravel_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -565,15 +812,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */;
 			buildSettings = {
-				ARCHS = arm64;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
-				DEVELOPMENT_TEAM = 95Y89KCYKV;
+				DEVELOPMENT_TEAM = WMCB79Z2LT;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETravel/SETravel-Prefix.pch";
 				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = (
 					"-fprofile-instr-generate",
@@ -604,7 +856,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SEWidgets/SETravel_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -615,7 +872,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 95Y89KCYKV;
+				DEVELOPMENT_TEAM = F9PFPWQX48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -666,7 +923,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 95Y89KCYKV;
+				DEVELOPMENT_TEAM = WMCB79Z2LT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -710,6 +967,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18A4CD742833B0DE00CAE962 /* Build configuration list for PBXNativeTarget "SEWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4CD752833B0DE00CAE962 /* Debug */,
+				18A4CD762833B0DE00CAE962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "SETravel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

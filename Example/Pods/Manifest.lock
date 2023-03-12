@@ -1,13 +1,33 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
   - SETravel (0.1.0)
   - SSZipArchive (1.1)
 
 DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - Masonry (= 1.1.0)
   - SETravel (from `../`)
   - SSZipArchive (= 1.1)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
+    - Masonry
     - SSZipArchive
 
 EXTERNAL SOURCES:
@@ -15,9 +35,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SETravel: 76ff0f47299d9b41b0df1a96cf9ee928aa7f2944
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SETravel: 7d9e7862d25c7a510effb01a34688964e83f60ae
   SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
 
-PODFILE CHECKSUM: 924d6a564432c8bd22a0d9887dc0b8bccca84eae
+PODFILE CHECKSUM: 67a74f40b7ecaa36ae31e803f9b73f8bf62fe26c
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

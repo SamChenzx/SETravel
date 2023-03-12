@@ -10,4 +10,6 @@
 
 @interface SEViewController : UIViewController
 
+- (NSString *)stringWithName:(NSString *)name;
+
 @end

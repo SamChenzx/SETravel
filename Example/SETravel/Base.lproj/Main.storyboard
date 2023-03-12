@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,14 +17,59 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-HW-soR" userLabel="tipView">
+                                <rect key="frame" x="30" y="253.66666666666666" width="866" height="40.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" layoutMarginsFollowReadableWidth="YES" text="当你收到信我还在流浪  Chat is now re-enabled " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbv-A7-G9w" userLabel="tipLabel">
+                                        <rect key="frame" x="62" y="10.000000000000027" width="784" height="20.333333333333329"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KUy-Rf-naz" userLabel="iconImageView">
+                                        <rect key="frame" x="20" y="5.3333333333333428" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="1jO-41-ZjW"/>
+                                            <constraint firstAttribute="height" constant="30" id="vMl-O1-BSP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Fbv-A7-G9w" secondAttribute="trailing" constant="20" id="5Ez-Ag-9Wz"/>
+                                    <constraint firstItem="Fbv-A7-G9w" firstAttribute="leading" secondItem="KUy-Rf-naz" secondAttribute="trailing" constant="12" id="PWP-ax-0dh"/>
+                                    <constraint firstItem="KUy-Rf-naz" firstAttribute="centerY" secondItem="tYU-HW-soR" secondAttribute="centerY" id="T9S-Hn-FPB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fbv-A7-G9w" secondAttribute="bottom" constant="10" id="eD9-g2-HUq"/>
+                                    <constraint firstItem="KUy-Rf-naz" firstAttribute="leading" secondItem="tYU-HW-soR" secondAttribute="leading" constant="20" id="ofj-dE-EoN"/>
+                                    <constraint firstItem="Fbv-A7-G9w" firstAttribute="top" secondItem="tYU-HW-soR" secondAttribute="top" constant="10" id="tMi-aq-kkf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tYU-HW-soR" firstAttribute="leading" relation="lessThanOrEqual" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="30" id="GUy-9M-1AY"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="tYU-HW-soR" secondAttribute="bottom" constant="100" id="I0T-8x-4eQ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tYU-HW-soR" secondAttribute="trailing" constant="30" id="rTa-3q-Eq7"/>
+                            <constraint firstItem="tYU-HW-soR" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="sft-Iv-tI3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="304.20560747663552" y="432.82937365010804"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

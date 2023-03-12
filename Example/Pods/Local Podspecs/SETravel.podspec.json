@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of SETravel.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/chenzhixiang/SETravel",
+  "homepage": "https://github.com/SamChenzx/SETravel",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "chenzhixiang": "chenzhixiang@kuaishou.com"
   },
   "source": {
-    "git": "https://github.com/chenzhixiang/SETravel.git",
+    "git": "https://github.com/SamChenzx/SETravel.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,5 +20,9 @@
   },
   "source_files": [
     "SETravel/Classes/**/*"
+  ],
+  "resources": [
+    "**/*.{bundle,png,xib,nib,data,json,xml,js,jpg,mp3,mp4,ltb}",
+    "**/{PinyinMap2.txt,country_code.txt,application_config}"
   ]
 }
