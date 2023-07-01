@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
   "source_files": [
     "SETravel/Classes/**/*"
@@ -24,5 +24,10 @@
   "resources": [
     "**/*.{bundle,png,xib,nib,data,json,xml,js,jpg,mp3,mp4,ltb}",
     "**/{PinyinMap2.txt,country_code.txt,application_config}"
-  ]
+  ],
+  "resource_bundles": {
+    "SETravel": [
+      "SETravel/Assets/*.xcassets"
+    ]
+  }
 }

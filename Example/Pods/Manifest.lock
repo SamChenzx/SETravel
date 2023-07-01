@@ -16,13 +16,13 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - SETravel (0.1.0)
-  - SSZipArchive (1.1)
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
   - Masonry (= 1.1.0)
   - SETravel (from `../`)
-  - SSZipArchive (= 1.1)
+  - SSZipArchive
 
 SPEC REPOS:
   trunk:
@@ -37,9 +37,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SETravel: 7d9e7862d25c7a510effb01a34688964e83f60ae
-  SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
+  SETravel: d1ddc0e3d92a69ae49b490908f6a4045997d3818
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 67a74f40b7ecaa36ae31e803f9b73f8bf62fe26c
+PODFILE CHECKSUM: 6e697ca5627990422fa15174006ce544d815e82d
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

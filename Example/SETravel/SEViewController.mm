@@ -21,6 +21,7 @@
 #import <SETravel/SETappableLabel.h>
 #import <SETravel/SESubView.h>
 #import <SETravel/ZMMultitaskingView.h>
+#import <SETravel/ZMDrawerTableView.h>
 #define dispatch_gifPostTest_main_async_safe(block)\
     if ([NSThread isMainThread]) {\
         block();\
@@ -70,11 +71,12 @@ static NSString *const SECellId = @"SECellId";
 @property (nonatomic, strong) UIButton *gifButton;
 @property (nonatomic, strong) NSURLSession *session;
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ZMDrawerTableView *tableView;
 @property (nonatomic, copy) NSArray<UIColor *> *dataSource;
 @property (nonatomic, strong) UIView *bgView;
 @property (nonatomic, assign) NSInteger count;
-@property (nonatomic, strong) ZMMultitaskingView *multitaskingContainerView;
+@property (nonatomic, strong) ZMMultitaskingView *multitaskingView;
+@property (nonatomic, assign) CGFloat lastContentOffset;
 
 @end
 
@@ -82,7 +84,7 @@ static NSString *const SECellId = @"SECellId";
 
 - (NSArray<UIColor *> *)dataSource {
     if (!_dataSource) {
-        _dataSource = @[UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor];
+        _dataSource = @[UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor, UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor, UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor, UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor, UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor, UIColor.redColor, UIColor.greenColor, UIColor.blueColor, UIColor.yellowColor, UIColor.brownColor, UIColor.purpleColor];
     }
     return _dataSource;
 }
@@ -103,9 +105,9 @@ static NSString *const SECellId = @"SECellId";
     return _collectionView;
 }
 
-- (UITableView *)tableView {
+- (ZMDrawerTableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[ZMDrawerTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:SECellId];
@@ -156,8 +158,10 @@ static NSString *const SECellId = @"SECellId";
 	// Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:self.collectionView];
     self.collectionView.frame = CGRectMake(30, 100, CGRectGetWidth(self.view.bounds), 100);
-    [self.view addSubview:self.multitaskingContainerView];
-    self.multitaskingContainerView.frame = self.view.bounds;
+    [self.view addSubview:self.multitaskingView];
+    self.multitaskingView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame)-500, CGRectGetWidth(self.view.frame), 500);
+    [self.multitaskingView presentFeatureView:self.tableView];
+    [self.multitaskingView slideToStyle:ZMMultitaskingMiddleStyle];
 //    for (NSInteger i = 0; i < 100; i++) {
 //        ZMMultitaskingView *view = [[ZMMultitaskingView alloc] initWithFrame:self.view.bounds num:i];
 //        view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255.0)/255.0 blue:arc4random_uniform(255.0)/255.0 alpha:0.05];
@@ -184,13 +188,18 @@ static NSString *const SECellId = @"SECellId";
     NSLog(@"[color1 isEqual:color2] = %@", [color1 isEqual:color2] ? @"YES" : @"NO");
 }
 
-- (ZMMultitaskingView *)multitaskingContainerView {
-    if (!_multitaskingContainerView) {
-        _multitaskingContainerView = [[ZMMultitaskingView alloc] init];
-        _multitaskingContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        _multitaskingContainerView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.multitaskingView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame)-500, CGRectGetWidth(self.view.frame), 500);
+}
+
+- (ZMMultitaskingView *)multitaskingView {
+    if (!_multitaskingView) {
+        _multitaskingView = [[ZMMultitaskingView alloc] initWithFrame:self.view.bounds toolbar:self.collectionView];
+        _multitaskingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        _multitaskingView.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.3];
     }
-    return _multitaskingContainerView;
+    return _multitaskingView;
 }
 
 //- (NSArray<PHAsset *> *)assetsFromImages:(NSArray<UIImage *> *)images {

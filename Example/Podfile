@@ -1,11 +1,11 @@
 #use_frameworks!
 install! 'cocoapods', :disable_input_output_paths => true
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'SETravel_Example' do
   pod 'SETravel', :path => '../'
-  pod 'SSZipArchive', '1.1'
+  pod 'SSZipArchive'
   pod 'Masonry', '1.1.0'  
   pod 'AFNetworking', '3.2.1'
   target 'SETravel_Tests' do
@@ -14,12 +14,12 @@ target 'SETravel_Example' do
     
   end
   
-  post_install do |installer_representation|
-      installer_representation.pods_project.targets.each do |target|
-          target.build_configurations.each do |config|
-              config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'YES'
-          end
-      end
-  end
+#  post_install do |installer_representation|
+#      installer_representation.pods_project.targets.each do |target|
+#          target.build_configurations.each do |config|
+#              config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'YES'
+#          end
+#      end
+#  end
   
 end

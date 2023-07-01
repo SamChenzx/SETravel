@@ -10,6 +10,8 @@
 #import "SEPanelView.h"
 #import "SEPanelBehavior.h"
 #import <Masonry/Masonry.h>
+#import <SETravel/ZMBasePanelView.h>
+#import <SETravel/ZMBasicPlusPanel.h>
 
 static CGFloat const MinContainerViewHeight = 280;
 static CGFloat const MaxContainerViewHeight = 680;
@@ -25,7 +27,7 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
 @property (nonatomic, strong) UIView *bottomView;
 
 @property (nonatomic) PanelState panelState;
-@property (nonatomic) SEPanelView *panelView;
+@property (nonatomic) ZMBasicPlusPanel *panelView;
 @property (nonatomic) UIDynamicAnimator *animator;
 @property (nonatomic, strong) SEPanelBehavior *panelBehavior;
 
@@ -35,41 +37,43 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:16.0/255 green:22.0/255 blue:25.0/255 alpha:1];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *resetButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    resetButton.frame = CGRectMake(100, 100, 100, 100);
+    resetButton.backgroundColor = [UIColor yellowColor];
+    [resetButton addTarget:self action:@selector(didTapReset:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:resetButton];
     [self.view addSubview:self.containerView];
-    [self.view addSubview:self.videoView];
+//    [self.view addSubview:self.videoView];
     [self.view addSubview:self.panelView];
-    [self.panelView addSubview:self.tableView];
+//    [self.panelView addSubview:self.tableView];
 //    [self.view addSubview:self.bottomView];
 //    self.bottomView.frame = CGRectMake(0, self.view.frame.size.height-34, self.view.frame.size.width, 34);
     self.panelView.frame = CGRectMake(0, self.view.frame.size.height-MinContainerViewHeight, self.view.frame.size.width, MinContainerViewHeight);
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.panelView.mas_left);
-        make.bottom.mas_equalTo(self.panelView.mas_bottom).offset(-34);
-        make.right.mas_equalTo(self.panelView.mas_right);
-        make.top.mas_equalTo(self.panelView.mas_top).offset(40);
-    }];
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.panelView.mas_left);
+//        make.bottom.mas_equalTo(self.panelView.mas_bottom).offset(-34);
+//        make.right.mas_equalTo(self.panelView.mas_right);
+//        make.top.mas_equalTo(self.panelView.mas_top).offset(40);
+//    }];
     self.tableView.frame = CGRectMake(0, 40, self.view.frame.size.width, MinContainerViewHeight-40);
     
-    self.containerView.frame = self.panelView.frame;
-    [self.view addGestureRecognizer:self.panGestureRecognizer];
+//    self.containerView.frame = self.panelView.frame;
+//    [self.view addGestureRecognizer:self.panGestureRecognizer];
 }
 
-- (SEPanelView *)panelView {
+- (void)didTapReset:(UIButton *)button {
+    [self.panelView slideToStyle:ZMMeetingPanelTopStyle];
+}
+
+- (ZMBasicPlusPanel *)panelView {
     if (!_panelView) {
-        _panelView = [[SEPanelView alloc] initWithFrame:CGRectZero];
+        _panelView = [[ZMBasicPlusPanel alloc] initWithFrame:CGRectZero];
         _panelView.backgroundColor = [UIColor colorWithRed:26.0/255 green:32.0/255 blue:35.0/255 alpha:1];
         _panelView.layer.cornerRadius = 20;
-        _panelView.delegate = self;
+//        _panelView.delegate = self;
     }
     return _panelView;
-}
-
-- (UIDynamicAnimator *)animator {
-    if (!_animator) {
-        _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
-    }
-    return _animator;
 }
 
 - (UIView *)bottomView {
@@ -116,14 +120,14 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
     return _tableView;
 }
 
-- (UIPanGestureRecognizer *)panGestureRecognizer {
-    if (!_panGestureRecognizer) {
-        _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
-                                                                        action:@selector(handlePanGesture:)];
-        _panGestureRecognizer.enabled = YES;
-    }
-    return _panGestureRecognizer;
-}
+//- (UIPanGestureRecognizer *)panGestureRecognizer {
+//    if (!_panGestureRecognizer) {
+//        _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+//                                                                        action:@selector(handlePanGesture:)];
+//        _panGestureRecognizer.enabled = YES;
+//    }
+//    return _panGestureRecognizer;
+//}
 
 - (void)handlePanGesture:(UIPanGestureRecognizer *)pan {
     CGPoint translation = [pan translationInView:self.containerView];
