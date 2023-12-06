@@ -10,6 +10,11 @@
 
 @implementation UIColor (Hex)
 
+NSString* ZMLocalizedString(NSString* key, NSString* comment)
+{
+    return NSLocalizedString(key, comment);
+}
+
 + (UIColor *)colorWithHexString:(NSString*)hexString
 {
     unsigned clrRef = 0, length = hexString.length;

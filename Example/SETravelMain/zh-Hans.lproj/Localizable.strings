@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  SETravel
+
+  Created by Sam Chen on 7/1/23.
+  Copyright © 2023 chenzhixiang. All rights reserved.
+*/
+"Cancel" = "Cancel";
+"LN_MEET_BASICPLUS_EXTEND_REMAIN_TITLE_528113" = "Extend this meeting to 80 minutes
+You have %ld extensions remaining";
+
+"LN_MEET_BASICPLUS_MORE_MENU_EXTEND_528113" = "Extend Meeting";
+
+"LN_MEET_BASICPLUS_MORE_MENU_CANCEL_528113" = "Cancel Extension";
+
+"LN_MEET_BASICPLUS_PANEL_BUTTON_528113" = "Extend";
+
+"LN_MEET_BASICPLUS_TIME_LEFT_528113" = "Time Left %@";

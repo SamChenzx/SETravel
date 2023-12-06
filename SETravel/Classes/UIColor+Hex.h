@@ -6,11 +6,15 @@
 //  Copyright © 2023 chenzhixiang. All rights reserved.
 //
 
+#define l10nString(key)                     ZMLocalizedString(key, @"")
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (Hex)
+
+NSString* ZMLocalizedString(NSString* key, NSString* comment);
 
 + (UIColor *)colorWithHexString:(NSString*)hexString;
 

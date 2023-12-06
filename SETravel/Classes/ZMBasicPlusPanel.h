@@ -7,31 +7,19 @@
 //
 
 #import "ZMBasePanelView.h"
-
-typedef NS_ENUM(NSInteger, ZMBasicPlusStatus) {
-    ZMBasicPlusStatusUnavailable,
-    ZMBasicPlusStatusExtend,
-    ZMBasicPlusStatusCancel,
-    ZMBasicPlusStatusExtended,
-    ZMBasicPlusStatusEnding,
-};
-
-typedef NS_ENUM(NSInteger, ZMBasicPlusAction) {
-    ZMBasicPlusExtendAction,
-    ZMBasicPlusCancelAction,
-};
+#import "ZMBasicPlusPanelDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@protocol ZMBasicPlusPanelDelegate <NSObject>
-
-- (void)didTapWithAction:(ZMBasicPlusAction)action;
-
-@end
 
 @interface ZMBasicPlusPanel : ZMBasePanelView
 
 @property (nonatomic, weak) id<ZMBasicPlusPanelDelegate> delegate;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
+- (instancetype)initWithFrame:(CGRect)frame
+                       status:(ZMBasicPlusStatus)status;
+- (void)updateWithDataSource:(id<ZMBasicPlusPanelDataSource>)data;
 
 @end
 

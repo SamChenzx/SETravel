@@ -13,7 +13,7 @@
 #import <SETravel/ZMBasePanelView.h>
 #import <SETravel/ZMBasicPlusPanel.h>
 
-static CGFloat const MinContainerViewHeight = 280;
+static CGFloat const MinContainerViewHeight = 194;
 static CGFloat const MaxContainerViewHeight = 680;
 static NSString *const reuseIdentifier = @"reuseIdentifier";
 
@@ -36,6 +36,7 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
 @implementation SEVideoFiltersViewController
 
 - (void)viewDidLoad {
+    [self removeFromParentViewController];
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *resetButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -68,7 +69,7 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
 
 - (ZMBasicPlusPanel *)panelView {
     if (!_panelView) {
-        _panelView = [[ZMBasicPlusPanel alloc] initWithFrame:CGRectZero];
+        _panelView = [[ZMBasicPlusPanel alloc] initWithFrame:CGRectZero status:ZMBasicPlusStatusLateExtend];
         _panelView.backgroundColor = [UIColor colorWithRed:26.0/255 green:32.0/255 blue:35.0/255 alpha:1];
         _panelView.layer.cornerRadius = 20;
 //        _panelView.delegate = self;

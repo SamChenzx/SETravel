@@ -3,14 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18005A22287D183F00EAFA9C /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */; };
-		18005A29287EA25D00EAFA9C /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A28287EA25D00EAFA9C /* SEPanelView.m */; };
-		18005A2C287EA36F00EAFA9C /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */; };
 		180FE44726E22203000C7121 /* resource.response in Resources */ = {isa = PBXBuildFile; fileRef = 180FE44626E22203000C7121 /* resource.response */; };
+		188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */; };
+		188FCD4B2B075D8A0090E5D3 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */; };
+		188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2D2B075D8A0090E5D3 /* Localizable.strings */; };
+		188FCD4D2B075D8A0090E5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2F2B075D8A0090E5D3 /* InfoPlist.strings */; };
+		188FCD4E2B075D8A0090E5D3 /* SETravel-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD332B075D8A0090E5D3 /* SETravel-Info.plist */; };
+		188FCD4F2B075D8A0090E5D3 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD372B075D8A0090E5D3 /* Main.strings */; };
+		188FCD512B075D8A0090E5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD3D2B075D8A0090E5D3 /* LaunchScreen.storyboard */; };
+		188FCD522B075D8A0090E5D3 /* SESecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD402B075D8A0090E5D3 /* SESecondViewController.m */; };
+		188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD412B075D8A0090E5D3 /* SEViewController.mm */; };
+		188FCD542B075D8A0090E5D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD432B075D8A0090E5D3 /* main.m */; };
+		188FCD552B075D8A0090E5D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD442B075D8A0090E5D3 /* Images.xcassets */; };
+		188FCD562B075D8A0090E5D3 /* SEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD452B075D8A0090E5D3 /* SEAppDelegate.m */; };
+		188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */; };
+		188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */; };
+		188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD792B075F3C0090E5D3 /* SEPanelView.m */; };
 		18A4CD652833B0DD00CAE962 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD642833B0DD00CAE962 /* WidgetKit.framework */; };
 		18A4CD672833B0DD00CAE962 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD662833B0DD00CAE962 /* SwiftUI.framework */; };
 		18A4CD6A2833B0DD00CAE962 /* SEWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD692833B0DD00CAE962 /* SEWidgets.swift */; };
@@ -19,24 +31,17 @@
 		18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
 		18A4CD732833B0DE00CAE962 /* SEWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18B002302834B993006133D3 /* MyMainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0022E2834B819006133D3 /* MyMainWidget.swift */; };
+		18BF58132B079B2C0083C634 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF58112B079B2C0083C634 /* Start.storyboard */; };
 		18CA61B4271FC9D200C8C0F2 /* SENewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA61B3271FC9D200C8C0F2 /* SENewTests.m */; };
+		1D72ED42BBAD26ED9F17C0DE /* libPods-SETravel_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBD3FF02B506EB92812FBFD /* libPods-SETravel_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* SEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SEAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* SEViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SEViewController.mm */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A046BF5800E232143243A608 /* libPods-SETravel_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */; };
-		B64C161CAF82C8B6CC25BC2E /* libPods-SETravel_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */; };
+		8C2D2FE13B65FDC7C7D4A467 /* libPods-SETravel_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AC1075D9470F8252AAD63E /* libPods-SETravel_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +76,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18005A20287D183F00EAFA9C /* SEVideoFiltersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEVideoFiltersViewController.h; sourceTree = "<group>"; };
-		18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
-		18005A27287EA25D00EAFA9C /* SEPanelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SEPanelView.h; path = ../../SEPanelView.h; sourceTree = "<group>"; };
-		18005A28287EA25D00EAFA9C /* SEPanelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SEPanelView.m; path = ../../SEPanelView.m; sourceTree = "<group>"; };
-		18005A2A287EA36F00EAFA9C /* SEPanelBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SEPanelBehavior.h; path = ../../SEPanelBehavior.h; sourceTree = "<group>"; };
-		18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SEPanelBehavior.m; path = ../../SEPanelBehavior.m; sourceTree = "<group>"; };
 		180FE44626E22203000C7121 /* resource.response */ = {isa = PBXFileReference; lastKnownFileType = file; path = resource.response; sourceTree = "<group>"; };
+		188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
+		188FCD2C2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		188FCD2E2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		188FCD302B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		188FCD312B075D8A0090E5D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		188FCD322B075D8A0090E5D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		188FCD332B075D8A0090E5D3 /* SETravel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SETravel-Info.plist"; sourceTree = "<group>"; };
+		188FCD342B075D8A0090E5D3 /* SEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAppDelegate.h; sourceTree = "<group>"; };
+		188FCD352B075D8A0090E5D3 /* SEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
+		188FCD362B075D8A0090E5D3 /* SEDevToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEDevToolViewController.h; sourceTree = "<group>"; };
+		188FCD382B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Base.lproj/zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		188FCD3B2B075D8A0090E5D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Base.lproj/en.lproj/Main.strings; sourceTree = "<group>"; };
+		188FCD3E2B075D8A0090E5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188FCD402B075D8A0090E5D3 /* SESecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESecondViewController.m; sourceTree = "<group>"; };
+		188FCD412B075D8A0090E5D3 /* SEViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SEViewController.mm; sourceTree = "<group>"; };
+		188FCD422B075D8A0090E5D3 /* SEVideoFiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEVideoFiltersViewController.h; sourceTree = "<group>"; };
+		188FCD432B075D8A0090E5D3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188FCD442B075D8A0090E5D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		188FCD452B075D8A0090E5D3 /* SEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAppDelegate.m; sourceTree = "<group>"; };
+		188FCD462B075D8A0090E5D3 /* SETravel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SETravel-Prefix.pch"; sourceTree = "<group>"; };
+		188FCD472B075D8A0090E5D3 /* SESecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESecondViewController.h; sourceTree = "<group>"; };
+		188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDevToolViewController.m; sourceTree = "<group>"; };
+		188FCD492B075D8A0090E5D3 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		188FCD762B075F3C0090E5D3 /* SEPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPanelView.h; sourceTree = "<group>"; };
+		188FCD772B075F3C0090E5D3 /* SEPanelBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPanelBehavior.h; sourceTree = "<group>"; };
+		188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPanelBehavior.m; sourceTree = "<group>"; };
+		188FCD792B075F3C0090E5D3 /* SEPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPanelView.m; sourceTree = "<group>"; };
+		188FCD862B0765E30090E5D3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		188FCD872B0765E30090E5D3 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		188FCD882B0765E30090E5D3 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SEWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4CD642833B0DD00CAE962 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		18A4CD662833B0DD00CAE962 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -87,6 +116,7 @@
 		18A4CD6E2833B0DE00CAE962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETravel_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		18B0022E2834B819006133D3 /* MyMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainWidget.swift; sourceTree = "<group>"; };
+		18BF58122B079B2C0083C634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		18CA61B3271FC9D200C8C0F2 /* SENewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENewTests.m; sourceTree = "<group>"; };
 		18ED076326F2F45B0091A111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,30 +124,18 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* SETravel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SETravel-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* SETravel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETravel-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* SEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* SEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* SEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* SEViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SEViewController.mm; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* SETravel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SETravel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B5BB8715D0B4D12631B228 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.debug.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AC1075D9470F8252AAD63E /* libPods-SETravel_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C358E991F9C3B7AC205735 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EA2395420A8AA63202BE4541 /* SETravel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SETravel.podspec; path = ../SETravel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EEBD3FF02B506EB92812FBFD /* libPods-SETravel_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SETravel_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Example.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +156,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A046BF5800E232143243A608 /* libPods-SETravel_Example.a in Frameworks */,
+				8C2D2FE13B65FDC7C7D4A467 /* libPods-SETravel_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,13 +167,44 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B64C161CAF82C8B6CC25BC2E /* libPods-SETravel_Tests.a in Frameworks */,
+				1D72ED42BBAD26ED9F17C0DE /* libPods-SETravel_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188FCD292B075D8A0090E5D3 /* SETravelMain */ = {
+			isa = PBXGroup;
+			children = (
+				188FCD772B075F3C0090E5D3 /* SEPanelBehavior.h */,
+				188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */,
+				188FCD762B075F3C0090E5D3 /* SEPanelView.h */,
+				188FCD792B075F3C0090E5D3 /* SEPanelView.m */,
+				188FCD422B075D8A0090E5D3 /* SEVideoFiltersViewController.h */,
+				188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */,
+				188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */,
+				188FCD2D2B075D8A0090E5D3 /* Localizable.strings */,
+				188FCD2F2B075D8A0090E5D3 /* InfoPlist.strings */,
+				188FCD332B075D8A0090E5D3 /* SETravel-Info.plist */,
+				188FCD352B075D8A0090E5D3 /* SEViewController.h */,
+				188FCD412B075D8A0090E5D3 /* SEViewController.mm */,
+				188FCD372B075D8A0090E5D3 /* Main.strings */,
+				188FCD3D2B075D8A0090E5D3 /* LaunchScreen.storyboard */,
+				18BF58112B079B2C0083C634 /* Start.storyboard */,
+				188FCD472B075D8A0090E5D3 /* SESecondViewController.h */,
+				188FCD402B075D8A0090E5D3 /* SESecondViewController.m */,
+				188FCD432B075D8A0090E5D3 /* main.m */,
+				188FCD442B075D8A0090E5D3 /* Images.xcassets */,
+				188FCD342B075D8A0090E5D3 /* SEAppDelegate.h */,
+				188FCD452B075D8A0090E5D3 /* SEAppDelegate.m */,
+				188FCD462B075D8A0090E5D3 /* SETravel-Prefix.pch */,
+				188FCD362B075D8A0090E5D3 /* SEDevToolViewController.h */,
+				188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */,
+			);
+			path = SETravelMain;
+			sourceTree = SOURCE_ROOT;
+		};
 		18A4CD682833B0DD00CAE962 /* SEWidgets */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,10 +232,10 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				188FCD292B075D8A0090E5D3 /* SETravelMain */,
 				18ED076326F2F45B0091A111 /* Info.plist */,
 				180FE44626E22203000C7121 /* resource.response */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for SETravel */,
 				6003F5B5195388D20070C39A /* Tests */,
 				18A4CD682833B0DD00CAE962 /* SEWidgets */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -208,49 +257,19 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				188FCD862B0765E30090E5D3 /* AFNetworking.framework */,
+				188FCD872B0765E30090E5D3 /* Masonry.framework */,
+				188FCD882B0765E30090E5D3 /* SSZipArchive.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				D5138426B7FAB82A2F21FBE3 /* libPods-SETravel_Example.a */,
-				BCD95651DF475D92201857C8 /* libPods-SETravel_Tests.a */,
 				18A4CD642833B0DD00CAE962 /* WidgetKit.framework */,
 				18A4CD662833B0DD00CAE962 /* SwiftUI.framework */,
+				D2AC1075D9470F8252AAD63E /* libPods-SETravel_Example.a */,
+				EEBD3FF02B506EB92812FBFD /* libPods-SETravel_Tests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for SETravel */ = {
-			isa = PBXGroup;
-			children = (
-				6003F59C195388D20070C39A /* SEAppDelegate.h */,
-				6003F59D195388D20070C39A /* SEAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* SEViewController.h */,
-				6003F5A6195388D20070C39A /* SEViewController.mm */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-				18005A20287D183F00EAFA9C /* SEVideoFiltersViewController.h */,
-				18005A21287D183F00EAFA9C /* SEVideoFiltersViewController.m */,
-			);
-			name = "Example for SETravel";
-			path = SETravel;
-			sourceTree = "<group>";
-		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F595195388D20070C39A /* SETravel-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* SETravel-Prefix.pch */,
-				18005A27287EA25D00EAFA9C /* SEPanelView.h */,
-				18005A28287EA25D00EAFA9C /* SEPanelView.m */,
-				18005A2A287EA36F00EAFA9C /* SEPanelBehavior.h */,
-				18005A2B287EA36F00EAFA9C /* SEPanelBehavior.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6003F5B5195388D20070C39A /* Tests */ = {
@@ -267,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -308,11 +326,12 @@
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SETravel_Example" */;
 			buildPhases = (
 				ADAE0DB655EC7E38B1877617 /* [CP] Check Pods Manifest.lock */,
+				188FCE352B0789590090E5D3 /* Run Script */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				F24F4939823C268589AA274D /* [CP] Copy Pods Resources */,
 				18A4CD772833B0DE00CAE962 /* Embed App Extensions */,
+				966C9705002DC527F0CCA1E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,6 +368,7 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = SE;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 0720;
@@ -356,11 +376,9 @@
 				TargetAttributes = {
 					18A4CD622833B0DD00CAE962 = {
 						CreatedOnToolsVersion = 13.3;
-						DevelopmentTeam = F9PFPWQX48;
 						ProvisioningStyle = Automatic;
 					};
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = F9PFPWQX48;
 						LastSwiftMigration = 1340;
 					};
 					6003F5AD195388D20070C39A = {
@@ -371,12 +389,13 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "SETravel" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				en,
 				Base,
+				"zh-Hans",
+				en,
+				"en-IN",
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -403,11 +422,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				188FCD4D2B075D8A0090E5D3 /* InfoPlist.strings in Resources */,
+				188FCD4B2B075D8A0090E5D3 /* LaunchScreen.strings in Resources */,
+				18BF58132B079B2C0083C634 /* Start.storyboard in Resources */,
+				188FCD552B075D8A0090E5D3 /* Images.xcassets in Resources */,
+				188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */,
+				188FCD4E2B075D8A0090E5D3 /* SETravel-Info.plist in Resources */,
+				188FCD512B075D8A0090E5D3 /* LaunchScreen.storyboard in Resources */,
 				180FE44726E22203000C7121 /* resource.response in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				188FCD4F2B075D8A0090E5D3 /* Main.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,13 +438,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		188FCE352B0789590090E5D3 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# echo \"666 swift\"\nsource_file=\"/Users/SamChen/Personal Files/Xcode/Products/Debug-iphonesimulator/ZMDevTool/Swift Compatibility Header/ZMDevTool-Swift.h\"\ntarget_file=\"/Users/SamChen/Documents/dev/SETravel/Example/Pods/Headers/Public/ZMDevTool/ZMDevTool-Swift.h\"\nif [ ! -e \"$target_file\" ]; then\n    # 目标文件不存在，创建软链接\n    ln -s \"$source_file\" \"$target_file\"\nelse\n    echo \"Target file already exists, not creating symlink.\"\nfi\n\n";
+		};
+		966C9705002DC527F0CCA1E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ADAE0DB655EC7E38B1877617 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,21 +521,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F24F4939823C268589AA274D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SETravel_Example/Pods-SETravel_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -498,13 +538,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* SEAppDelegate.m in Sources */,
-				18005A29287EA25D00EAFA9C /* SEPanelView.m in Sources */,
-				6003F5A7195388D20070C39A /* SEViewController.mm in Sources */,
-				18005A22287D183F00EAFA9C /* SEVideoFiltersViewController.m in Sources */,
+				188FCD542B075D8A0090E5D3 /* main.m in Sources */,
+				188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */,
 				18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
-				18005A2C287EA36F00EAFA9C /* SEPanelBehavior.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */,
+				188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */,
+				188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */,
+				188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */,
+				188FCD522B075D8A0090E5D3 /* SESecondViewController.m in Sources */,
+				188FCD562B075D8A0090E5D3 /* SEAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,28 +575,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				188FCD2C2B075D8A0090E5D3 /* zh-Hans */,
+				188FCD312B075D8A0090E5D3 /* en */,
+				188FCD492B075D8A0090E5D3 /* en-IN */,
+			);
+			name = LaunchScreen.strings;
+			sourceTree = "<group>";
+		};
+		188FCD2D2B075D8A0090E5D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188FCD2E2B075D8A0090E5D3 /* zh-Hans */,
+				188FCD322B075D8A0090E5D3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		188FCD2F2B075D8A0090E5D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188FCD302B075D8A0090E5D3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+		188FCD372B075D8A0090E5D3 /* Main.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F5B9195388D20070C39A /* en */,
+				188FCD382B075D8A0090E5D3 /* zh-Hans */,
+				188FCD3B2B075D8A0090E5D3 /* en */,
 			);
-			name = InfoPlist.strings;
+			name = Main.strings;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+		188FCD3D2B075D8A0090E5D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				188FCD3E2B075D8A0090E5D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		18BF58112B079B2C0083C634 /* Start.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BF58122B079B2C0083C634 /* Base */,
+			);
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,7 +666,11 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
 				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -638,7 +712,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = WMCB79Z2LT;
+				DEVELOPMENT_TEAM = F9PFPWQX48;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -648,15 +722,20 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
 				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example.SEWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,6 +746,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -714,6 +794,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -752,22 +833,36 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C18C1BA6AA66F6443D0A1874 /* Pods-SETravel_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9PFPWQX48;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravel/SETravel-Prefix.pch";
-				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
+				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravelMain/SETravel-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SETravel\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header\"",
+				);
+				INFOPLIST_FILE = "SETravelMain/SETravel-Info.plist";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = (
 					"-fprofile-instr-generate",
@@ -813,21 +908,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F43B99A9FDB2647FFC818A90 /* Pods-SETravel_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
-				DEVELOPMENT_TEAM = WMCB79Z2LT;
+				DEVELOPMENT_TEAM = F9PFPWQX48;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravel/SETravel-Prefix.pch";
-				INFOPLIST_FILE = "SETravel/SETravel-Info.plist";
+				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravelMain/SETravel-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SETravel\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header\"",
+				);
+				INFOPLIST_FILE = "SETravelMain/SETravel-Info.plist";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_CFLAGS = (
 					"-fprofile-instr-generate",

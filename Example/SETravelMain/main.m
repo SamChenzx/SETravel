@@ -65,11 +65,6 @@
 
 int main(int argc, char * argv[])
 {
-    Child *c = [Child new];
-    [c Two];                            // will call the Two inherited from Parent
-
-//    Parent *p = [Parent new];
-//    [p Two];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([SEAppDelegate class]));
     }

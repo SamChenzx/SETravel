@@ -1,17 +1,19 @@
 #use_frameworks!
-install! 'cocoapods', :disable_input_output_paths => true
+require 'xcodeproj'
+install! 'cocoapods',
+         :disable_input_output_paths => true,
+         :generate_multiple_pod_projects => true
 
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 target 'SETravel_Example' do
   pod 'SETravel', :path => '../'
+  pod 'ZMDevTool', :path => '../'
   pod 'SSZipArchive'
-  pod 'Masonry', '1.1.0'  
-  pod 'AFNetworking', '3.2.1'
+  pod 'Masonry'
+  pod 'AFNetworking'
   target 'SETravel_Tests' do
     inherit! :search_paths
-
-    
   end
   
 #  post_install do |installer_representation|
