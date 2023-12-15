@@ -199,6 +199,7 @@ static NSTimeInterval endTime = 0;
 @property (nonatomic, strong) ZMMultitaskingView *multitaskingView;
 @property (nonatomic, assign) CGFloat lastContentOffset;
 @property (nonatomic, strong) dispatch_source_t timer;
+@property (nonatomic, strong) NSTimer *myTimer;
 @property (nonatomic, strong) UIEditMenuInteraction *editMenuInteraction;
 @property (nonatomic, strong) UIButton *menuButton;
 @property (nonatomic, strong) ZMToolbarButton *toolbarButton;
@@ -384,6 +385,13 @@ static NSTimeInterval endTime = 0;
     self.menuButton.menu = [UIMenu menuWithTitle:@"666" children:[self prepareMenuActions]];
     self.menuButton.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
     [self.view addSubview:self.menuButton];
+    
+    
+    SEObject *lbj = [[SEObject alloc] init];
+    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        lbj.title = @"666";
+    }];
+    [self performSelector:@selector(test) withObject:nil afterDelay:10];
 }
 
 - (void)testThread {
@@ -435,9 +443,13 @@ static NSTimeInterval endTime = 0;
 
 
 - (void)test {
-    SEObjectSub *sub = [[SEObjectSub alloc] init];
+    if (self.myTimer) {
+        [self.myTimer invalidate];
+//        self.myTimer = nil;
+    }
+//    SEObjectSub *sub = [[SEObjectSub alloc] init];
 //    sub.mString = [[NSMutableString alloc] initWithString:@"70j"];
-    sub.mArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", nil];
+//    sub.mArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", nil];
 //    sub.obj = [[SEObject alloc] init];
 //    sub.protocolObj = [[SEProtocolObj alloc] init];
 //    [sub.protocolObj print666];

@@ -33,6 +33,7 @@
 		18B002302834B993006133D3 /* MyMainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0022E2834B819006133D3 /* MyMainWidget.swift */; };
 		18BF58132B079B2C0083C634 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF58112B079B2C0083C634 /* Start.storyboard */; };
 		18CA61B4271FC9D200C8C0F2 /* SENewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA61B3271FC9D200C8C0F2 /* SENewTests.m */; };
+		18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */; };
 		1D72ED42BBAD26ED9F17C0DE /* libPods-SETravel_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBD3FF02B506EB92812FBFD /* libPods-SETravel_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -118,6 +119,8 @@
 		18B0022E2834B819006133D3 /* MyMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainWidget.swift; sourceTree = "<group>"; };
 		18BF58122B079B2C0083C634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		18CA61B3271FC9D200C8C0F2 /* SENewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENewTests.m; sourceTree = "<group>"; };
+		18CAB1482B207337005EA2F5 /* SEAnnoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAnnoViewController.h; sourceTree = "<group>"; };
+		18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAnnoViewController.m; sourceTree = "<group>"; };
 		18ED076326F2F45B0091A111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SETravel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETravel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +235,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				18CAB1482B207337005EA2F5 /* SEAnnoViewController.h */,
+				18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */,
 				188FCD292B075D8A0090E5D3 /* SETravelMain */,
 				18ED076326F2F45B0091A111 /* Info.plist */,
 				180FE44626E22203000C7121 /* resource.response */,
@@ -544,6 +549,7 @@
 				188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */,
 				188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */,
 				188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */,
+				18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */,
 				188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */,
 				188FCD522B075D8A0090E5D3 /* SESecondViewController.m in Sources */,
 				188FCD562B075D8A0090E5D3 /* SEAppDelegate.m in Sources */,
@@ -965,7 +971,7 @@
 					"-fcoverage-mapping",
 					"-fprofile-instr-generate",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "sam.cocoapods.demo.--PRODUCT-NAME-rfc1034identifier-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SEObject : NSObject
 
+@property (nonatomic, copy) NSString *title;
+
 - (void)show;
 - (void)calculate;
 - (BOOL)isPositive:(NSInteger)num;
