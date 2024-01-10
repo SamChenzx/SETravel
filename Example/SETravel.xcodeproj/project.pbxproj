@@ -78,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		180FE44626E22203000C7121 /* resource.response */ = {isa = PBXFileReference; lastKnownFileType = file; path = resource.response; sourceTree = "<group>"; };
+		183346572B42F893004E9F77 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
 		188FCD2C2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		188FCD2E2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				183346572B42F893004E9F77 /* Location.gpx */,
 				18CAB1482B207337005EA2F5 /* SEAnnoViewController.h */,
 				18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */,
 				188FCD292B075D8A0090E5D3 /* SETravelMain */,

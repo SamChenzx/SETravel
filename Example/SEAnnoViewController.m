@@ -28,8 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.devButton];
-    [self.devButton setFrame:CGRectMake(100, 100, 100, 100)];
     self.safeAreaGuideView = [[UIView alloc] initWithFrame:CGRectZero];
     self.safeAreaGuideView.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.3];
     self.safeAreaGuideView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -46,6 +44,8 @@
     NSLayoutConstraint *height = [self.annoButton.heightAnchor constraintEqualToConstant:100];
     [NSLayoutConstraint activateConstraints:@[self.annoBarX, self.annoBarY, width, height]];
     [self.annoButton addGestureRecognizer:self.panGesture];
+    [self.view addSubview:self.devButton];
+    [self.devButton setFrame:CGRectMake(100, 300, 100, 100)];
     // Do any additional setup after loading the view.
 }
 
@@ -89,9 +89,10 @@
 
 - (void)didTapButton:(UIButton *)button {
     ZMDevToolViewController *vc = [[ZMDevToolViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:^{
-        NSLog(@"Sam dev: %s", __FUNCTION__);
-    }];
+//    [self presentViewController:vc animated:YES completion:^{
+//        NSLog(@"Sam dev: %s", __FUNCTION__);
+//    }];
+    self.devButton.transform = CGAffineTransformMakeTranslation(0, -200);
 }
 
 - (CGPoint)centerOfAnnoButton {

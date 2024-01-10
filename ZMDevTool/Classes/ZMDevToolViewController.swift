@@ -10,6 +10,16 @@ import CoreMotion
 
 let ZMDTCellIdentifier = "ZMDTCellIdentifier"
 
+struct DragonFirePosition {
+    var x:Int64
+    var y:Int32
+}
+
+struct DragonHomePosition {
+    var y:Int32
+    var x:Int64
+}
+
 @objcMembers
 open class ZMDevToolViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -27,6 +37,9 @@ open class ZMDevToolViewController: UIViewController, UITableViewDelegate, UITab
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow.withAlphaComponent(0.5)
+        let fire = MemoryLayout<DragonFirePosition>.size
+        let home = MemoryLayout<DragonHomePosition>.size
+        print("fire = \(fire) stride = \(MemoryLayout<DragonFirePosition>.stride), home = \(home) stride = \(MemoryLayout<DragonHomePosition>.stride)")
     }
     
     
