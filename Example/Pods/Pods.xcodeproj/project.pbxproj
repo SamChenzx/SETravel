@@ -20,13 +20,6 @@
 			remoteGlobalIDString = B561AD1B13C486A61C9BF66B4E6D8F89;
 			remoteInfo = AFNetworking;
 		};
-		622B711D7A6727A6DE798C2DA735263A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE7A530F1BFF6AEC502ED8C3AFCC183D /* ZMDevTool.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F6739F18D38ACD91F0A65BE9E7FD349;
-			remoteInfo = ZMDevTool;
-		};
 		AC30E1F02780F8E8E3AFA3910C4D20BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8C8EC12C42FEBA8DC8EDC16D002D183 /* SSZipArchive.xcodeproj */;
@@ -47,6 +40,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 38A8B722860C6AD5DABBFD048990C1F6;
 			remoteInfo = SETravel;
+		};
+		CBFAC6309703D97212C39D12853C6193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7A530F1BFF6AEC502ED8C3AFCC183D /* ZMDevTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F6739F18D38ACD91F0A65BE9E7FD349;
+			remoteInfo = ZMDevTool;
 		};
 		ECDF55A9B3C2357459AEC63D3DFC400F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -238,7 +238,7 @@
 				415096F8CF616F327105ACAC19E00B41 /* PBXTargetDependency */,
 				37A046CB4451CA0594196349C90ABD56 /* PBXTargetDependency */,
 				627B07314F2C0CA80854E3027B3B287C /* PBXTargetDependency */,
-				9EF65D4E9F1C5D0237E32D7DE821DE46 /* PBXTargetDependency */,
+				D2138C425295D09579A1DEE8FE4042C1 /* PBXTargetDependency */,
 			);
 			name = "Pods-SETravel_Example";
 			productName = "Pods-SETravel_Example";
@@ -336,10 +336,10 @@
 			target = 6D8544A4AFD017BDA2E92B151AEA2F98 /* Pods-SETravel_Example */;
 			targetProxy = C6012F346C65747A92EEA37A9590DC9D /* PBXContainerItemProxy */;
 		};
-		9EF65D4E9F1C5D0237E32D7DE821DE46 /* PBXTargetDependency */ = {
+		D2138C425295D09579A1DEE8FE4042C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZMDevTool;
-			targetProxy = 622B711D7A6727A6DE798C2DA735263A /* PBXContainerItemProxy */;
+			targetProxy = CBFAC6309703D97212C39D12853C6193 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

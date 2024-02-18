@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180EED2A2B6E8BC4005471CD /* ZMDTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EED292B6E8BC4005471CD /* ZMDTCell.swift */; };
 		180FE44726E22203000C7121 /* resource.response in Resources */ = {isa = PBXBuildFile; fileRef = 180FE44626E22203000C7121 /* resource.response */; };
+		181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 181E284E2B735EAB001AB09A /* SEtestCPP.cpp */; };
 		188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */; };
 		188FCD4B2B075D8A0090E5D3 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */; };
 		188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2D2B075D8A0090E5D3 /* Localizable.strings */; };
@@ -77,7 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180EED292B6E8BC4005471CD /* ZMDTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMDTCell.swift; sourceTree = "<group>"; };
 		180FE44626E22203000C7121 /* resource.response */ = {isa = PBXFileReference; lastKnownFileType = file; path = resource.response; sourceTree = "<group>"; };
+		181E284E2B735EAB001AB09A /* SEtestCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SEtestCPP.cpp; sourceTree = "<group>"; };
+		181E284F2B735EAB001AB09A /* SEtestCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SEtestCPP.hpp; sourceTree = "<group>"; };
 		183346572B42F893004E9F77 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
 		188FCD2C2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -178,9 +183,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180EED282B6E8BA8005471CD /* ZMDevTool */ = {
+			isa = PBXGroup;
+			children = (
+				180EED292B6E8BC4005471CD /* ZMDTCell.swift */,
+			);
+			path = ZMDevTool;
+			sourceTree = "<group>";
+		};
 		188FCD292B075D8A0090E5D3 /* SETravelMain */ = {
 			isa = PBXGroup;
 			children = (
+				180EED282B6E8BA8005471CD /* ZMDevTool */,
 				188FCD772B075F3C0090E5D3 /* SEPanelBehavior.h */,
 				188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */,
 				188FCD762B075F3C0090E5D3 /* SEPanelView.h */,
@@ -205,6 +219,8 @@
 				188FCD462B075D8A0090E5D3 /* SETravel-Prefix.pch */,
 				188FCD362B075D8A0090E5D3 /* SEDevToolViewController.h */,
 				188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */,
+				181E284E2B735EAB001AB09A /* SEtestCPP.cpp */,
+				181E284F2B735EAB001AB09A /* SEtestCPP.hpp */,
 			);
 			path = SETravelMain;
 			sourceTree = SOURCE_ROOT;
@@ -467,7 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# echo \"666 swift\"\nsource_file=\"/Users/SamChen/Personal Files/Xcode/Products/Debug-iphonesimulator/ZMDevTool/Swift Compatibility Header/ZMDevTool-Swift.h\"\ntarget_file=\"/Users/SamChen/Documents/dev/SETravel/Example/Pods/Headers/Public/ZMDevTool/ZMDevTool-Swift.h\"\nif [ ! -e \"$target_file\" ]; then\n    # 目标文件不存在，创建软链接\n    ln -s \"$source_file\" \"$target_file\"\nelse\n    echo \"Target file already exists, not creating symlink.\"\nfi\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# echo \"666 swift\"\nsource_file=\"$CONFIGURATION_BUILD_DIR/ZMDevTool/Swift Compatibility Header/ZMDevTool-Swift.h\"\ntarget_file=\"${PODS_ROOT}/Headers/Public/ZMDevTool/ZMDevTool-Swift.h\"\nrm \"$target_file\"\nif [[ ! -e \"$target_file\" ]]; then\n    # 目标文件不存在，创建软链接\n    ln -s \"$source_file\" \"$target_file\"\nelse\n    echo \"Target file already exists, not creating symlink.\"\nfi\n\n";
 		};
 		966C9705002DC527F0CCA1E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -546,6 +562,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				188FCD542B075D8A0090E5D3 /* main.m in Sources */,
+				181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */,
+				180EED2A2B6E8BC4005471CD /* ZMDTCell.swift in Sources */,
 				188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */,
 				18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
 				188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */,
@@ -843,6 +861,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -918,6 +937,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
 				DEVELOPMENT_TEAM = F9PFPWQX48;
@@ -989,6 +1009,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F9PFPWQX48;
@@ -1040,6 +1061,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WMCB79Z2LT;
