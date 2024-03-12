@@ -25,14 +25,7 @@
 		188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */; };
 		188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */; };
 		188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD792B075F3C0090E5D3 /* SEPanelView.m */; };
-		18A4CD652833B0DD00CAE962 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD642833B0DD00CAE962 /* WidgetKit.framework */; };
-		18A4CD672833B0DD00CAE962 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4CD662833B0DD00CAE962 /* SwiftUI.framework */; };
-		18A4CD6A2833B0DD00CAE962 /* SEWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD692833B0DD00CAE962 /* SEWidgets.swift */; };
-		18A4CD6D2833B0DE00CAE962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */; };
-		18A4CD6F2833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
 		18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
-		18A4CD732833B0DE00CAE962 /* SEWidgetsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		18B002302834B993006133D3 /* MyMainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0022E2834B819006133D3 /* MyMainWidget.swift */; };
 		18BF58132B079B2C0083C634 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF58112B079B2C0083C634 /* Start.storyboard */; };
 		18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243572BA18F690095CD82 /* DevToolModel.swift */; };
 		18C2435A2BA197E50095CD82 /* DevToolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243592BA197E50095CD82 /* DevToolType.swift */; };
@@ -53,13 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18A4CD712833B0DE00CAE962 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18A4CD622833B0DD00CAE962;
-			remoteInfo = SEWidgetsExtension;
-		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -76,7 +62,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				18A4CD732833B0DE00CAE962 /* SEWidgetsExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +104,6 @@
 		188FCD862B0765E30090E5D3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188FCD872B0765E30090E5D3 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188FCD882B0765E30090E5D3 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SEWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4CD642833B0DD00CAE962 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		18A4CD662833B0DD00CAE962 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		18A4CD692833B0DD00CAE962 /* SEWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEWidgets.swift; sourceTree = "<group>"; };
@@ -159,15 +143,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18A4CD602833B0DD00CAE962 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4CD672833B0DD00CAE962 /* SwiftUI.framework in Frameworks */,
-				18A4CD652833B0DD00CAE962 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,7 +270,6 @@
 			children = (
 				6003F58A195388D20070C39A /* SETravel_Example.app */,
 				6003F5AE195388D20070C39A /* SETravel_Tests.xctest */,
-				18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,23 +324,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18A4CD742833B0DE00CAE962 /* Build configuration list for PBXNativeTarget "SEWidgetsExtension" */;
-			buildPhases = (
-				18A4CD5F2833B0DD00CAE962 /* Sources */,
-				18A4CD602833B0DD00CAE962 /* Frameworks */,
-				18A4CD612833B0DD00CAE962 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SEWidgetsExtension;
-			productName = SEWidgetsExtension;
-			productReference = 18A4CD632833B0DD00CAE962 /* SEWidgetsExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		6003F589195388D20070C39A /* SETravel_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SETravel_Example" */;
@@ -382,7 +339,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				18A4CD722833B0DE00CAE962 /* PBXTargetDependency */,
 			);
 			name = SETravel_Example;
 			productName = SETravel;
@@ -420,10 +376,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chenzhixiang;
 				TargetAttributes = {
-					18A4CD622833B0DD00CAE962 = {
-						CreatedOnToolsVersion = 13.3;
-						ProvisioningStyle = Automatic;
-					};
 					6003F589195388D20070C39A = {
 						LastSwiftMigration = 1340;
 					};
@@ -450,20 +402,11 @@
 			targets = (
 				6003F589195388D20070C39A /* SETravel_Example */,
 				6003F5AD195388D20070C39A /* SETravel_Tests */,
-				18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18A4CD612833B0DD00CAE962 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18A4CD6D2833B0DE00CAE962 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,16 +513,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18A4CD5F2833B0DD00CAE962 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18B002302834B993006133D3 /* MyMainWidget.swift in Sources */,
-				18A4CD6F2833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
-				18A4CD6A2833B0DD00CAE962 /* SEWidgets.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,11 +549,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18A4CD722833B0DE00CAE962 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18A4CD622833B0DD00CAE962 /* SEWidgetsExtension */;
-			targetProxy = 18A4CD712833B0DE00CAE962 /* PBXContainerItemProxy */;
-		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* SETravel_Example */;
@@ -684,117 +612,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		18A4CD752833B0DE00CAE962 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = F9PFPWQX48;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SEWidgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SEWidgets;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
-				INTENTS_CODEGEN_LANGUAGE = Swift;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example.SEWidgets";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		18A4CD762833B0DE00CAE962 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = F9PFPWQX48;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SEWidgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SEWidgets;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 chenzhixiang. All rights reserved.";
-				INTENTS_CODEGEN_LANGUAGE = Swift;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SETravel-Example.SEWidgets";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1136,15 +953,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18A4CD742833B0DE00CAE962 /* Build configuration list for PBXNativeTarget "SEWidgetsExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18A4CD752833B0DE00CAE962 /* Debug */,
-				18A4CD762833B0DE00CAE962 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "SETravel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
