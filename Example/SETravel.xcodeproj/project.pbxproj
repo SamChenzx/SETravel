@@ -898,7 +898,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravelMain/SETravel-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SETravelMain/SETravel-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -973,7 +973,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/SamChen/Documents/dev/SETravel/Example/SETravelMain/SETravel-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SETravelMain/SETravel-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
