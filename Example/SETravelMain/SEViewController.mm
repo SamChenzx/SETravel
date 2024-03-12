@@ -316,7 +316,9 @@ static NSTimeInterval endTime = 0;
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
     NSLog(@"Sam dev: %s %@", __FUNCTION__, indexPath);
-    [self reloadItems];
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    cell.alpha = 0.2;
+//    [self reloadItems];
 //    CGRect frame = [collectionView cellForItemAtIndexPath:indexPath].frame;
 //    frame = [collectionView convertRect:frame toView:self.view];
 //    self.menuButton.frame = frame;

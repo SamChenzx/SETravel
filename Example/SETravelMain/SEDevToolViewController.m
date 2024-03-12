@@ -37,6 +37,9 @@
 }
 
 - (void)didTapButton:(UIButton *)button {
+    UIViewController *vc = [[ZMDTCellView new] makeMainView];
+    [self presentViewController:vc animated:YES completion:nil];
+    return;
     self.landscape = !self.landscape;
     [self setNeedsUpdateOfSupportedInterfaceOrientations];
 //    [self setOrientation:UIDeviceOrientationLandscapeLeft force:YES];
@@ -85,8 +88,6 @@
         return;
     }
 #endif
-    
-    [currentDevice setValue:[NSNumber numberWithInt:orientation] forKey:@"orientation"];
 }
 
 - (UIWindowScene*)mainWindowScene API_AVAILABLE(ios(13.0))
