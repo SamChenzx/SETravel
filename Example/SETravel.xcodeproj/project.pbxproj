@@ -30,11 +30,12 @@
 		18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243572BA18F690095CD82 /* DevToolModel.swift */; };
 		18C2435A2BA197E50095CD82 /* DevToolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243592BA197E50095CD82 /* DevToolType.swift */; };
 		18C2435C2BA19B620095CD82 /* DevToolStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435B2BA19B620095CD82 /* DevToolStore.swift */; };
-		18C2435E2BA19E0D0095CD82 /* DevToolBusinesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435D2BA19E0D0095CD82 /* DevToolBusinesses.swift */; };
-		18C243602BA19E310095CD82 /* DevToolModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435F2BA19E310095CD82 /* DevToolModules.swift */; };
+		18C2435E2BA19E0D0095CD82 /* DevToolBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */; };
+		18C243602BA19E310095CD82 /* DevToolModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435F2BA19E310095CD82 /* DevToolModule.swift */; };
 		18CA61B4271FC9D200C8C0F2 /* SENewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA61B3271FC9D200C8C0F2 /* SENewTests.m */; };
 		18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */; };
 		1D72ED42BBAD26ED9F17C0DE /* libPods-SETravel_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBD3FF02B506EB92812FBFD /* libPods-SETravel_Tests.a */; };
+		22E5282C2BA1F85500DA15B8 /* AnyDevToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5282B2BA1F85500DA15B8 /* AnyDevToolModel.swift */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -116,13 +117,14 @@
 		18C243572BA18F690095CD82 /* DevToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModel.swift; sourceTree = "<group>"; };
 		18C243592BA197E50095CD82 /* DevToolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolType.swift; sourceTree = "<group>"; };
 		18C2435B2BA19B620095CD82 /* DevToolStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolStore.swift; sourceTree = "<group>"; };
-		18C2435D2BA19E0D0095CD82 /* DevToolBusinesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolBusinesses.swift; sourceTree = "<group>"; };
-		18C2435F2BA19E310095CD82 /* DevToolModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModules.swift; sourceTree = "<group>"; };
+		18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolBusiness.swift; sourceTree = "<group>"; };
+		18C2435F2BA19E310095CD82 /* DevToolModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModule.swift; sourceTree = "<group>"; };
 		18CA61B3271FC9D200C8C0F2 /* SENewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SENewTests.m; sourceTree = "<group>"; };
 		18CAB1482B207337005EA2F5 /* SEAnnoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAnnoViewController.h; sourceTree = "<group>"; };
 		18CAB1492B207337005EA2F5 /* SEAnnoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAnnoViewController.m; sourceTree = "<group>"; };
 		18ED076326F2F45B0091A111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SETravel_Tests.release.xcconfig"; path = "Target Support Files/Pods-SETravel_Tests/Pods-SETravel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		22E5282B2BA1F85500DA15B8 /* AnyDevToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDevToolModel.swift; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SETravel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETravel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -230,8 +232,9 @@
 				18C243572BA18F690095CD82 /* DevToolModel.swift */,
 				18C243592BA197E50095CD82 /* DevToolType.swift */,
 				18C2435B2BA19B620095CD82 /* DevToolStore.swift */,
-				18C2435D2BA19E0D0095CD82 /* DevToolBusinesses.swift */,
-				18C2435F2BA19E310095CD82 /* DevToolModules.swift */,
+				18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */,
+				18C2435F2BA19E310095CD82 /* DevToolModule.swift */,
+				22E5282B2BA1F85500DA15B8 /* AnyDevToolModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -519,12 +522,13 @@
 			files = (
 				188FCD542B075D8A0090E5D3 /* main.m in Sources */,
 				18C2435A2BA197E50095CD82 /* DevToolType.swift in Sources */,
-				18C243602BA19E310095CD82 /* DevToolModules.swift in Sources */,
+				18C243602BA19E310095CD82 /* DevToolModule.swift in Sources */,
 				181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */,
-				18C2435E2BA19E0D0095CD82 /* DevToolBusinesses.swift in Sources */,
+				18C2435E2BA19E0D0095CD82 /* DevToolBusiness.swift in Sources */,
 				180EED2A2B6E8BC4005471CD /* ZMDTCell.swift in Sources */,
 				188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */,
 				18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
+				22E5282C2BA1F85500DA15B8 /* AnyDevToolModel.swift in Sources */,
 				18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */,
 				188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */,
 				188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */,

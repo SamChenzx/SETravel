@@ -8,8 +8,8 @@
 
 import Foundation
 
-public Protocol DevToolType {
-    static let dataType: DevToolDataType { get }
+public protocol DevToolType {
+    static var dataType: DevToolDataType { get }
 }
 
 public enum DevToolDataType {

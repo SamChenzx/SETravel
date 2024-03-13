@@ -14,7 +14,7 @@ public struct DevToolModel<T: DevToolType> {
     let featureName: String
     let defaultValue: T
     
-    init(businessName: String, moduleName: String, featureName: String, defaultValue: DevToolType) {
+    init(businessName: String, moduleName: String, featureName: String, defaultValue: T) {
         self.businessName = businessName
         self.moduleName = moduleName
         self.featureName = featureName
