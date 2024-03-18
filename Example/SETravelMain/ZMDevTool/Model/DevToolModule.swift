@@ -10,7 +10,7 @@ import Foundation
 
 internal struct DevToolModule {
     let title: String
-    var models: [String: DevToolModel<DevToolType>] = [:]
+    var models: [String: AnyDevToolModel] = [:]
 
     init(title: String) {
         self.title = title
@@ -18,7 +18,7 @@ internal struct DevToolModule {
 }
 
 extension DevToolModule {
-    internal var sortedModels: [DevToolModel<DevToolType>] {
+    internal var sortedModels: [AnyDevToolModel] {
         return models.sorted { $0.0 < $1.0 }.map { return $0.1 }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ZMDTCell.swift
+//  DevToolCell.swift
 //  SETravel_Example
 //
 //  Created by Sam Chen on 2/3/24.
@@ -9,13 +9,14 @@
 import SwiftUI
 
 @objcMembers
-class ZMDTCellView: NSObject {
+class DevToolCellView: NSObject {
     func makeMainView() -> UIViewController {
-        return UIHostingController(rootView: ZMDTCell())
+        return UIHostingController(rootView: DevToolCell())
     }
+    
 }
 
-struct ZMDTCell: View {
+struct DevToolCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
@@ -51,5 +52,5 @@ struct ZMDTCell: View {
 }
 
 #Preview {
-    ZMDTCell()
+    DevToolCell()
 }

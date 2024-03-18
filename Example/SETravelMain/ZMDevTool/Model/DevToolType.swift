@@ -23,6 +23,6 @@ public enum DevToolDataType {
     case action
     
     public static let allTypes: [DevToolDataType] = [
-        .boolean, .integer, .float, .action, .double, .color, .string, .stringList
+        .boolean, .integer, .float, .double, .color, .string, .stringList, .action
     ]
 }

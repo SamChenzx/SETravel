@@ -10,7 +10,7 @@ import Foundation
 
 internal struct DevToolBusiness {
     let title: String
-    var businesses: [String: TweakGroup] = [:]
+    var modules: [String: DevToolModule] = [:]
 
     init(title: String) {
         self.title = title
