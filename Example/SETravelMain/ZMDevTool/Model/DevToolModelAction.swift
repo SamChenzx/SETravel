@@ -10,7 +10,7 @@ import Foundation
 
 public typealias ModelActionClosure = () -> Void
 
-public class DevToolModelAction {
+public class ModelAction {
     public enum Error: Swift.Error {
         case wrongIdentifier
     }
@@ -35,26 +35,29 @@ public class DevToolModelAction {
         }
         closures[identifier] = nil
     }
-    
-    // MARK: Internal
-    
-    func evaluateAllClosures() {
+        
+    func executeAllClosures() {
         closures.keys.sorted().forEach { closures[$0]?() }
     }
 }
 
-extension DevToolModel where T == DevToolModelAction {
-    
+extension ModelAction: BaseType {
+    public static var dataType: DataType {
+        return .action
+    }
+}
+
+extension DevToolModel where T == ModelAction {
     public init(_ businessName: String, _ moduleName: String, _ featureName: String) {
-        self.init(businessName, moduleName, featureName, DevToolModelAction())
+        self.init(businessName, moduleName, featureName, ModelAction())
     }
     
     @discardableResult
-    public func addClosure(_ closure: @escaping ModelActionClosure) -> DevToolModelAction.ClosureIdentifier {
+    public func addClosure(_ closure: @escaping ModelActionClosure) -> ModelAction.ClosureIdentifier {
         return defaultValue.addClosure(closure)
     }
     
-    public func removeClosure(with identifier: DevToolModelAction.ClosureIdentifier) throws {
+    public func removeClosure(with identifier: ModelAction.ClosureIdentifier) throws {
         try defaultValue.removeClosure(withIdentifier: identifier)
     }
 }

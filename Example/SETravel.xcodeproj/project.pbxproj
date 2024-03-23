@@ -14,7 +14,6 @@
 		188FCD4B2B075D8A0090E5D3 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */; };
 		188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2D2B075D8A0090E5D3 /* Localizable.strings */; };
 		188FCD4D2B075D8A0090E5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2F2B075D8A0090E5D3 /* InfoPlist.strings */; };
-		188FCD4E2B075D8A0090E5D3 /* SETravel-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD332B075D8A0090E5D3 /* SETravel-Info.plist */; };
 		188FCD4F2B075D8A0090E5D3 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD372B075D8A0090E5D3 /* Main.strings */; };
 		188FCD512B075D8A0090E5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD3D2B075D8A0090E5D3 /* LaunchScreen.storyboard */; };
 		188FCD522B075D8A0090E5D3 /* SESecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD402B075D8A0090E5D3 /* SESecondViewController.m */; };
@@ -26,9 +25,11 @@
 		188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */; };
 		188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD792B075F3C0090E5D3 /* SEPanelView.m */; };
 		18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
+		18B9FC192BAD647C00FCF665 /* ModelPersistency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9FC182BAD647C00FCF665 /* ModelPersistency.swift */; };
+		18B9FC1D2BAE6DFA00FCF665 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */; };
 		18BF58132B079B2C0083C634 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF58112B079B2C0083C634 /* Start.storyboard */; };
 		18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243572BA18F690095CD82 /* DevToolModel.swift */; };
-		18C2435A2BA197E50095CD82 /* DevToolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243592BA197E50095CD82 /* DevToolType.swift */; };
+		18C2435A2BA197E50095CD82 /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C243592BA197E50095CD82 /* BaseType.swift */; };
 		18C2435C2BA19B620095CD82 /* DevToolStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435B2BA19B620095CD82 /* DevToolStore.swift */; };
 		18C2435E2BA19E0D0095CD82 /* DevToolBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */; };
 		18C243602BA19E310095CD82 /* DevToolModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2435F2BA19E310095CD82 /* DevToolModule.swift */; };
@@ -58,14 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		18A4CD772833B0DE00CAE962 /* Embed App Extensions */ = {
+		18A4CD772833B0DE00CAE962 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -114,9 +115,11 @@
 		18A4CD6E2833B0DE00CAE962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETravel_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		18B0022E2834B819006133D3 /* MyMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainWidget.swift; sourceTree = "<group>"; };
+		18B9FC182BAD647C00FCF665 /* ModelPersistency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPersistency.swift; sourceTree = "<group>"; };
+		18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
 		18BF58122B079B2C0083C634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		18C243572BA18F690095CD82 /* DevToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModel.swift; sourceTree = "<group>"; };
-		18C243592BA197E50095CD82 /* DevToolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolType.swift; sourceTree = "<group>"; };
+		18C243592BA197E50095CD82 /* BaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
 		18C2435B2BA19B620095CD82 /* DevToolStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolStore.swift; sourceTree = "<group>"; };
 		18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolBusiness.swift; sourceTree = "<group>"; };
 		18C2435F2BA19E310095CD82 /* DevToolModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModule.swift; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 		180EED282B6E8BA8005471CD /* ZMDevTool */ = {
 			isa = PBXGroup;
 			children = (
+				18B9FC1B2BAE6DE800FCF665 /* Util */,
 				18C243562BA18F3B0095CD82 /* Model */,
 				180EED292B6E8BC4005471CD /* DevToolCell.swift */,
 			);
@@ -228,16 +232,25 @@
 			path = SEWidgets;
 			sourceTree = "<group>";
 		};
+		18B9FC1B2BAE6DE800FCF665 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		18C243562BA18F3B0095CD82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				18C243572BA18F690095CD82 /* DevToolModel.swift */,
-				18C243592BA197E50095CD82 /* DevToolType.swift */,
+				18C243592BA197E50095CD82 /* BaseType.swift */,
 				18C2435B2BA19B620095CD82 /* DevToolStore.swift */,
 				18C2435D2BA19E0D0095CD82 /* DevToolBusiness.swift */,
 				18C2435F2BA19E310095CD82 /* DevToolModule.swift */,
 				22E5282B2BA1F85500DA15B8 /* AnyDevToolModel.swift */,
 				18C243762BA449370095CD82 /* DevToolModelAction.swift */,
+				18B9FC182BAD647C00FCF665 /* ModelPersistency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,7 +352,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				18A4CD772833B0DE00CAE962 /* Embed App Extensions */,
+				18A4CD772833B0DE00CAE962 /* Embed Foundation Extensions */,
 				966C9705002DC527F0CCA1E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -379,11 +392,11 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = SE;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = chenzhixiang;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						LastSwiftMigration = 1340;
+						LastSwiftMigration = "";
 					};
 					6003F5AD195388D20070C39A = {
 						DevelopmentTeam = F9PFPWQX48;
@@ -422,7 +435,6 @@
 				18BF58132B079B2C0083C634 /* Start.storyboard in Resources */,
 				188FCD552B075D8A0090E5D3 /* Images.xcassets in Resources */,
 				188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */,
-				188FCD4E2B075D8A0090E5D3 /* SETravel-Info.plist in Resources */,
 				188FCD512B075D8A0090E5D3 /* LaunchScreen.storyboard in Resources */,
 				180FE44726E22203000C7121 /* resource.response in Resources */,
 				188FCD4F2B075D8A0090E5D3 /* Main.strings in Resources */,
@@ -455,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# echo \"666 swift\"\nsource_file=\"$CONFIGURATION_BUILD_DIR/ZMDevTool/Swift Compatibility Header/ZMDevTool-Swift.h\"\ntarget_file=\"${PODS_ROOT}/Headers/Public/ZMDevTool/ZMDevTool-Swift.h\"\nrm \"$target_file\"\nif [[ ! -e \"$target_file\" ]]; then\n    # 目标文件不存在，创建软链接\n    ln -s \"$source_file\" \"$target_file\"\nelse\n    echo \"Target file already exists, not creating symlink.\"\nfi\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# echo \"666 swift\"\nsource_file=\"$CONFIGURATION_BUILD_DIR/ZMDevTool/Swift Compatibility Header/ZMDevTool-Swift.h\"\ntarget_file=\"${PODS_ROOT}/Headers/Public/ZMDevTool/ZMDevTool-Swift.h\"\nrm \"$target_file\"\necho \"$source_file\"\nif [[ ! -e \"$target_file\" ]]; then\n    # 目标文件不存在，创建软链接\n    ln -s \"$source_file\" \"$target_file\"\nelse\n    echo \"Target file already exists, not creating symlink.\"\nfi\n\n";
 		};
 		966C9705002DC527F0CCA1E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -524,7 +536,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				188FCD542B075D8A0090E5D3 /* main.m in Sources */,
-				18C2435A2BA197E50095CD82 /* DevToolType.swift in Sources */,
+				18B9FC1D2BAE6DFA00FCF665 /* Clip.swift in Sources */,
+				18C2435A2BA197E50095CD82 /* BaseType.swift in Sources */,
 				18C243602BA19E310095CD82 /* DevToolModule.swift in Sources */,
 				181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */,
 				18C2435E2BA19E0D0095CD82 /* DevToolBusiness.swift in Sources */,
@@ -538,6 +551,7 @@
 				188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */,
 				18C243772BA449370095CD82 /* DevToolModelAction.swift in Sources */,
 				18C2435C2BA19B620095CD82 /* DevToolStore.swift in Sources */,
+				18B9FC192BAD647C00FCF665 /* ModelPersistency.swift in Sources */,
 				18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */,
 				188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */,
 				188FCD522B075D8A0090E5D3 /* SESecondViewController.m in Sources */,
@@ -624,26 +638,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -657,7 +685,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = /Users/samchen/Desktop/SETravel/Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-fcoverage-mapping",
@@ -672,37 +700,52 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = (
 					"-fcoverage-mapping",
 					"-fprofile-instr-generate",
 				);
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -719,6 +762,7 @@
 				COMPILER_INDEX_STORE_ENABLE = Default;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = F9PFPWQX48;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -794,6 +838,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMPILER_INDEX_STORE_ENABLE = Default;
 				DEVELOPMENT_TEAM = F9PFPWQX48;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -863,7 +908,6 @@
 			baseConfigurationReference = AADDF047A46F4777DC7AD20E /* Pods-SETravel_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F9PFPWQX48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -915,7 +959,6 @@
 			baseConfigurationReference = 20816CCDC09ADCFCF341AB0A /* Pods-SETravel_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = WMCB79Z2LT;
 				FRAMEWORK_SEARCH_PATHS = (

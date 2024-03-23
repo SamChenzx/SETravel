@@ -9,16 +9,16 @@
 import Foundation
 import SwiftUI
 
-public struct AnyDevToolModel: AnyModel {
-    public let model: AnyModel
+public struct AnyDevToolModel: ModelType {
+    public let model: ModelType
 
     public var businessName: String { return model.businessName }
     public var moduleName: String { return model.moduleName }
     public var featureName: String { return model.featureName }
 
-    public var defaultData: DefaultData { return model.defaultData }
+    public var defaultData: ModelDefaultData { return model.defaultData }
 
-    public init(model: AnyModel) {
+    public init(model: ModelType) {
         self.model = model.model
     }
 }
@@ -43,28 +43,18 @@ public protocol ModelClusterType {
     var modelCluster: [AnyDevToolModel] { get }
 }
 
-public protocol AnyModel: ModelClusterType {
-    var model: AnyModel { get }
+public protocol ModelType: ModelClusterType {
+    var model: ModelType { get }
 
     var businessName: String { get }
     var moduleName: String { get }
     var featureName: String { get }
 
-    var defaultData: DefaultData { get }
+    var defaultData: ModelDefaultData { get }
 }
 
-extension AnyModel {
+extension ModelType {
     var modelIdentifier: String {
         return "\(businessName)--\(moduleName)--\(featureName)"
     }
-}
-
-public enum DefaultData {
-    case boolean(defaultValue: Bool)
-    case integer(defaultValue: Int, min: Int?, max: Int?, stepSize: Int?)
-    case float(defaultValue: CGFloat, min: CGFloat?, max: CGFloat?, stepSize: CGFloat?)
-    case double(defaultValue: Double, min: Double?, max: Double?, stepSize: Double?)
-    case color(defaultValue: Color)
-    case string(defaultValue: String)
-    case action(defaultValue: DevToolModelAction)
 }

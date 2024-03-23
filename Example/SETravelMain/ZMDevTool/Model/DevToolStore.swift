@@ -9,5 +9,9 @@
 import Foundation
 
 public final class DevToolStore {
-    
+    var devToolCollections: [String: DevToolBusiness] = [:]
+    private let storeName: String = ""
+    init(devToolCollections: [String : DevToolBusiness]) {
+        self.devToolCollections = devToolCollections
+    }
 }

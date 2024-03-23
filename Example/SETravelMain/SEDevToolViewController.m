@@ -37,7 +37,7 @@
 }
 
 - (void)didTapButton:(UIButton *)button {
-    UIViewController *vc = [[ZMDTCellView new] makeMainView];
+    UIViewController *vc = [[DevToolCellView new] makeMainView];
     [self presentViewController:vc animated:YES completion:nil];
     return;
     self.landscape = !self.landscape;
