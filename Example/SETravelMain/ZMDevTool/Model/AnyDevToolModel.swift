@@ -39,6 +39,12 @@ extension AnyDevToolModel: Equatable, Hashable {
     }
 }
 
+extension AnyDevToolModel: ModelIdentifiable {
+    var persistenceIdentifier: String {
+        return modelIdentifier
+    }
+}
+
 public protocol ModelClusterType {
     var modelCluster: [AnyDevToolModel] { get }
 }

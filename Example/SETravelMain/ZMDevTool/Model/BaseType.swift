@@ -29,7 +29,7 @@ public enum ModelDefaultData {
     case integer(defaultValue: Int, min: Int?, max: Int?, stepSize: Int?)
     case float(defaultValue: CGFloat, min: CGFloat?, max: CGFloat?, stepSize: CGFloat?)
     case doubleTweak(defaultValue: Double, min: Double?, max: Double?, stepSize: Double?)
-    case color(defaultValue: UIColor)
+    case color(defaultValue: Color)
     case string(defaultValue: String)
     case stringList(defaultValue: StringOption, options: [StringOption])
     case action(defaultValue: ModelAction)
