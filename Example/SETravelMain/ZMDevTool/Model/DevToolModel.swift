@@ -13,7 +13,7 @@ public struct DevToolModel<T: BaseType> {
     public let businessName: String
     public let moduleName: String
     public let featureName: String
-    internal let defaultValue: T
+    internal var defaultValue: T
     internal let minimumValue: T?
     internal let maximumValue: T?
     internal let stepSize: T?
@@ -102,51 +102,74 @@ extension DevToolModel {
 }
 
 extension DevToolModel: ModelType {
+    public var dataValue: ModelDataValue {
+        get {
+            switch T.dataType {
+            case .boolean:
+                return .boolean(currentValue: (defaultValue as! Bool))
+            case .integer:
+                return .integer(
+                    currentValue: defaultValue as! Int,
+                    min: minimumValue as? Int,
+                    max: maximumValue as? Int,
+                    stepSize: stepSize as? Int
+                )
+            case .cgFloat:
+                return .float(
+                    currentValue: defaultValue as! CGFloat,
+                    min: minimumValue as? CGFloat,
+                    max: maximumValue as? CGFloat,
+                    stepSize: stepSize as? CGFloat
+                )
+            case .double:
+                return .double(
+                    currentValue: defaultValue as! Double,
+                    min: minimumValue as? Double,
+                    max: maximumValue as? Double,
+                    stepSize: stepSize as? Double
+                )
+            case .color:
+                return .color(currentValue: defaultValue as! Color)
+            case .string:
+                return .string(currentValue: defaultValue as! String)
+            case .stringList:
+                return .stringList(
+                    currentValue: defaultValue as! StringOption,
+                    options: options!.map { $0 as! StringOption }
+                )
+            case .action:
+                return .action(
+                    currentValue: defaultValue as! ModelAction
+                )
+            }
+
+        }
+        set {
+            switch newValue {
+            case let .boolean(currentValue):
+                self.defaultValue = currentValue as! T
+            case let .integer(currentValue, _, _, _):
+                self.defaultValue = currentValue as! T
+            case let .float(currentValue, _, _, _):
+                self.defaultValue = currentValue as! T
+            case let .double(currentValue, _, _, _):
+                self.defaultValue = currentValue as! T
+            case let .color(currentValue):
+                self.defaultValue = currentValue as! T
+            case let .string(currentValue):
+                self.defaultValue = currentValue as! T
+            case let .stringList(currentValue, options):
+                self.defaultValue = currentValue as! T
+            case let .action(currentValue): break
+                self.defaultValue = currentValue as! T
+            }
+        }
+    }
+    
     public var model: ModelType {
         return self
     }
-
-    public var defaultData: ModelDefaultData {
-        switch T.dataType {
-        case .boolean:
-            return .boolean(defaultValue: (defaultValue as! Bool))
-        case .integer:
-            return .integer(
-                defaultValue: defaultValue as! Int,
-                min: minimumValue as? Int,
-                max: maximumValue as? Int,
-                stepSize: stepSize as? Int
-            )
-        case .cgFloat:
-            return .float(
-                defaultValue: defaultValue as! CGFloat,
-                min: minimumValue as? CGFloat,
-                max: maximumValue as? CGFloat,
-                stepSize: stepSize as? CGFloat
-            )
-        case .double:
-            return .doubleTweak(
-                defaultValue: defaultValue as! Double,
-                min: minimumValue as? Double,
-                max: maximumValue as? Double,
-                stepSize: stepSize as? Double
-            )
-        case .color:
-            return .color(defaultValue: defaultValue as! Color)
-        case .string:
-            return .string(defaultValue: defaultValue as! String)
-        case .stringList:
-            return .stringList(
-                defaultValue: defaultValue as! StringOption,
-                options: options!.map { $0 as! StringOption }
-            )
-        case .action:
-            return .action(
-                defaultValue: defaultValue as! ModelAction
-            )
-        }
-    }
-
+    
     public var dataType: DataType {
         return T.dataType
     }
@@ -165,7 +188,7 @@ extension DevToolModel: Hashable, Equatable {
 
 extension DevToolModel: ModelIdentifiable {
     var persistenceIdentifier: String {
-        return modelIdentifier
+        return modelIdentifier+"|\(dataValue.codingKey)"
     }
 }
 

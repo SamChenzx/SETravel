@@ -37,9 +37,6 @@
 }
 
 - (void)didTapButton:(UIButton *)button {
-    UIViewController *vc = [[DevToolCellView new] makeMainView];
-    [self presentViewController:vc animated:YES completion:nil];
-    return;
     self.landscape = !self.landscape;
     [self setNeedsUpdateOfSupportedInterfaceOrientations];
 //    [self setOrientation:UIDeviceOrientationLandscapeLeft force:YES];

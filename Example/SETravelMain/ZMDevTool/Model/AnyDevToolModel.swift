@@ -10,13 +10,19 @@ import Foundation
 import SwiftUI
 
 public struct AnyDevToolModel: ModelType {
-    public let model: ModelType
+    public var dataValue: ModelDataValue {
+        get {
+            return model.dataValue
+        }
+        set(newDataValue) {
+            model.dataValue = newDataValue
+        }
+    }
+    public var model: ModelType
 
     public var businessName: String { return model.businessName }
     public var moduleName: String { return model.moduleName }
     public var featureName: String { return model.featureName }
-
-    public var defaultData: ModelDefaultData { return model.defaultData }
 
     public init(model: ModelType) {
         self.model = model.model
@@ -39,9 +45,11 @@ extension AnyDevToolModel: Equatable, Hashable {
     }
 }
 
-extension AnyDevToolModel: ModelIdentifiable {
+extension AnyDevToolModel: ModelIdentifiable, Identifiable {
+    public var id: Self { self }
+    
     var persistenceIdentifier: String {
-        return modelIdentifier
+        return modelIdentifier+"|\(dataValue.codingKey)"
     }
 }
 
@@ -56,7 +64,7 @@ public protocol ModelType: ModelClusterType {
     var moduleName: String { get }
     var featureName: String { get }
 
-    var defaultData: ModelDefaultData { get }
+    var dataValue: ModelDataValue { get set }
 }
 
 extension ModelType {
