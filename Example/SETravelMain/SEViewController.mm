@@ -24,6 +24,7 @@
 #import <SETravel/ZMDrawerTableView.h>
 #import "SESecondViewController.h"
 #import <ZMDevTool/ZMDevTool-umbrella.h>
+#import "SETravel_Example-Swift.h"
 #define dispatch_gifPostTest_main_async_safe(block)\
     if ([NSThread isMainThread]) {\
         block();\
@@ -374,19 +375,6 @@ static NSTimeInterval endTime = 0;
     UIColor *color2 = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
     NSLog(@"color1 == color2 = %@", color1 == color2 ? @"YES" : @"NO");
     NSLog(@"[color1 isEqual:color2] = %@", [color1 isEqual:color2] ? @"YES" : @"NO");
-    __block NSInteger seconds = 0;
-    [self.view addInteraction:self.editMenuInteraction];
-    static NSTimer *timer = nil;
-//    timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-//        NSLog(@"Sam dev:seconds = %ld thread = %@", seconds++, [NSThread currentThread]);
-//        [self.collectionView reloadData];
-//    }];
-    self.menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.menuButton.backgroundColor = [UIColor clearColor];
-    self.menuButton.showsMenuAsPrimaryAction = YES;
-    self.menuButton.menu = [UIMenu menuWithTitle:@"666" children:[self prepareMenuActions]];
-    self.menuButton.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-    [self.view addSubview:self.menuButton];
     
     
     SEObject *lbj = [[SEObject alloc] init];
@@ -433,6 +421,8 @@ static NSTimeInterval endTime = 0;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"cell = %@", cell);
     NSLog(@"Sam dev: %s", __FUNCTION__);
+    UIViewController *hostVC = [[SwiftUIBridgeViewController new] createContentView];
+    [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
 //    
 //    infoView.didConfirmBlock = ^(NSDictionary * _Nonnull caseInfoDic, BOOL shouldReset) {
@@ -449,13 +439,6 @@ static NSTimeInterval endTime = 0;
         [self.myTimer invalidate];
 //        self.myTimer = nil;
     }
-//    SEObjectSub *sub = [[SEObjectSub alloc] init];
-//    sub.mString = [[NSMutableString alloc] initWithString:@"70j"];
-//    sub.mArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", nil];
-//    sub.obj = [[SEObject alloc] init];
-//    sub.protocolObj = [[SEProtocolObj alloc] init];
-//    [sub.protocolObj print666];
-//    [sub.obj isPositive:6];
 } 
 
 - (void)test1 {
@@ -465,7 +448,6 @@ static NSTimeInterval endTime = 0;
     SEBaseLabel *bLabel = [[SEBaseLabel alloc] init];
     bLabel.center = self.view.center;
     CGFloat components[4] = {0.5, 0.2, 0.3, 1.0};
-    CGColorRef color = CGColorCreate(CGColorSpaceCreateDeviceRGB(), components);
     for (NSInteger i = 0; i < 100000; i++) {
         bLabel.text = [NSString stringWithFormat:@"%ld", i];
     }
@@ -487,56 +469,11 @@ static NSTimeInterval endTime = 0;
         _gifButton = [[ZMTimeButton alloc] init];
         _gifButton.frame = CGRectMake(100, 230, 100, 100);
         _gifButton.backgroundColor = [UIColor purpleColor];
-//        _gifButton.contextMenuInteractionEnabled = YES;
-        _gifButton.showsMenuAsPrimaryAction = YES;
-        _gifButton.menu = [UIMenu menuWithTitle:@"dude" children:[self prepareMenuActions]];
         _gifButton.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
         [_gifButton addTarget:self action:@selector(didClickButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _gifButton;
 }
-
-//- (ZMToolbarButton *)toolbarButton {
-//    if (!_toolbarButton) {
-//        _toolbarButton = [[ZMToolbarButton alloc] init];
-//        _toolbarButton.showsMenuAsPrimaryAction = YES;
-//        _toolbarButton.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-//        _toolbarButton.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.3];
-////        _toolbarButton.menu = [UIMenu menuWithChildren:[self prepareMenuActions]];
-//    }
-//    return _toolbarButton;
-//}
-
-
-- (UIEditMenuInteraction *)editMenuInteraction {
-    if (!_editMenuInteraction) {
-        _editMenuInteraction = [[UIEditMenuInteraction alloc] initWithDelegate:self];
-        
-    }
-    return _editMenuInteraction;
-}
-
-- (nullable UIMenu *)editMenuInteraction:(UIEditMenuInteraction *)interaction menuForConfiguration:(UIEditMenuConfiguration *)configuration suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions {
-    UIMenu *menu = [UIMenu menuWithTitle:@"666" children:[self prepareMenuActions]];
-    return menu;
-}
-
-- (NSArray<UIMenuElement *> *)prepareMenuActions API_AVAILABLE(ios(15.0)) {
-    UIDeferredMenuElement *deferredElement = [UIDeferredMenuElement elementWithProvider:^(void (^ _Nonnull completion)(NSArray<UIMenuElement *> * _Nonnull)) {
-        NSMutableArray *actionArray = [NSMutableArray array];
-        for (NSInteger i = 0; i < 10; i++) {
-            UIAction *menuAction = [UIAction actionWithTitle:[NSString stringWithFormat:@"action: %ld", i] image:[UIImage imageNamed:@"icon_toolbar_share_stop"] identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
-                NSLog(@"Sam dev: %s action.title = %@", __FUNCTION__, action.title);
-            }];
-            [actionArray addObject:menuAction];
-        }
-        self.endTime = CACurrentMediaTime();
-        NSLog(@"Sam dev time: %s endTime = %f, duration = %f", __FUNCTION__, self.endTime, self.endTime-startTime);
-        completion(actionArray);
-    }];
-    return @[deferredElement];
-}
-
 
 - (void)didReceiveMemoryWarning
 {

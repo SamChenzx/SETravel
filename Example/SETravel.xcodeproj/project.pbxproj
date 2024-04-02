@@ -26,7 +26,6 @@
 		188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD482B075D8A0090E5D3 /* SEDevToolViewController.m */; };
 		188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD782B075F3C0090E5D3 /* SEPanelBehavior.m */; };
 		188FCD7B2B075F3C0090E5D3 /* SEPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD792B075F3C0090E5D3 /* SEPanelView.m */; };
-		18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */; };
 		18B9FC192BAD647C00FCF665 /* ModelPersistency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9FC182BAD647C00FCF665 /* ModelPersistency.swift */; };
 		18B9FC1D2BAE6DFA00FCF665 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */; };
 		18BF58132B079B2C0083C634 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF58112B079B2C0083C634 /* Start.storyboard */; };
@@ -113,12 +112,6 @@
 		188FCD882B0765E30090E5D3 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4CD642833B0DD00CAE962 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		18A4CD662833B0DD00CAE962 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		18A4CD692833B0DD00CAE962 /* SEWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEWidgets.swift; sourceTree = "<group>"; };
-		18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SEWidgets.intentdefinition; sourceTree = "<group>"; };
-		18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18A4CD6E2833B0DE00CAE962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETravel_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		18B0022E2834B819006133D3 /* MyMainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainWidget.swift; sourceTree = "<group>"; };
 		18B9FC182BAD647C00FCF665 /* ModelPersistency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPersistency.swift; sourceTree = "<group>"; };
 		18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
 		18BF58122B079B2C0083C634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
@@ -232,19 +225,6 @@
 			path = SETravelMain;
 			sourceTree = SOURCE_ROOT;
 		};
-		18A4CD682833B0DD00CAE962 /* SEWidgets */ = {
-			isa = PBXGroup;
-			children = (
-				18A4CD692833B0DD00CAE962 /* SEWidgets.swift */,
-				18A4CD6B2833B0DD00CAE962 /* SEWidgets.intentdefinition */,
-				18A4CD6C2833B0DE00CAE962 /* Assets.xcassets */,
-				18A4CD6E2833B0DE00CAE962 /* Info.plist */,
-				18B0022E2834B819006133D3 /* MyMainWidget.swift */,
-				18B0022D2834B819006133D3 /* SETravel_Example-Bridging-Header.h */,
-			);
-			path = SEWidgets;
-			sourceTree = "<group>";
-		};
 		18B9FC1B2BAE6DE800FCF665 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,7 +271,6 @@
 				180FE44626E22203000C7121 /* resource.response */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
-				18A4CD682833B0DD00CAE962 /* SEWidgets */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				4F5874F87E70323EFA2B8C60 /* Pods */,
@@ -558,7 +537,6 @@
 				180EED2A2B6E8BC4005471CD /* DevToolCell.swift in Sources */,
 				185482752BBA4C9200F885C1 /* test.swift in Sources */,
 				188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */,
-				18A4CD702833B0DE00CAE962 /* SEWidgets.intentdefinition in Sources */,
 				1854823D2BB6C1CA00F885C1 /* DebugModels.swift in Sources */,
 				22E5282C2BA1F85500DA15B8 /* AnyDevToolModel.swift in Sources */,
 				18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */,
@@ -836,7 +814,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SEWidgets/SETravel_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -912,7 +889,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SEWidgets/SETravel_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
