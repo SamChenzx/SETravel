@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-@objcMembers
-class SwiftUIBridgeViewController: NSObject {
-    func createContentView() -> UIViewController {
+@objc
+public class SwiftUIBridgeViewController: NSObject {
+    @objc public func createContentView() -> UIViewController {
         return UIHostingController(rootView: MyContentView())
     }
 }
 
-class test: NSObject {
+public class test: NSObject {
     var vc: SwiftUIBridgeViewController = SwiftUIBridgeViewController()
     
 }

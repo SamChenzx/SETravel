@@ -420,8 +420,8 @@ static NSTimeInterval endTime = 0;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"cell = %@", cell);
     NSLog(@"Sam dev: %s", __FUNCTION__);
-//    UIViewController *hostVC = [[SwiftUIBridgeViewController new] createContentView];
-//    [self presentViewController:hostVC animated:YES completion:nil];
+    UIViewController *hostVC = [[[SwiftUIBridgeViewController alloc] init] createContentView];
+    [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
 //    
 //    infoView.didConfirmBlock = ^(NSDictionary * _Nonnull caseInfoDic, BOOL shouldReset) {

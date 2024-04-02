@@ -48,13 +48,13 @@ open class ZMDevToolViewController: UIViewController, UITableViewDelegate, UITab
         return true
     }
     
-    public override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    public override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             print("Shake motion start")
         }
     }
     
-    public override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+    public override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             print("Shake motion end")
             self.view.addSubview(tableView)
