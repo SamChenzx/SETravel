@@ -40,6 +40,7 @@ open class ZMDevToolViewController: UIViewController, UITableViewDelegate, UITab
         let fire = MemoryLayout<DragonFirePosition>.size
         let home = MemoryLayout<DragonHomePosition>.size
         print("fire = \(fire) stride = \(MemoryLayout<DragonFirePosition>.stride), home = \(home) stride = \(MemoryLayout<DragonHomePosition>.stride)")
+        
     }
     
     

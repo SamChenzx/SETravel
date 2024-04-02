@@ -16,7 +16,6 @@ struct ContentView: View {
     }
     
     @State private var contentType: ContentViewType = .type1
-    
     var body: some View {
         VStack {
             Picker("Content Type", selection: $contentType) {

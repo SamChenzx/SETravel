@@ -23,7 +23,6 @@
 #import <SETravel/ZMMultitaskingView.h>
 #import <SETravel/ZMDrawerTableView.h>
 #import "SESecondViewController.h"
-#import <ZMDevTool/ZMDevTool-umbrella.h>
 #import "SETravel_Example-Swift.h"
 #define dispatch_gifPostTest_main_async_safe(block)\
     if ([NSThread isMainThread]) {\
@@ -421,8 +420,8 @@ static NSTimeInterval endTime = 0;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"cell = %@", cell);
     NSLog(@"Sam dev: %s", __FUNCTION__);
-    UIViewController *hostVC = [[SwiftUIBridgeViewController new] createContentView];
-    [self presentViewController:hostVC animated:YES completion:nil];
+//    UIViewController *hostVC = [[SwiftUIBridgeViewController new] createContentView];
+//    [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
 //    
 //    infoView.didConfirmBlock = ^(NSDictionary * _Nonnull caseInfoDic, BOOL shouldReset) {

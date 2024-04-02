@@ -15,6 +15,11 @@ class SwiftUIBridgeViewController: NSObject {
     }
 }
 
+class test: NSObject {
+    var vc: SwiftUIBridgeViewController = SwiftUIBridgeViewController()
+    
+}
+
 struct MyContentView: View {
     @State private var models: [AnyDevToolModel]
 
