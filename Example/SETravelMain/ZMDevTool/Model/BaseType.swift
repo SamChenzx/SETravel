@@ -13,6 +13,16 @@ public protocol BaseType {
     static var dataType: DataType { get }
 }
 
+extension BaseType {
+    public func hash(into hasher: inout Hasher) {
+            hasher.combine(Self.dataType)
+        }
+        
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        return (Self.dataType == Self.dataType)
+    }
+}
+
 public enum DataType: CaseIterable {
     case boolean
     case integer
@@ -35,6 +45,29 @@ public enum ModelDataValue {
     case action(currentValue: ModelAction)
 }
 
+extension ModelDataValue: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        switch self {
+        case .boolean(let currentValue):
+            hasher.combine(currentValue)
+        case .integer(let currentValue, _, _, _):
+            hasher.combine(currentValue)
+        case .float(let currentValue, _, _, _):
+            hasher.combine(currentValue)
+        case .double(let currentValue, _, _, _):
+            hasher.combine(currentValue)
+        case .color(let currentValue):
+            hasher.combine(currentValue)
+        case .string(let currentValue):
+            hasher.combine(currentValue)
+        case .stringList(let currentValue, _):
+            hasher.combine(currentValue)
+        case .action(let currentValue):
+            hasher.combine(currentValue)
+        }
+    }
+}
+
 public struct StringOption {
     public let value: String
     public init(value: String) {
@@ -42,7 +75,7 @@ public struct StringOption {
     }
 }
 
-extension StringOption: Equatable {
+extension StringOption: Hashable {
     public static func ==(lhs: StringOption, rhs: StringOption) -> Bool {
         return lhs.value == rhs.value
     }

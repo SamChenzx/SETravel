@@ -47,6 +47,15 @@ extension ModelAction: BaseType {
     }
 }
 
+extension ModelAction: Hashable {
+    public static func == (lhs: ModelAction, rhs: ModelAction) -> Bool {
+        return lhs.lastToken == rhs.lastToken
+    }
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(lastToken)
+    }
+}
+
 extension DevToolModel where T == ModelAction {
     public init(_ businessName: String, _ moduleName: String, _ featureName: String) {
         self.init(businessName, moduleName, featureName, ModelAction())

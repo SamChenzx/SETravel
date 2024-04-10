@@ -89,9 +89,6 @@
 
 - (void)didTapButton:(UIButton *)button {
     ZMDevToolViewController *vc = [[ZMDevToolViewController alloc] init];
-//    [self presentViewController:vc animated:YES completion:^{
-//        NSLog(@"Sam dev: %s", __FUNCTION__);
-//    }];
     self.devButton.transform = CGAffineTransformMakeTranslation(0, -200);
 }
 

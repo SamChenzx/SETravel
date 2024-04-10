@@ -418,8 +418,6 @@ static NSTimeInterval endTime = 0;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
     self.count ++;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
-    NSLog(@"cell = %@", cell);
-    NSLog(@"Sam dev: %s", __FUNCTION__);
     UIViewController *hostVC = [[[SwiftUIBridgeViewController alloc] init] createContentView];
     [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
@@ -438,22 +436,6 @@ static NSTimeInterval endTime = 0;
         [self.myTimer invalidate];
 //        self.myTimer = nil;
     }
-} 
-
-- (void)test1 {
-    NSLog(@"1");
-    sleep(1);
-    NSLog(@"2");
-    SEBaseLabel *bLabel = [[SEBaseLabel alloc] init];
-    bLabel.center = self.view.center;
-    CGFloat components[4] = {0.5, 0.2, 0.3, 1.0};
-    for (NSInteger i = 0; i < 100000; i++) {
-        bLabel.text = [NSString stringWithFormat:@"%ld", i];
-    }
-    
-    SESecondViewController *vc = [[SESecondViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
-
 }
 
 - (void)gesture {
