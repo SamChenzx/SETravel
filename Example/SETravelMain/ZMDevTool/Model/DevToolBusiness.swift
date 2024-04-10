@@ -28,7 +28,7 @@ extension DevToolBusiness {
         return sortedModules.reduce(0) { $0 + $1.sortedModels.count }
     }
 
-    internal var allModels: [AnyDevToolModel] {
+    internal var allModels: [MMDevToolModel] {
         return sortedModules.reduce([]) {
             $0 + $1.sortedModels
         }

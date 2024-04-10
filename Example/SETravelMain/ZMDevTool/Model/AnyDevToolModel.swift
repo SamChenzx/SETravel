@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-public struct AnyDevToolModel: ModelType {
+public struct AnyDevToolModel {
     public var dataValue: ModelDataValue {
         get {
             return model.dataValue
@@ -29,32 +29,26 @@ public struct AnyDevToolModel: ModelType {
     }
 }
 
-extension AnyDevToolModel: ModelClusterType {
-    public var modelCluster: [AnyDevToolModel] {
-        return [self]
-    }
-}
-
-extension AnyDevToolModel: Equatable, Hashable {
-    static public func ==(lhs: AnyDevToolModel, rhs: AnyDevToolModel) -> Bool {
-        return lhs.modelIdentifier == rhs.modelIdentifier
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(modelIdentifier)
-    }
-}
-
-extension AnyDevToolModel: ModelIdentifiable, Identifiable {
-    public var id: Self { self }
-    
-    var persistenceIdentifier: String {
-        return modelIdentifier+"|\(dataValue.codingKey)"
-    }
-}
+//extension AnyDevToolModel: Equatable, Hashable {
+//    static public func ==(lhs: AnyDevToolModel, rhs: AnyDevToolModel) -> Bool {
+//        return lhs.modelIdentifier == rhs.modelIdentifier
+//    }
+//    
+//    public func hash(into hasher: inout Hasher) {
+//        hasher.combine(modelIdentifier)
+//    }
+//}
+//
+//extension AnyDevToolModel: ModelIdentifiable, Identifiable {
+//    public var id: Self { self }
+//    
+//    var persistenceIdentifier: String {
+//        return modelIdentifier+"|\(dataValue.codingKey)"
+//    }
+//}
 
 public protocol ModelClusterType {
-    var modelCluster: [AnyDevToolModel] { get }
+    var modelCluster: [MMDevToolModel] { get }
 }
 
 public protocol ModelType: ModelClusterType {

@@ -12,7 +12,7 @@ public final class DevToolStore {
     var allBusinesses: [String: DevToolBusiness] = [:]
     private let storeName: String
     private let persistence: ModelPersistency
-    private let allModels: Set<AnyDevToolModel>
+    private let allModels: Set<MMDevToolModel>
     init(models: [ModelClusterType], storeName: String = "ZMDev") {
         self.persistence = ModelPersistency(identifier: storeName)
         self.storeName = storeName

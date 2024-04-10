@@ -25,16 +25,16 @@ internal final class ModelPersistency {
         self.modelCache = self.diskPersistency.loadFromDisk()
     }
 
-    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? {
-        return persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T
-    }
-
-    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? where T: Comparable {
-        if let currentValue = persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T {
-                return clip(currentValue, model.minimumValue, model.maximumValue)
-        }
-        return nil
-    }
+//    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? {
+//        return persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T
+//    }
+//
+//    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? where T: Comparable {
+//        if let currentValue = persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T {
+//                return clip(currentValue, model.minimumValue, model.maximumValue)
+//        }
+//        return nil
+//    }
 
     internal func persistedValueForModelIdentifiable(_ modelID: ModelIdentifiable) -> BaseType? {
         return modelCache[modelID.persistenceIdentifier]

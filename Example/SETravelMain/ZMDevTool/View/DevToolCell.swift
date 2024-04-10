@@ -15,35 +15,6 @@ public class SwiftUIBridgeViewController: NSObject {
     }
 }
 
-public struct MyDevToolModel {
-    public let businessName: String
-    public let moduleName: String
-    public let featureName: String
-    internal var defaultValue: ModelDataValue
-}
-
-extension MyDevToolModel: ModelType {
-    public var model: any ModelType {
-        return self
-    }
-    
-    public var dataValue: ModelDataValue {
-        get {
-            if case .boolean(let currentValue) = defaultValue {
-                return .boolean(currentValue: currentValue)
-            }
-            return .boolean(currentValue: false)
-        }
-        set {
-            defaultValue = newValue
-        }
-    }
-    
-    public var modelCluster: [AnyDevToolModel] {
-        return [AnyDevToolModel.init(model: self)]
-    }
-}
-
 struct MyContentView: View {
     
     @State private var models: [MMDevToolModel] = [
@@ -51,9 +22,9 @@ struct MyContentView: View {
         MMDevToolModel("Meeting", "Reaction", "Disable Webinar Reaction", false),
         MMDevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32),
         MMDevToolModel("Phone", "VOIP", "VOIP support version", 17.3, minValue: 0.0, stepSize: 0.5),
-        MMDevToolModel(businessName: "Chat", moduleName: "new chat", featureName: "new chat version", dataValue: .string(currentValue: "6.0.0")),
-        MMDevToolModel(businessName: "Mail", moduleName: "Mail Server", featureName: "Mail server", dataValue:.stringList(currentValue: StringOption(value:"Google"), options: [StringOption(value:"Google") , StringOption(value:"Zoom"), StringOption(value:"Amazon")])),
-        MMDevToolModel(businessName: "Chat", moduleName: "new chat", featureName: "new chat Color", dataValue: .color(currentValue: Color.blue))
+        MMDevToolModel("Chat", "new chat", "new chat version", "6.0.0"),
+        MMDevToolModel("Mail", "Mail Server", "Mail server", options: ["Google", "Zoom", "Amazon", "Microsoft"], defaultValue: "Zoom"),
+        MMDevToolModel("Chat", "new chat", "new chat Color", Color.blue)
     ]
 
     var body: some View {
