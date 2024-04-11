@@ -21,7 +21,11 @@ public struct MMDevToolModel: Identifiable {
     var moduleName: String
     var featureName: String
     var description: String?
-    var dataValue: ModelDataValue
+    var dataValue: ModelDataValue {
+        willSet {
+            print("Sam dev:\(type(of: self)) line:\(#line) \(#function) newValue = \(newValue)")
+        }
+    }
     var minValue: ModelNumValue?
     var maxValue: ModelNumValue?
     var stepSize: ModelNumValue?

@@ -7,18 +7,19 @@
 //
 
 import Foundation
+import SwiftUI
 
-internal struct DevToolModule {
+internal struct DevToolModule: Identifiable {
+    let id = UUID()
     let title: String
-    var models: [String: MMDevToolModel] = [:]
-
+    var models: [MMDevToolModel] = []
+    
     init(title: String) {
         self.title = title
     }
-}
-
-extension DevToolModule {
-    internal var sortedModels: [MMDevToolModel] {
-        return models.sorted { $0.0 < $1.0 }.map { return $0.1 }
+    
+    mutating func addModel(_ model: MMDevToolModel) {
+        models.append(model)
+        models.sort { $0.featureName < $1.featureName }
     }
 }

@@ -1,55 +1,12 @@
 //
-//  DevToolCell.swift
+//  DevToolCells.swift
 //  SETravel_Example
 //
-//  Created by Sam Chen on 2/3/24.
+//  Created by Sam Chen on 2024/4/11.
 //  Copyright © 2024 chenzhixiang. All rights reserved.
 //
 
 import SwiftUI
-
-@objc
-public class SwiftUIBridgeViewController: NSObject {
-    @objc public func createContentView() -> UIViewController {
-        return UIHostingController(rootView: MyContentView())
-    }
-}
-
-struct MyContentView: View {
-    
-    @State private var models: [MMDevToolModel] = [
-        MMDevToolModel("Phone", "VOIP", "Enable VOIP", true),
-        MMDevToolModel("Meeting", "Reaction", "Disable Webinar Reaction", false),
-        MMDevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32),
-        MMDevToolModel("Phone", "VOIP", "VOIP support version", 17.3, minValue: 0.0, stepSize: 0.5),
-        MMDevToolModel("Chat", "new chat", "new chat version", "6.0.0"),
-        MMDevToolModel("Mail", "Mail Server", "Mail server", options: ["Google", "Zoom", "Amazon", "Microsoft"], defaultValue: "Zoom"),
-        MMDevToolModel("Chat", "new chat", "new chat Color", Color.blue)
-    ]
-
-    var body: some View {
-        List {
-            ForEach(models.indices,  id: \.self) { index in
-                switch models[index].dataValue {
-                case .boolean(currentValue: _):
-                    BooleanCell(model: $models[index])
-                case .integer(currentValue: _, min: _, max: _, stepSize: _),
-                 .float(currentValue: _, min: _, max: _, stepSize: _),
-                 .double(currentValue: _, min: _, max: _, stepSize: _):
-                    NumericalCell(model: $models[index])
-                case .string(currentValue: _):
-                    StringCell(model: $models[index])
-                case .stringList(currentValue: _, options: _):
-                    StringOptionCell(model: $models[index])
-                case .color(currentValue: _):
-                    ColorCell(model: $models[index])
-                default:
-                    Spacer()
-                }
-            }
-        }.frame(maxWidth: 500)
-    }
-}
 
 struct BooleanCell: View {
     @Binding var model: MMDevToolModel
@@ -187,6 +144,15 @@ struct ColorCell: View {
     }
 }
 
+struct DevToolCells: View {
+    @State var model: MMDevToolModel = MMDevToolModel("Meeting", "Reaction", "Disable Reaction", false)
+    var body: some View {
+        List {
+            BooleanCell(model: $model)
+        }
+    }
+}
+
 #Preview {
-    MyContentView()
+    DevToolCells()
 }

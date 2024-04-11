@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180EED2A2B6E8BC4005471CD /* DevToolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EED292B6E8BC4005471CD /* DevToolCell.swift */; };
+		180EED2A2B6E8BC4005471CD /* DevToolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EED292B6E8BC4005471CD /* DevToolList.swift */; };
 		180FE44726E22203000C7121 /* resource.response in Resources */ = {isa = PBXBuildFile; fileRef = 180FE44626E22203000C7121 /* resource.response */; };
 		181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 181E284E2B735EAB001AB09A /* SEtestCPP.cpp */; };
+		1824286C2BC7DC6E00A6D240 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824286B2BC7DC6E00A6D240 /* ArrayExtension.swift */; };
+		1824286E2BC7E2B300A6D240 /* DevToolCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824286D2BC7E2B300A6D240 /* DevToolCells.swift */; };
 		1854823D2BB6C1CA00F885C1 /* DebugModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854823C2BB6C1CA00F885C1 /* DebugModels.swift */; };
 		185482752BBA4C9200F885C1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185482742BBA4C9200F885C1 /* test.swift */; };
 		188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */; };
@@ -73,10 +75,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		180EED292B6E8BC4005471CD /* DevToolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolCell.swift; sourceTree = "<group>"; };
+		180EED292B6E8BC4005471CD /* DevToolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolList.swift; sourceTree = "<group>"; };
 		180FE44626E22203000C7121 /* resource.response */ = {isa = PBXFileReference; lastKnownFileType = file; path = resource.response; sourceTree = "<group>"; };
 		181E284E2B735EAB001AB09A /* SEtestCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SEtestCPP.cpp; sourceTree = "<group>"; };
 		181E284F2B735EAB001AB09A /* SEtestCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SEtestCPP.hpp; sourceTree = "<group>"; };
+		1824286B2BC7DC6E00A6D240 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		1824286D2BC7E2B300A6D240 /* DevToolCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolCells.swift; sourceTree = "<group>"; };
 		183346572B42F893004E9F77 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		1854823C2BB6C1CA00F885C1 /* DebugModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugModels.swift; sourceTree = "<group>"; };
 		185482742BBA4C9200F885C1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
@@ -185,8 +189,9 @@
 		185482732BBA4C7900F885C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				180EED292B6E8BC4005471CD /* DevToolCell.swift */,
+				180EED292B6E8BC4005471CD /* DevToolList.swift */,
 				185482742BBA4C9200F885C1 /* test.swift */,
+				1824286D2BC7E2B300A6D240 /* DevToolCells.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */,
+				1824286B2BC7DC6E00A6D240 /* ArrayExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -530,14 +536,16 @@
 			files = (
 				188FCD542B075D8A0090E5D3 /* main.m in Sources */,
 				18B9FC1D2BAE6DFA00FCF665 /* Clip.swift in Sources */,
+				1824286E2BC7E2B300A6D240 /* DevToolCells.swift in Sources */,
 				18C2435A2BA197E50095CD82 /* BaseType.swift in Sources */,
 				18C243602BA19E310095CD82 /* DevToolModule.swift in Sources */,
 				181E28502B735EAB001AB09A /* SEtestCPP.cpp in Sources */,
 				18C2435E2BA19E0D0095CD82 /* DevToolBusiness.swift in Sources */,
-				180EED2A2B6E8BC4005471CD /* DevToolCell.swift in Sources */,
+				180EED2A2B6E8BC4005471CD /* DevToolList.swift in Sources */,
 				185482752BBA4C9200F885C1 /* test.swift in Sources */,
 				188FCD572B075D8A0090E5D3 /* SEDevToolViewController.m in Sources */,
 				1854823D2BB6C1CA00F885C1 /* DebugModels.swift in Sources */,
+				1824286C2BC7DC6E00A6D240 /* ArrayExtension.swift in Sources */,
 				22E5282C2BA1F85500DA15B8 /* AnyDevToolModel.swift in Sources */,
 				18C243582BA18F690095CD82 /* DevToolModel.swift in Sources */,
 				188FCD532B075D8A0090E5D3 /* SEViewController.mm in Sources */,
