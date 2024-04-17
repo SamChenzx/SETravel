@@ -12,15 +12,8 @@ import Dispatch
 struct DevToolBusiness {
     let title: String
     var modules: [DevToolModule] = []
-    var bzMainBoolValue: Bool = false {
-        didSet {
-            print("Sam dev:\(type(of: self)) line:\(#line) \(#function) title:\(title) value:\(bzMainBoolValue)")
-        }
-    }
-    var mainModule: DevToolModule = DevToolModule(title: "")
     init(title: String) {
         self.title = title
-        print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
     }
     
     mutating func addModule(_ module: DevToolModule) {
@@ -36,18 +29,6 @@ struct DevToolBusiness {
         }
     }
 }
-
-//extension DevToolBusiness: Hashable {
-//    static func == (lhs: DevToolBusiness, rhs: DevToolBusiness) -> Bool {
-//        return (lhs.title == rhs.title) && (lhs.modules == rhs.modules) && (lhs.bzMainBoolValue == rhs.bzMainBoolValue) && (lhs.mainModule == rhs.mainModule)
-//    }
-//    func hash(into hasher: inout Hasher) {
-//        hasher.combine(title)
-//        hasher.combine(modules)
-//        hasher.combine(mainModule)
-//        hasher.combine(bzMainBoolValue)
-//    }
-//}
 
 extension DevToolBusiness {
 

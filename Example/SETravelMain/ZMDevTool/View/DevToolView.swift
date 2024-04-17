@@ -35,19 +35,12 @@ struct BusinessContentView: View {
     var body: some View {
         VStack(spacing: 5) {
             Spacer().frame(height: 20)
-            SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle) {
-                updateSelectedBusiness(by: $0)
-            }
-//            DevToolModuleView(selectedBusiness: selectedBusiness).id(selectedTitle)
+            SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle)
             DevToolList(modules: selectedBusiness.modules)
         }.onAppear(perform: {
             selectedTitle = testBusiness.allBusinessesTitles.first!
             print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
         })
-    }
-    
-    private func updateSelectedBusiness(by title: String) {
-//        selectedBusiness = testBusiness.businesses[title]!
     }
 }
 

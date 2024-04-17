@@ -11,11 +11,10 @@ import SwiftUI
 struct SegmentTitle: View {
     let titles: [String]
     @Binding var selectedTitle: String
-    var didUpdate: (_ selectedTitle: String) -> Void
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
             VStack {
-                Picker("", selection: $selectedTitle.onChange(updateSelectedTitle)) {
+                Picker("", selection: $selectedTitle) {
                     ForEach(titles, id:\.self) {
                         Text("\($0)")
                     }
@@ -27,19 +26,13 @@ struct SegmentTitle: View {
             .cornerRadius(12)
             .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous).stroke(Color.gray, lineWidth: 1))
     }
-    
-    func updateSelectedTitle(_ title: String) {
-        didUpdate(title)
-    }
 }
 
 struct SegmentTitlePreview: View {
     let titles: [String] = ["Phone", "Meeting", "Chat", "Mail", "Calendar", "Docs"]
     @State private var selectedTitle: String  = "Phone"
     var body: some View {
-        SegmentTitle(titles: titles, selectedTitle: $selectedTitle) {
-            print("Sam dev:\(type(of: self)) line:\(#line) \(#function) selectedTitle = \($0)")
-        }
+        SegmentTitle(titles: titles, selectedTitle: $selectedTitle)
     }
 }
 

@@ -17,8 +17,6 @@ struct BooleanCell: View {
                 get: {
                     boolValue
                 }, set: { newValue in
-                    let newModel = MMDevToolModel(model.businessName, model.moduleName, model.featureName, newValue)
-                    testBusiness.updateModel(newModel)
                     model.dataValue = .boolean(currentValue: newValue)
                 }
             ))
