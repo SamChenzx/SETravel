@@ -16,7 +16,10 @@ enum ModelNumValue {
 }
 
 public struct MMDevToolModel: Identifiable {
-    public let id = UUID()
+    public var id: String {
+        modelIdentifier
+    }
+    var mainBool: Bool = false
     var businessName: String
     var moduleName: String
     var featureName: String
@@ -43,6 +46,10 @@ public struct MMDevToolModel: Identifiable {
         self.maxValue = maxValue
         self.stepSize = stepSize
         self.options = options
+    }
+    
+    mutating func updateBool(_ boolValue: Bool) {
+        self.dataValue = .boolean(currentValue: boolValue)
     }
 }
 

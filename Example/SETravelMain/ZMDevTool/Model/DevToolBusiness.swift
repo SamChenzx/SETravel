@@ -7,29 +7,56 @@
 //
 
 import Foundation
+import Dispatch
 
-internal struct DevToolBusiness {
+struct DevToolBusiness {
     let title: String
-    var moduleDictionary: [String: DevToolModule] = [:]
-
+    var modules: [DevToolModule] = []
+    var bzMainBoolValue: Bool = false {
+        didSet {
+            print("Sam dev:\(type(of: self)) line:\(#line) \(#function) title:\(title) value:\(bzMainBoolValue)")
+        }
+    }
+    var mainModule: DevToolModule = DevToolModule(title: "")
     init(title: String) {
         self.title = title
+        print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
+    }
+    
+    mutating func addModule(_ module: DevToolModule) {
+        if !modules.contains(where: { $0.title == module.title }) {
+            modules.append(module)
+        }
+        modules.sort { $0.title < $1.title }
+    }
+    
+    func findModule(by name: String) -> DevToolModule? {
+        modules.first {
+            $0.title == name
+        }
     }
 }
 
+//extension DevToolBusiness: Hashable {
+//    static func == (lhs: DevToolBusiness, rhs: DevToolBusiness) -> Bool {
+//        return (lhs.title == rhs.title) && (lhs.modules == rhs.modules) && (lhs.bzMainBoolValue == rhs.bzMainBoolValue) && (lhs.mainModule == rhs.mainModule)
+//    }
+//    func hash(into hasher: inout Hasher) {
+//        hasher.combine(title)
+//        hasher.combine(modules)
+//        hasher.combine(mainModule)
+//        hasher.combine(bzMainBoolValue)
+//    }
+//}
+
 extension DevToolBusiness {
-    internal var sortedModules: [DevToolModule] {
-        return moduleDictionary
-            .sorted { $0.0 < $1.0 }
-            .map { return $0.1 }
-    }
 
     internal var numberOfModels: Int {
-        return sortedModules.reduce(0) { $0 + $1.models.count }
+        return modules.reduce(0) { $0 + $1.models.count }
     }
 
     internal var allModels: [MMDevToolModel] {
-        return sortedModules.reduce([]) {
+        return modules.reduce([]) {
             $0 + $1.models
         }
     }

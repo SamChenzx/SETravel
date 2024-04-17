@@ -9,7 +9,7 @@
 import Foundation
 
 public final class DevToolStore {
-    var businessDictionary: [String: DevToolBusiness] = [:]
+    var businesses: [DevToolBusiness] = []
     private let storeName: String
     private let persistence: ModelPersistency
     private let allModels: Set<MMDevToolModel>
@@ -19,32 +19,28 @@ public final class DevToolStore {
         self.allModels = Set(models.reduce([]) { $0 + $1.modelCluster})
         self.allModels.forEach { model in
             var business: DevToolBusiness
-            if let existingBusiness = businessDictionary[model.businessName] {
+            if let existingBusiness = businesses.first(where: { $0.title == model.businessName }) {
                 business = existingBusiness
             } else {
                 business = DevToolBusiness(title: model.businessName)
-                businessDictionary[business.title] = business
+                addBusiness(business)
             }
             var module: DevToolModule
-            if let existingModule = business.moduleDictionary[model.moduleName] {
+            if let existingModule = business.findModule(by: model.moduleName) {
                 module = existingModule
             } else {
                 module = DevToolModule(title: model.moduleName)
             }
             module.addModel(model)
-            business.moduleDictionary[module.title] = module
-            businessDictionary[business.title] = business
+            business.addModule(module)
         }
     }
-
-}
-
-extension DevToolStore {
-    internal var sortedBusinesses: [DevToolBusiness] {
-        return businessDictionary
-            .sorted { $0.0 < $1.0 }
-            .map { return $0.1 }
+    
+    func addBusiness(_ business: DevToolBusiness) {
+        businesses.append(business)
+        businesses.sort { $0.title < $1.title }
     }
+
 }
 
 

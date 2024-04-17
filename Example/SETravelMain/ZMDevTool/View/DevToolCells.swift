@@ -10,12 +10,15 @@ import SwiftUI
 
 struct BooleanCell: View {
     @Binding var model: MMDevToolModel
+    @EnvironmentObject private var testBusiness: TestBusiness
     var body: some View {
         if case .boolean(let boolValue) = model.dataValue {
             Toggle(model.featureName, isOn:Binding(
                 get: {
                     boolValue
                 }, set: { newValue in
+                    let newModel = MMDevToolModel(model.businessName, model.moduleName, model.featureName, newValue)
+                    testBusiness.updateModel(newModel)
                     model.dataValue = .boolean(currentValue: newValue)
                 }
             ))
@@ -38,14 +41,14 @@ struct NumericalCell: View {
                     }
                 ), step: stepSize!).fixedSize()
             case .float(let floatValue, let min, let max, let stepSize):
-                Stepper("\(floatValue)", value: Binding(
+                Stepper(String(format: "%.2f", floatValue), value: Binding(
                     get: { clip(floatValue, min, max) },
                     set: { newValue in
                         self.model.dataValue = .float(currentValue: clip(newValue, min, max), min: min, max: max, stepSize: stepSize)
                     }
                 ), step: stepSize!).fixedSize()
             case .double(let doubleValue, let min, let max, let stepSize):
-                Stepper("\(doubleValue)", value: Binding(
+                Stepper(String(format: "%.2f", doubleValue), value: Binding(
                     get: { clip(doubleValue, min, max) },
                     set: { newValue in
                         self.model.dataValue = .double(currentValue: clip(newValue, min, max), min: min, max: max, stepSize: stepSize)

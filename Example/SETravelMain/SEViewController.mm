@@ -418,7 +418,7 @@ static NSTimeInterval endTime = 0;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
     self.count ++;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
-    UIViewController *hostVC = [[[SwiftUIBridgeViewController alloc] init] createContentView];
+    UIViewController *hostVC = [[[DevToolBridgeViewController alloc] init] createContentView];
     [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
 //    
