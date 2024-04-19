@@ -20,6 +20,7 @@
 		185482752BBA4C9200F885C1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185482742BBA4C9200F885C1 /* test.swift */; };
 		1884AA482BCE4FC90073827C /* DevToolModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AA472BCE4FC90073827C /* DevToolModuleView.swift */; };
 		1884AA4A2BCE584D0073827C /* DevToolStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AA492BCE584D0073827C /* DevToolStoreView.swift */; };
+		1884AABA2BD2587F0073827C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AAB92BD2587F0073827C /* ViewExtension.swift */; };
 		188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */; };
 		188FCD4B2B075D8A0090E5D3 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2B2B075D8A0090E5D3 /* LaunchScreen.strings */; };
 		188FCD4C2B075D8A0090E5D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188FCD2D2B075D8A0090E5D3 /* Localizable.strings */; };
@@ -96,6 +97,7 @@
 		185482742BBA4C9200F885C1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1884AA472BCE4FC90073827C /* DevToolModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModuleView.swift; sourceTree = "<group>"; };
 		1884AA492BCE584D0073827C /* DevToolStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolStoreView.swift; sourceTree = "<group>"; };
+		1884AAB92BD2587F0073827C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
 		188FCD2C2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		188FCD2E2B075D8A0090E5D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				18B9FC1C2BAE6DFA00FCF665 /* Clip.swift */,
 				1824286B2BC7DC6E00A6D240 /* ArrayExtension.swift */,
 				182428732BC932E600A6D240 /* BindingExtension.swift */,
+				1884AAB92BD2587F0073827C /* ViewExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				18C243772BA449370095CD82 /* DevToolModelAction.swift in Sources */,
 				18C2435C2BA19B620095CD82 /* DevToolStore.swift in Sources */,
 				1884AA482BCE4FC90073827C /* DevToolModuleView.swift in Sources */,
+				1884AABA2BD2587F0073827C /* ViewExtension.swift in Sources */,
 				18B9FC192BAD647C00FCF665 /* ModelPersistency.swift in Sources */,
 				18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */,
 				188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 @objc
 public class DevToolBridgeViewController: NSObject {
@@ -25,6 +26,9 @@ struct DevToolView: View {
 struct BusinessContentView: View {
     @ObservedObject var testBusiness: TestBusiness
     @Binding var selectedTitle: String
+    @State private var keyboardIsShown = false
+    @State private var keyboardHideMonitor: AnyCancellable? = nil
+    @State private var keyboardShownMonitor: AnyCancellable? = nil
     private var selectedBusiness: Binding<DevToolBusiness> {
         Binding {
             testBusiness.businesses[selectedTitle] ?? testBusiness.businesses["Meeting"]!
@@ -33,15 +37,43 @@ struct BusinessContentView: View {
         }
     }
     var body: some View {
-        VStack(spacing: 5) {
-            Spacer().frame(height: 20)
-            SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle)
-            DevToolList(modules: selectedBusiness.modules)
-        }.onAppear(perform: {
-            selectedTitle = testBusiness.allBusinessesTitles.first!
-            print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
-        })
+        ZStack {
+            VStack(spacing: 5) {
+                Spacer().frame(height: 20)
+                SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle)
+                DevToolList(modules: selectedBusiness.modules)
+            }.onAppear(perform: {
+                selectedTitle = testBusiness.allBusinessesTitles.first!
+                
+                print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
+            })
+            .dismissKeyboardOnTap()
+            
+        }
+        .onAppear {
+            setupKeyboardMonitors()
+        }
+        .onDisappear {
+            dismantleKeyboarMonitors()
+        }
+        .environment(\.keyboardIsShown, keyboardIsShown)
     }
+    
+    func setupKeyboardMonitors() {
+        keyboardShownMonitor = NotificationCenter.default
+            .publisher(for: UIWindow.keyboardWillShowNotification)
+            .sink { _ in if !keyboardIsShown { keyboardIsShown = true } }
+        
+        keyboardHideMonitor = NotificationCenter.default
+            .publisher(for: UIWindow.keyboardWillHideNotification)
+            .sink { _ in if keyboardIsShown { keyboardIsShown = false } }
+    }
+    
+    func dismantleKeyboarMonitors() {
+        keyboardHideMonitor?.cancel()
+        keyboardShownMonitor?.cancel()
+    }
+    
 }
 
 struct WrapperView: View {
