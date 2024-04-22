@@ -35,7 +35,8 @@ public final class DevToolStore: ObservableObject {
             business.updateModule(module)
             businesses[model.businessName] = business
         }
-        self.allBusinessesTitles = businesses.map { $0.0 }
+        let sortedPair = businesses.sorted {$0.key < $1.key}
+        self.allBusinessesTitles = sortedPair.map { $0.0 }
     }
 }
 
