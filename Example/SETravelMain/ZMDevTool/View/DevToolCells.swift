@@ -59,7 +59,7 @@ struct NumericalCell: View {
 }
 
 struct StringCell: View {
-    @Binding var model: MMDevToolModel
+    @State var model: MMDevToolModel
     var body: some View {
         if case .string(let stringValue) = model.dataValue {
             HStack {

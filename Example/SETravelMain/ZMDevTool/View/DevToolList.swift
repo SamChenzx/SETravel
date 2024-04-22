@@ -30,7 +30,7 @@ struct DevToolList: View {
                             .double(currentValue: _, min: _, max: _, stepSize: _):
                         NumericalCell(model: $model)
                     case .string(currentValue: _):
-                        StringCell(model: $model)
+                        StringCell(model: model)
                     case .stringList(currentValue: _, options: _):
                         StringOptionCell(model: $model)
                     case .color(currentValue: _):
