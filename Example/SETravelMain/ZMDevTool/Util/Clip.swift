@@ -20,3 +20,9 @@ internal func clip<U: Comparable>(_ value: U, _ minimum: U?, _ maximum: U?) -> U
     }
     return result
 }
+
+func printAddress(_ object: UnsafeRawPointer) -> String {
+    let addr = Int(bitPattern: object)
+    let str = String(format: "%p", addr)
+    return str
+}
