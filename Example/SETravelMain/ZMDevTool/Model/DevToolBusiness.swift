@@ -16,11 +16,18 @@ struct DevToolBusiness {
         self.title = title
     }
     
-    mutating func addModule(_ module: DevToolModule) {
+    fileprivate mutating func addModule(_ module: DevToolModule) {
         if !modules.contains(where: { $0.title == module.title }) {
             modules.append(module)
         }
         modules.sort { $0.title < $1.title }
+    }
+    
+    mutating func updateModule(_ module: DevToolModule) {
+        if (findModule(by: module.title) != nil) {
+            modules.removeAll { $0.title == module.title }
+        }
+        addModule(module)
     }
     
     func findModule(by name: String) -> DevToolModule? {

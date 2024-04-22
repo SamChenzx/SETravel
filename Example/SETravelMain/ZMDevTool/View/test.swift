@@ -52,17 +52,17 @@ func loadBusiness() -> [String: DevToolBusiness] {
     mail.addModel(server)
     
     var phoneBusiness = DevToolBusiness(title: "Phone")
-    phoneBusiness.addModule(voip)
+    phoneBusiness.updateModule(voip)
     
     var meetingBusiness = DevToolBusiness(title: "Meeting")
-    meetingBusiness.addModule(reac)
-    meetingBusiness.addModule(multi)
+    meetingBusiness.updateModule(reac)
+    meetingBusiness.updateModule(multi)
     
     var chatBusiness = DevToolBusiness(title: "Chat")
-    chatBusiness.addModule(chat)
+    chatBusiness.updateModule(chat)
     
     var mailBusiness = DevToolBusiness(title: "Mail")
-    mailBusiness.addModule(mail)
+    mailBusiness.updateModule(mail)
     var dic = ["Phone": phoneBusiness, "Meeting": meetingBusiness, "Chat": chatBusiness, "Mail": mailBusiness]
     return dic
 }
