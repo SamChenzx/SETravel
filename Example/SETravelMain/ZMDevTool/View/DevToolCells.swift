@@ -12,15 +12,14 @@ struct BooleanCell: View {
     @Binding var model: MMDevToolModel
     @EnvironmentObject private var testBusiness: TestBusiness
     var body: some View {
-        if case .boolean(let boolValue) = model.dataValue {
-            Toggle(model.featureName, isOn:Binding(
-                get: {
-                    boolValue
-                }, set: { newValue in
-                    model.dataValue = .boolean(currentValue: newValue)
-                }
-            ))
-        }
+        Toggle(model.featureName, isOn: Binding(get: {
+            if case .boolean(let boolValue) = model.dataValue {
+                return boolValue
+            }
+            return false
+        }, set: { newValue in
+            model.dataValue = .boolean(currentValue: newValue)
+        }))
     }
 }
 
