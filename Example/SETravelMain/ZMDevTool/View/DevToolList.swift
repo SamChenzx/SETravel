@@ -54,7 +54,7 @@ struct MyContentView: View {
         voip.addModel(maxLine)
         voip.addModel(version)
         var business = DevToolBusiness(title: "Meeting")
-        business.addModule(voip)
+        business.updateModule(voip)
         return business
     }()
     var body: some View {

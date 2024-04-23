@@ -24,26 +24,26 @@ struct DevToolView: View {
 }
 
 struct BusinessContentView: View {
-    @ObservedObject var testBusiness: TestBusiness
+    @ObservedObject var devToolStore: DevToolStore
     @Binding var selectedTitle: String
     @State private var keyboardIsShown = false
     @State private var keyboardHideMonitor: AnyCancellable? = nil
     @State private var keyboardShownMonitor: AnyCancellable? = nil
     private var selectedBusiness: Binding<DevToolBusiness> {
         Binding {
-            testBusiness.businesses[selectedTitle] ?? testBusiness.businesses["Meeting"]!
+            devToolStore.businesses[selectedTitle] ?? devToolStore.businesses["Meeting"]!
         } set: { newValue in
-            testBusiness.businesses[selectedTitle] = newValue
+            devToolStore.businesses[selectedTitle] = newValue
         }
     }
     var body: some View {
         ZStack {
             VStack(spacing: 5) {
                 Spacer().frame(height: 20)
-                SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle)
+                SegmentTitle(titles: devToolStore.allBusinessesTitles, selectedTitle: $selectedTitle)
                 DevToolList(business: selectedBusiness)
             }.onAppear(perform: {
-                selectedTitle = testBusiness.allBusinessesTitles.first!
+                selectedTitle = devToolStore.allBusinessesTitles.first!
                 
                 print("Sam dev:\(type(of: self)) line:\(#line) \(#function)")
             })
@@ -78,11 +78,11 @@ struct BusinessContentView: View {
 
 struct WrapperView: View {
     
-    @StateObject var testBusiness = TestBusiness(businesses: loadBusiness())
-    @State var selectedTitle: String = ""
+    @StateObject var devToolStore = DebugModels.defaultStore
+    @State var selectedTitle: String = DebugModels.defaultStore.allBusinessesTitles.first!
     @State var selectedBusiness: DevToolBusiness = DevToolBusiness(title: "")
     var body: some View {
-        BusinessContentView(testBusiness: testBusiness, selectedTitle: $selectedTitle).environmentObject(testBusiness)
+        BusinessContentView(devToolStore: devToolStore, selectedTitle: $selectedTitle).environmentObject(devToolStore)
     }
 }
 
