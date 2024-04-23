@@ -18,9 +18,17 @@ struct DevToolModule: Identifiable {
         self.title = title
     }
     
-    mutating func addModel(_ model: DevToolModel) {
+    @discardableResult
+    mutating func addModel(_ model: DevToolModel) -> DevToolModule {
         models.append(model)
         models.sort { $0.featureName < $1.featureName }
+        return self
+    }
+    
+    @discardableResult
+    mutating func updateModel(_ model: DevToolModel) -> DevToolModule {
+        models.removeAll { $0.featureName == model.featureName }
+        return addModel(model)
     }
 }
 

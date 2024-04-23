@@ -7,8 +7,6 @@
 
 #import "ZMBasicPlusModel.h"
 
-static const CGFloat ZMMeetingNormalEndSeconds = 2400;
-static const CGFloat ZMMeetingExtendedEndSeconds = 4800;
 
 @implementation ZMBasicPlusModel
 

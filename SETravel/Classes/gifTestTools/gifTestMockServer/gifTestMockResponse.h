@@ -74,9 +74,6 @@ NS_ASSUME_NONNULL_BEGIN
                     WithResource:(KSTestResourceKey)resourceKey
                       statusCode:(NSInteger)statusCode
                          headers:(nullable NSDictionary*)httpHeaders;
-+ (instancetype)responseWithDictionary:(NSDictionary *)jsonObject
-                            statusCode:(NSInteger)statusCode
-                               headers:(nullable NSDictionary *)httpHeaders;
 +(instancetype)responseWithData:(NSData*)data
                      statusCode:(NSInteger)statusCode
                         headers:(nullable NSDictionary*)httpHeaders;

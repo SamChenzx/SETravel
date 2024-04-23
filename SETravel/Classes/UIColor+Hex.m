@@ -17,7 +17,7 @@ NSString* ZMLocalizedString(NSString* key, NSString* comment)
 
 + (UIColor *)colorWithHexString:(NSString*)hexString
 {
-    unsigned clrRef = 0, length = hexString.length;
+    NSUInteger clrRef = 0, length = hexString.length;
     length = MIN(length, 6);
     
     if(length > 0) {
@@ -48,7 +48,7 @@ NSString* ZMLocalizedString(NSString* key, NSString* comment)
     if ([fullHexString.lowercaseString hasPrefix:@"0x"])
         hexString = [fullHexString substringFromIndex:2];
     
-    unsigned clrRef = 0, length = hexString.length;
+    NSUInteger clrRef = 0, length = hexString.length;
     length = MIN(length, 8);
     
     if(length > 0) {
@@ -75,7 +75,7 @@ NSString* ZMLocalizedString(NSString* key, NSString* comment)
         alpha = (CGFloat)alphaInt/255.f;
         clrRef >>= 8;
     }
-    return [UIColor staticColorWithHex:clrRef alpha:alpha];
+    return [UIColor staticColorWithHex:(uint32_t)clrRef alpha:alpha];
 }
 
 + (UIColor*)staticColorWithHex:(uint32_t)rgb alpha:(CGFloat)alpha

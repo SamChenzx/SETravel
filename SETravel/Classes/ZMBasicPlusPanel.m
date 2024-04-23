@@ -10,8 +10,6 @@
 #error ARC (-fobjc-arc) is required to build this code.
 #endif
 
-static const CGFloat ZMBPHostPanelHeight = 160.0f;
-static const CGFloat ZMBPParticipantPanelHeight = 70.0f;
 static const CGFloat ZMBPIconHeight = 24.0f;
 static const CGSize ZMBPButtonSize = {313.0f, 40.0f};
 

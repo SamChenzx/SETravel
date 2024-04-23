@@ -73,7 +73,7 @@ open class ZMDevToolViewController: UIViewController, UITableViewDelegate, UITab
         }
         
         public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            var cell = tableView.dequeueReusableCell(withIdentifier: ZMDTCellIdentifier, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: ZMDTCellIdentifier, for: indexPath)
             cell.textLabel?.text = "666"
             return cell
         }

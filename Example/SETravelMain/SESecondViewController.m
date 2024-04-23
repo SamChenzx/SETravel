@@ -30,10 +30,6 @@
 }
 
 - (void)didTap:(UIButton *)button {
-    NSString *baseString = @"Time coundtingdown:";
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"I'm countingdown "
-                                                                   message:baseString
-                                                            preferredStyle:UIAlertControllerStyleAlert];
     
 }
 

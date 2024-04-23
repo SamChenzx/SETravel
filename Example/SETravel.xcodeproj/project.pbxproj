@@ -18,7 +18,6 @@
 		182428742BC932E600A6D240 /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182428732BC932E600A6D240 /* BindingExtension.swift */; };
 		1854823D2BB6C1CA00F885C1 /* DebugModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854823C2BB6C1CA00F885C1 /* DebugModels.swift */; };
 		185482752BBA4C9200F885C1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185482742BBA4C9200F885C1 /* test.swift */; };
-		1884AA482BCE4FC90073827C /* DevToolModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AA472BCE4FC90073827C /* DevToolModuleView.swift */; };
 		1884AA4A2BCE584D0073827C /* DevToolStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AA492BCE584D0073827C /* DevToolStoreView.swift */; };
 		1884AABA2BD2587F0073827C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884AAB92BD2587F0073827C /* ViewExtension.swift */; };
 		188FCD4A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */; };
@@ -95,7 +94,6 @@
 		183346572B42F893004E9F77 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		1854823C2BB6C1CA00F885C1 /* DebugModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugModels.swift; sourceTree = "<group>"; };
 		185482742BBA4C9200F885C1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		1884AA472BCE4FC90073827C /* DevToolModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolModuleView.swift; sourceTree = "<group>"; };
 		1884AA492BCE584D0073827C /* DevToolStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolStoreView.swift; sourceTree = "<group>"; };
 		1884AAB92BD2587F0073827C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		188FCD2A2B075D8A0090E5D3 /* SEVideoFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEVideoFiltersViewController.m; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				180EED292B6E8BC4005471CD /* DevToolList.swift */,
-				1884AA472BCE4FC90073827C /* DevToolModuleView.swift */,
 				1884AA492BCE584D0073827C /* DevToolStoreView.swift */,
 				185482742BBA4C9200F885C1 /* test.swift */,
 				1824286D2BC7E2B300A6D240 /* DevToolCells.swift */,
@@ -579,7 +576,6 @@
 				188FCD7A2B075F3C0090E5D3 /* SEPanelBehavior.m in Sources */,
 				18C243772BA449370095CD82 /* DevToolModelAction.swift in Sources */,
 				18C2435C2BA19B620095CD82 /* DevToolStore.swift in Sources */,
-				1884AA482BCE4FC90073827C /* DevToolModuleView.swift in Sources */,
 				1884AABA2BD2587F0073827C /* ViewExtension.swift in Sources */,
 				18B9FC192BAD647C00FCF665 /* ModelPersistency.swift in Sources */,
 				18CAB14A2B207337005EA2F5 /* SEAnnoViewController.m in Sources */,

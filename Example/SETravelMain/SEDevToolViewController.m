@@ -38,7 +38,9 @@
 
 - (void)didTapButton:(UIButton *)button {
     self.landscape = !self.landscape;
-    [self setNeedsUpdateOfSupportedInterfaceOrientations];
+    if (@available(iOS 16.0, *)) {
+        [self setNeedsUpdateOfSupportedInterfaceOrientations];
+    }
 //    [self setOrientation:UIDeviceOrientationLandscapeLeft force:YES];
 //    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"this is a alert" message:@"just 666 just 666 just 666" preferredStyle:UIAlertControllerStyleAlert];
 //    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];

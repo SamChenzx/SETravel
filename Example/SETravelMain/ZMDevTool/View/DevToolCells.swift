@@ -71,7 +71,7 @@ struct StringCell: View {
                         stringValue
                     }, set: { newValue in
                         model.dataValue = .string(currentValue: newValue)
-                        
+                        devToolStore.updateModel(model, withValue: .string(currentValue: newValue))
                     }
                 )).textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)

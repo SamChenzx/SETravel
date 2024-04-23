@@ -21,16 +21,16 @@ class TestBusiness: ObservableObject {
 }
 
 func loadBusiness() -> [String: DevToolBusiness] {
-    var enableVoip = DevToolModel("Phone", "VOIP", "Enable VOIP", true)
-    var enableCallKit = DevToolModel("Phone", "VOIP", "Enable CallKit", true)
-    var reaction = DevToolModel("Meeting", "Reaction", "Disable Reaction", false)
-    var multitask = DevToolModel("Meeting", "Multitasking", "Enable Multitasking", false)
-    var maxLine = DevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32)
-    var version = DevToolModel("Phone", "VOIP", "Support version", 17.3, minValue: 0.0, stepSize: 0.5)
-    var newchat = DevToolModel("Chat", "new chat", "new chat version", "6.0.0")
-    var server = DevToolModel("Mail", "Mail Server", "Mail server", options: ["Google", "Zoom", "Amazon", "Microsoft"], defaultValue: "Zoom")
-    var color = DevToolModel("Chat", "new chat", "new chat Color", Color.blue)
-    var continus = DevToolModel("Chat", "new chat", "continus chat", true)
+    let enableVoip = DevToolModel("Phone", "VOIP", "Enable VOIP", true)
+    let enableCallKit = DevToolModel("Phone", "VOIP", "Enable CallKit", true)
+    let reaction = DevToolModel("Meeting", "Reaction", "Disable Reaction", false)
+    let multitask = DevToolModel("Meeting", "Multitasking", "Enable Multitasking", false)
+    let maxLine = DevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32)
+    let version = DevToolModel("Phone", "VOIP", "Support version", 17.3, minValue: 0.0, stepSize: 0.5)
+    let newchat = DevToolModel("Chat", "new chat", "new chat version", "6.0.0")
+    let server = DevToolModel("Mail", "Mail Server", "Mail server", options: ["Google", "Zoom", "Amazon", "Microsoft"], defaultValue: "Zoom")
+    let color = DevToolModel("Chat", "new chat", "new chat Color", Color.blue)
+    let continus = DevToolModel("Chat", "new chat", "continus chat", true)
     var voip: DevToolModule = DevToolModule(title: "VOIP")
     voip.addModel(enableVoip)
     voip.addModel(maxLine)
@@ -63,6 +63,6 @@ func loadBusiness() -> [String: DevToolBusiness] {
     
     var mailBusiness = DevToolBusiness(title: "Mail")
     mailBusiness.updateModule(mail)
-    var dic = ["Phone": phoneBusiness, "Meeting": meetingBusiness, "Chat": chatBusiness, "Mail": mailBusiness]
+    let dic = ["Phone": phoneBusiness, "Meeting": meetingBusiness, "Chat": chatBusiness, "Mail": mailBusiness]
     return dic
 }

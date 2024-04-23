@@ -199,9 +199,7 @@ static NSString *const reuseIdentifier = @"reuseIdentifier";
             self.containerView.frame = newFrame;
         }
                          completion:nil];
-    } else {
-        CASpringAnimation *spring = [CASpringAnimation animationWithKeyPath:@"position.y"];
-        
+    } else {        
         
 //        [UIView animateWithDuration:duration animations:^{
 //            self.videoFiltersViewHeightConstraint.constant = Position;

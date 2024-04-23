@@ -200,7 +200,6 @@ static NSTimeInterval endTime = 0;
 @property (nonatomic, assign) CGFloat lastContentOffset;
 @property (nonatomic, strong) dispatch_source_t timer;
 @property (nonatomic, strong) NSTimer *myTimer;
-@property (nonatomic, strong) UIEditMenuInteraction *editMenuInteraction;
 @property (nonatomic, strong) UIButton *menuButton;
 @property (nonatomic, strong) ZMToolbarButton *toolbarButton;
 @property (nonatomic, assign) NSTimeInterval endTime;
@@ -415,9 +414,7 @@ static NSTimeInterval endTime = 0;
 }
 
 - (void)didClickButton {
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
     self.count ++;
-    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
     UIViewController *hostVC = [[[DevToolBridgeViewController alloc] init] createContentView];
     [self presentViewController:hostVC animated:YES completion:nil];
 //    KSCoverageInfoView *infoView = [[KSCoverageInfoView alloc] initWithFrame:self.view.bounds];
@@ -460,6 +457,10 @@ static NSTimeInterval endTime = 0;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSString *)stringWithName:(NSString *)name {
+    return @"";
 }
 
 @end

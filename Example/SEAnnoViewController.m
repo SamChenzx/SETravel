@@ -88,7 +88,6 @@
 }
 
 - (void)didTapButton:(UIButton *)button {
-    ZMDevToolViewController *vc = [[ZMDevToolViewController alloc] init];
     self.devButton.transform = CGAffineTransformMakeTranslation(0, -200);
 }
 
