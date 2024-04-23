@@ -41,7 +41,7 @@ struct BusinessContentView: View {
             VStack(spacing: 5) {
                 Spacer().frame(height: 20)
                 SegmentTitle(titles: testBusiness.allBusinessesTitles, selectedTitle: $selectedTitle)
-                DevToolList(modules: selectedBusiness.modules)
+                DevToolList(business: selectedBusiness)
             }.onAppear(perform: {
                 selectedTitle = testBusiness.allBusinessesTitles.first!
                 

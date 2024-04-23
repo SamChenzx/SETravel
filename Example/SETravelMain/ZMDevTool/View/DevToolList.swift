@@ -16,10 +16,9 @@ public class SwiftUIBridgeViewController: NSObject {
 }
 
 struct DevToolList: View {
-    
-    @Binding var modules: [DevToolModule]
+    @Binding var business: DevToolBusiness
     var body: some View {
-        List($modules) { $module in
+        List($business.modules) { $module in
             Section(header: Text("\(module.title)")) {
                 ForEach($module.models) { $model in
                     switch model.dataValue {
@@ -40,40 +39,26 @@ struct DevToolList: View {
                     }
                 }
             }
+            
         }.frame(maxWidth: 500)
     }
 }
 
 struct MyContentView: View {
-    @State private var modules: [DevToolModule] = {
+    @State private var business: DevToolBusiness = {
         var enableVoip = MMDevToolModel("Phone", "VOIP", "Enable VOIP", true)
-        var reaction = MMDevToolModel("Meeting", "Reaction", "Disable Reaction", false)
         var maxLine = MMDevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32)
         var version = MMDevToolModel("Phone", "VOIP", "Support version", 17.3, minValue: 0.0, stepSize: 0.5)
-        var newchat = MMDevToolModel("Chat", "new chat", "new chat version", "6.0.0")
-        var server = MMDevToolModel("Mail", "Mail Server", "Mail server", options: ["Google", "Zoom", "Amazon", "Microsoft"], defaultValue: "Zoom")
-        var color = MMDevToolModel("Chat", "new chat", "new chat Color", Color.blue)
-        var continus = MMDevToolModel("Chat", "new chat", "continus chat", true)
         var voip: DevToolModule = DevToolModule(title: "VOIP")
         voip.addModel(enableVoip)
         voip.addModel(maxLine)
         voip.addModel(version)
-        
-        var chat: DevToolModule = DevToolModule(title: "new chat")
-        chat.addModel(newchat)
-        chat.addModel(color)
-        chat.addModel(continus)
-        
-        var reac: DevToolModule = DevToolModule(title: "Reaction")
-        reac.addModel(reaction)
-        
-        var mail: DevToolModule = DevToolModule(title: "Mail Server")
-        mail.addModel(server)
-        
-        return [voip, chat, reac, mail]
+        var business = DevToolBusiness(title: "Meeting")
+        business.addModule(voip)
+        return business
     }()
     var body: some View {
-        DevToolList(modules: $modules)
+        DevToolList(business: $business)
     }
 }
 
