@@ -13,7 +13,7 @@ public final class DevToolStore: ObservableObject {
     @Published var allBusinessesTitles: [String] = []
     private let storeName: String
     private let persistence: ModelPersistency
-    private let allModels: Set<MMDevToolModel>
+    private let allModels: Set<DevToolModel>
     init(models: [ModelClusterType], storeName: String = "ZMDev") {
         self.persistence = ModelPersistency(identifier: storeName)
         self.storeName = storeName
@@ -38,6 +38,11 @@ public final class DevToolStore: ObservableObject {
         let sortedPair = businesses.sorted {$0.key < $1.key}
         self.allBusinessesTitles = sortedPair.map { $0.0 }
     }
+    
+    func updateModel(_ model: DevToolModel) {
+        
+    }
+    
 }
 
 

@@ -48,7 +48,7 @@ public struct AnyDevToolModel {
 //}
 
 public protocol ModelClusterType {
-    var modelCluster: [MMDevToolModel] { get }
+    var modelCluster: [DevToolModel] { get }
 }
 
 public protocol ModelType: ModelClusterType {

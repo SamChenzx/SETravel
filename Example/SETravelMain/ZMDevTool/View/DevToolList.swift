@@ -46,9 +46,9 @@ struct DevToolList: View {
 
 struct MyContentView: View {
     @State private var business: DevToolBusiness = {
-        var enableVoip = MMDevToolModel("Phone", "VOIP", "Enable VOIP", true)
-        var maxLine = MMDevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32)
-        var version = MMDevToolModel("Phone", "VOIP", "Support version", 17.3, minValue: 0.0, stepSize: 0.5)
+        var enableVoip = DevToolModel("Phone", "VOIP", "Enable VOIP", true)
+        var maxLine = DevToolModel("Phone", "VOIP", "VOIP max Lines", 16, minValue:0, maxValue:32)
+        var version = DevToolModel("Phone", "VOIP", "Support version", 17.3, minValue: 0.0, stepSize: 0.5)
         var voip: DevToolModule = DevToolModule(title: "VOIP")
         voip.addModel(enableVoip)
         voip.addModel(maxLine)

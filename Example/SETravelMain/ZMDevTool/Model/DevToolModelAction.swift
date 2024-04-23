@@ -56,17 +56,14 @@ extension ModelAction: Hashable {
     }
 }
 
-extension DevToolModel where T == ModelAction {
-    public init(_ businessName: String, _ moduleName: String, _ featureName: String) {
-        self.init(businessName, moduleName, featureName, ModelAction())
-    }
+extension DevToolModel {
     
-    @discardableResult
-    public func addClosure(_ closure: @escaping ModelActionClosure) -> ModelAction.ClosureIdentifier {
-        return defaultValue.addClosure(closure)
-    }
-    
-    public func removeClosure(with identifier: ModelAction.ClosureIdentifier) throws {
-        try defaultValue.removeClosure(withIdentifier: identifier)
-    }
+//    @discardableResult
+//    public func addClosure(_ closure: @escaping ModelActionClosure) -> ModelAction.ClosureIdentifier {
+//        return dataValue.addClosure(closure)
+//    }
+//    
+//    public func removeClosure(with identifier: ModelAction.ClosureIdentifier) throws {
+//        try dataValue.removeClosure(withIdentifier: identifier)
+//    }
 }

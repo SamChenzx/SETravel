@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BooleanCell: View {
-    @Binding var model: MMDevToolModel
+    @Binding var model: DevToolModel
     @EnvironmentObject private var testBusiness: TestBusiness
     var body: some View {
         Toggle(model.featureName, isOn: Binding(get: {
@@ -24,7 +24,7 @@ struct BooleanCell: View {
 }
 
 struct NumericalCell: View {
-    @Binding var model: MMDevToolModel
+    @Binding var model: DevToolModel
     var body: some View {
         HStack {
             Text(model.featureName)
@@ -59,7 +59,8 @@ struct NumericalCell: View {
 }
 
 struct StringCell: View {
-    @State var model: MMDevToolModel
+    @State var model: DevToolModel
+    @EnvironmentObject var devToolStore: DevToolStore
     var body: some View {
         if case .string(let stringValue) = model.dataValue {
             HStack {
@@ -70,6 +71,7 @@ struct StringCell: View {
                         stringValue
                     }, set: { newValue in
                         model.dataValue = .string(currentValue: newValue)
+                        
                     }
                 )).textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)
@@ -81,7 +83,7 @@ struct StringCell: View {
 }
 
 struct StringOptionCell: View {
-    @Binding var model: MMDevToolModel
+    @Binding var model: DevToolModel
     var body: some View {
         if case let .stringList(stringValue, stringOptions) = model.dataValue {
             HStack {
@@ -117,7 +119,7 @@ struct StringOptionCell: View {
 }
 
 struct ColorCell: View {
-    @Binding var model: MMDevToolModel
+    @Binding var model: DevToolModel
     var body: some View {
         if case .color(let colorValue) = model.dataValue {
             HStack {
@@ -145,7 +147,7 @@ struct ColorCell: View {
 }
 
 struct DevToolCells: View {
-    @State var model: MMDevToolModel = MMDevToolModel("Meeting", "Reaction", "Disable Reaction", false)
+    @State var model: DevToolModel = DevToolModel("Meeting", "Reaction", "Disable Reaction", false)
     var body: some View {
         List {
             BooleanCell(model: $model)

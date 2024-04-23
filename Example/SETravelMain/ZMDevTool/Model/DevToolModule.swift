@@ -12,13 +12,13 @@ import SwiftUI
 struct DevToolModule: Identifiable {
     let id = UUID()
     let title: String
-    var models: [MMDevToolModel] = []
+    var models: [DevToolModel] = []
     
     init(title: String) {
         self.title = title
     }
     
-    mutating func addModel(_ model: MMDevToolModel) {
+    mutating func addModel(_ model: DevToolModel) {
         models.append(model)
         models.sort { $0.featureName < $1.featureName }
     }

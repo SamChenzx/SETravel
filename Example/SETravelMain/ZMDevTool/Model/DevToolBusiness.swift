@@ -43,7 +43,7 @@ extension DevToolBusiness {
         return modules.reduce(0) { $0 + $1.models.count }
     }
 
-    internal var allModels: [MMDevToolModel] {
+    internal var allModels: [DevToolModel] {
         return modules.reduce([]) {
             $0 + $1.models
         }
