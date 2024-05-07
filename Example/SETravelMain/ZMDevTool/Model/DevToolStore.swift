@@ -39,10 +39,11 @@ public final class DevToolStore: ObservableObject {
         self.allBusinessesTitles = sortedPair.map { $0.0 }
     }
     
-    func updateModel(_ model: DevToolModel, withValue: ModelDataValue) {
+    func updateModel(_ model: DevToolModel, withValue value: ModelDataValue) {
         guard var business = businesses[model.businessName] else { return }
         guard var module = business.findModule(by: model.moduleName) else { return }
         business.updateModule(module.updateModel(model))
+        persistence.setValue(value, forModelIdentifiable: model)
     }
     
 }

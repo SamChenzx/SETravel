@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-internal typealias ModelCache = [String: BaseType]
+internal typealias ModelCache = [String: ModelDataValue]
 
 protocol ModelIdentifiable {
     var persistenceIdentifier: String { get }
@@ -25,22 +25,18 @@ internal final class ModelPersistency {
         self.modelCache = self.diskPersistency.loadFromDisk()
     }
 
-//    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? {
-//        return persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T
-//    }
-//
-//    internal func currentValueForModel<T>(_ model: DevToolModel<T>) -> T? where T: Comparable {
-//        if let currentValue = persistedValueForModelIdentifiable(AnyDevToolModel(model: model)) as? T {
-//                return clip(currentValue, model.minimumValue, model.maximumValue)
-//        }
-//        return nil
-//    }
-
-    internal func persistedValueForModelIdentifiable(_ modelID: ModelIdentifiable) -> BaseType? {
-        return modelCache[modelID.persistenceIdentifier]
+    internal func currentValueForModel(_ model: DevToolModel) -> ModelDataValue? {
+        if let dataValue = persistedValueForModel(model) {
+            return dataValue.isNumeric ? dataValue.clippedDataValue : dataValue
+        }
+        return nil
     }
 
-    internal func setValue(_ value: BaseType?,  forModelIdentifiable modelID: ModelIdentifiable) {
+    internal func persistedValueForModel(_ model: DevToolModel) -> ModelDataValue? {
+        return modelCache[model.persistenceIdentifier]
+    }
+
+    internal func setValue(_ value: ModelDataValue,  forModelIdentifiable modelID: ModelIdentifiable) {
         modelCache[modelID.persistenceIdentifier] = value
         self.diskPersistency.saveToDisk(modelCache)
     }

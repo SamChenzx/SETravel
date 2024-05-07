@@ -138,3 +138,32 @@ extension ModelDataValue {
     }
 }
 
+extension ModelDataValue {
+    var isNumeric: Bool {
+        switch self {
+        case .integer(currentValue: _, min: _, max: _, stepSize: _),
+                .float(currentValue: _, min: _, max: _, stepSize: _),
+                .double(currentValue: _, min: _, max: _, stepSize: _):
+            return true
+        default:
+            return false
+        }
+    }
+    
+    var clippedDataValue: ModelDataValue {
+        switch self {
+        case .integer(currentValue: let intValue, min: let min, max: let max, stepSize: let stepSize):
+            let clipped: ModelDataValue = .integer(currentValue: clip(intValue, min, max), min: min, max: max, stepSize: stepSize)
+            return clipped
+        case .float(currentValue: let floatValue, min: let min, max: let max, stepSize: let stepSize):
+            let clipped: ModelDataValue = .float(currentValue: clip(floatValue, min, max), min: min, max: max, stepSize: stepSize)
+            return clipped
+        case .double(currentValue: let doubleValue, min: let min, max: let max, stepSize: let stepSize):
+            let clipped: ModelDataValue = .double(currentValue: clip(doubleValue, min, max), min: min, max: max, stepSize: stepSize)
+            return clipped
+        default:
+            assert(false, "numericValue only avaliable for int, float and double")
+        }
+    }
+}
+
