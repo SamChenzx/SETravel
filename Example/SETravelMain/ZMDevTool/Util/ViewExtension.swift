@@ -16,6 +16,13 @@ extension View {
   }
 }
 
+extension View {
+    func debug() -> Self {
+        print(Mirror(reflecting: self).subjectType)
+        return self
+    }
+}
+
 extension EnvironmentValues {
     var keyboardIsShown: Bool {
         get { return self[KeyboardIsShownEVK.self] }

@@ -11,6 +11,8 @@ target 'SETravel_Example' do
   pod 'ZMDevTool', :path => '../'
   pod 'SSZipArchive'
   pod 'Masonry'
+  pod 'SVGKit'
+  pod 'CocoaLumberjack/Swift'
   pod 'AFNetworking'
   target 'SETravel_Tests' do
     inherit! :search_paths

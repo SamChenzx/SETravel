@@ -14,6 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    navigationBar.prefersLargeTitles = YES;
     // Override point for customization after application launch.
     return YES;
 }
